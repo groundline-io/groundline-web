@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'groundline',
+    title: 'groundline.io',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'groundline',
-        short_name: 'starter',
+        name: 'groundline.io',
+        short_name: 'groundline',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -58,6 +58,14 @@ module.exports = {
           }
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Montserrat']
+        }
+      }
     },
     `gatsby-plugin-remove-trailing-slashes`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

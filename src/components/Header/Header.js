@@ -4,6 +4,7 @@ import sizeMe  from 'react-sizeme';
 import { connect } from "react-redux";
 import { updateHeaderHeight } from '../../actions/layout';
 import Menu from '../Menu';
+import LogoPath from '../../images/logo.png';
 
 class Header extends Component {
   componentDidUpdate = () => {
@@ -43,9 +44,10 @@ class Header extends Component {
                 style={{
                   color: '#666',
                   textDecoration: 'none',
+                  fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                {siteTitle}
+                <img src={LogoPath} alt="groundline.io" />
               </Link>
             </h1>
           </div>

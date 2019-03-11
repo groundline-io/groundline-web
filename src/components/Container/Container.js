@@ -26,8 +26,7 @@ class Container extends Component {
               maxWidth: '68.75rem',
               width: '90%',
               marginLeft: 'auto',
-              marginRight: 'auto',
-              marginTop: '7.1875rem'
+              marginRight: 'auto'
           }}
         >
           {this.props.children}

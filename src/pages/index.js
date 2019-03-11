@@ -6,23 +6,38 @@ import Col from 'antd/lib/col'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
+import InfoPath from '../images/infographic.png'
 import { Link } from "gatsby"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div style={{marginBottom: "7.1875rem"}}>
-        <div align="center">
-        <br/>
-          <p style={{color: "#364962", fontSize: 32}}>
-            Connect your React app with your back-end
+
+      <div style={{
+        marginBottom: "7.1875rem"
+      }}>
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+          <Col lg={10} xs={24} >
+            <h3 style={{color: "#364962", fontSize: 32}}>
+            Customizable declarative API for back-end connection
+          </h3>
+          <p style={{color: "#364962", fontSize: 16 }}>
+            Speed up CMS development by utilizing exsiting UI frameworks and BAAS through React JS components.
           </p>
           <br/>
           <Link to="/docs/get-started/introduction">
-            <Button type="outline" size="large" style={{marginRight: 10}}>Get Started</Button>
+            <Button type="outline" size="large" style={{marginRight: 10}} icon="folder-open">Get Started</Button>
           </Link>
-          <Button type="primary" size="large" href="#">Github</Button>
-        </div>
+          <Button type="primary" size="large" href="#" icon="github" >Github</Button>
+          </Col>
+          <Col lg={14} xs={24}>
+            <div style={{
+              paddingLeft: "4rem"
+            }}>
+              <img src={InfoPath} alt="Groundline.io how it works?" />
+            </div>
+          </Col>
+        </Row>
       </div>
 
       <div>
@@ -39,19 +54,19 @@ const IndexPage = () => {
         <div>
           <Row gutter={16}>
             <Col span={8}>
-              <h6>Feature 1</h6>
+              <h6>Declarative</h6>
               <p>
                 Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
               </p>
             </Col>
             <Col span={8}>
-              <h6>Feature 2</h6>
+              <h6>Back-end agnostic</h6>
               <p>
                 Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
               </p>
             </Col>
             <Col span={8}>
-              <h6>Feature 3</h6>
+              <h6>React JS</h6>
               <p>
                 Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
               </p>
