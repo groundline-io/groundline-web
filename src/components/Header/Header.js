@@ -12,7 +12,6 @@ class Header extends Component {
   }
 
   render() {
-    const { siteTitle } = this.props
     return(
       <div
         style={{

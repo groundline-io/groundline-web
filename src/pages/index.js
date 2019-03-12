@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Button from 'antd/lib/button'
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
+import Icon from 'antd/lib/icon'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
@@ -19,7 +20,7 @@ const IndexPage = () => {
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={10} xs={24} >
             <h3 style={{color: "#364962", fontSize: 32}}>
-            Customizable declarative API for back-end connection
+            Customizable declarative API for back-end connections
           </h3>
           <p style={{color: "#364962", fontSize: 16 }}>
             Speed up CMS development by utilizing exsiting UI frameworks and BAAS through React JS components.
@@ -41,54 +42,27 @@ const IndexPage = () => {
       </div>
 
       <div>
-        <div align="center">
-        <br/>
-          <h3>
-            Features
-          </h3>
-          <p>
-            Customizable declarative API.
-          </p>
-        </div>
-          <br/>
         <div>
-          <Row gutter={16}>
-            <Col span={8}>
-              <h6>Declarative</h6>
+          <Row gutter={96}>
+            <Col lg={8} xs={24}>
+              <Icon type="api" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
+              <h4>Declarative API</h4>
               <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
+                Focus on what your app can do instead of how it works under the hood. Build your schema using components and it will automatically connect to your chosen database and render your interface.
               </p>
             </Col>
-            <Col span={8}>
-              <h6>Back-end agnostic</h6>
+            <Col lg={8} xs={24}>
+              <Icon type="layout" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
+              <h4>UI framework agnostic</h4>
               <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
+                Components are not attached to a specific UI framework. Whether you are using Bootstrap, Ant Design or Material Design, our system will render your schema to your preferred interface designs.
               </p>
             </Col>
-            <Col span={8}>
-              <h6>React JS</h6>
+            <Col lg={8} xs={24}>
+              <Icon type="database" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
+              <h4>Back-end agnostic</h4>
               <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
-              </p>
-            </Col>
-          </Row>
-          <Row gutter={16}>
-            <Col span={8}>
-              <h6>Feature 4</h6>
-              <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
-              </p>
-            </Col>
-            <Col span={8}>
-              <h6>Feature 5</h6>
-              <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
-              </p>
-            </Col>
-            <Col span={8}>
-              <h6>Feature 6</h6>
-              <p>
-                Lorem ipsum dolor sit amet. Orem ipsum dolor sit amet dolorsit amet ipsum dolor sit amet ipsum doloramet ipsum dolor sit amet.
+                Create one schema and connect your data to one of our available back-end connectors. You can switch to another back-end without re-coding your schema, just configure your connectors and your done.
               </p>
             </Col>
           </Row>
@@ -97,13 +71,21 @@ const IndexPage = () => {
 
       <div style={{marginTop: "7.1875rem", padding: "3rem 0"}}>
         <div>
+           <div align="center">
+              <h5>groundline.io</h5>
+              <p>
+                Customizable declarative API for back-end connections
+              </p>
+            </div>
+        {/*
           <Row gutter={16}>
             <Col span={10}>
-              <h6>groundline</h6>
+              <h6>groundline.io</h6>
               <p>
-                Customizable declarative API for connecting your frontend and backend application
+                Customizable declarative API for back-end connection
               </p>
             </Col>
+          
             <Col span={4}>
               <h6>Developers</h6>
               <div><Link to="#">Link 1</Link></div>
@@ -126,6 +108,7 @@ const IndexPage = () => {
               <div><Link to="#">Link 4</Link></div>
             </Col>
           </Row>
+         */}
         </div>
       </div>
 
