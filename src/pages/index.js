@@ -23,7 +23,7 @@ const IndexPage = () => {
             Customizable declarative API for back-end connections
           </h3>
           <p style={{color: "#364962", fontSize: 16 }}>
-            Speed up CMS development by utilizing exsiting UI frameworks and BAAS through React JS components.
+            Speed up CMS development by utilizing exsiting UI frameworks and BAAS using high-order components.
           </p>
           <br/>
           <Link to="/docs/get-started/introduction">
