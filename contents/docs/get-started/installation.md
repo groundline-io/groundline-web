@@ -1,7 +1,8 @@
 ---
 title: Installation
 root: "/docs"
-parents: ["Get Started"]
+parents: ["I. Get Started"]
+weight: 1
 ---
 <h1 align="center">
   Installation

@@ -46,7 +46,7 @@ class Header extends Component {
                   fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                <img src={LogoPath} alt="groundline.io" />
+                <img src={LogoPath} alt="groundline.io" /> 
               </Link>
             </h1>
           </div>

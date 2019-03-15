@@ -16,7 +16,8 @@ const convertToTree = (data) => {
         path: edge.node.fields.slug,
         key: edge.node.id,
         title: edge.node.frontmatter.title,
-        parents: edge.node.frontmatter.parents
+        parents: edge.node.frontmatter.parents,
+        weight: edge.node.frontmatter.weight
       })
     })
   return constructTree(list)
@@ -25,6 +26,7 @@ const convertToTree = (data) => {
 const constructTree = (list) => {
   let tree = []
   let dir = []
+  console.log('list', list)
   list.forEach(item => {
     if (item.parents === [] || item.parents === null) tree.push(item)
     else {
@@ -51,11 +53,23 @@ const constructTree = (list) => {
 
 const sortTree = tree => {
   tree.sort((a,b)=> {
+    
+    if (typeof a.weight !== 'undefined' && typeof b.weight !== 'undefined' ) {
+      return a.weight - b.weight
+    } else if (((a.children && b.children) || (!a.children && !b.children)) && a.title > b.title) {
+      return 1
+    } else if (((a.children && b.children) || (!a.children && !b.children)) && a.title < b.title) {
+      return -1
+    }
+
+    return -1
+    /*
     if (((a.children && b.children) || 
     (!a.children && !b.children)) &&
     a.title > b.title) return 1
     else if (a.children) return 1
     return -1
+    */
   })
 }
 
@@ -81,6 +95,7 @@ class SidebarContents extends Component {
                   frontmatter {
                     title
                     parents
+                    weight
                   }
                 }
               }
@@ -88,6 +103,7 @@ class SidebarContents extends Component {
           }
         `}
         render={data => {
+          console.log(data);
           const [tree, dir] = convertToTree(data.allMarkdownRemark.edges.filter(node => 
             node.node.fields.slug.startsWith(root)
           ))
@@ -96,7 +112,7 @@ class SidebarContents extends Component {
             if (item.children) {
               sortTree(item.children)
               return (
-                <SubMenu key={item.key} title={<span style={{fontWeight:900}}>{item.title}</span>}>
+                <SubMenu key={item.key} title={<span style={{fontWeight:900}}>{item.title.substr(item.title.indexOf('.') + 1 )}</span>}>
                   {loop(item.children)}
                 </SubMenu>
               )

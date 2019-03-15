@@ -4,6 +4,8 @@ import Button from 'antd/lib/button'
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
 import Icon from 'antd/lib/icon'
+import Badge from 'antd/lib/badge'
+import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
@@ -19,7 +21,8 @@ const IndexPage = () => {
       }}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={10} xs={24} >
-            <h3 style={{color: "#364962", fontSize: 32}}>
+            <Badge count={'Beta'} />
+            <h3 style={{color: "#364962", fontSize: 32, marginTop: '5px'}}>
             Customizable declarative API for back-end connections
           </h3>
           <p style={{color: "#364962", fontSize: 16 }}>
@@ -53,7 +56,7 @@ const IndexPage = () => {
             </Col>
             <Col lg={8} xs={24}>
               <Icon type="layout" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>UI framework agnostic</h4>
+              <h4>UI framework flexible</h4>
               <p>
                 Components are not attached to a specific UI framework. Whether you are using Bootstrap, Ant Design or Material Design, our system will render your schema to your preferred interface designs.
               </p>
@@ -71,8 +74,8 @@ const IndexPage = () => {
 
       <div style={{marginTop: "7.1875rem", padding: "3rem 0"}}>
         <div>
-           <div align="center">
-              <h5>groundline.io</h5>
+           <div align="left">
+              <h5>Groundline.io</h5>
               <p>
                 Customizable declarative API for back-end connections
               </p>

@@ -1,7 +1,8 @@
 ---
 title: Quick Start
 root: "/docs"
-parents: ["Get Started"]
+parents: ["I. Get Started"]
+weight: 2
 ---
 <h1 align="center">
   Quick Start
@@ -22,27 +23,14 @@ class App extends Component {
       baseUrl: "/"
     });
 
-    const routes = router.getRoutes();
-
-    const routerParams = {
-      operator: router.getOperator(),
-      payload: router.getPayload(),
-      where: router.getWhere(),
-      sort: router.getSort(),
-      pagination: router.getPagination()
-    };
-
     return (
-      <React.Fragment>
         <Groundline 
-          ref={React.createRef()}
           schema={schema} 
-          routes={routes}
+          routes={router.getRoutes()}
           goTo={router.goTo}
-          routerParams={routerParams}
         />
-      </React.Fragment>
     );
+
   }
 }
 ```
@@ -51,7 +39,7 @@ class App extends Component {
 ```
 /** @jsx builder */
 
-import {builder, FirebaseRtdbClientConnector} from 'groundline';
+import {builder, ConnectFirebaseClientRealtimeDB} from 'groundline';
 import firebase from 'firebase';
 import Posts from './posts';
 
@@ -65,9 +53,9 @@ if (!firebase.apps.length) {
     messagingSenderId: "your-firebase-messaging-id"
   });
 }
-const defaultApp = firebase.app();
-const connector = new FirebaseRtdbClientConnector({
-  database: defaultApp.database()
+const myApp = firebase.app();
+const connector = new ConnectFirebaseClientRealtimeDB({
+  database: myApp.database()
 });
 
 export default (
@@ -90,11 +78,11 @@ export default () => (
   <record 
     keyName="posts" 
     title="Posts" 
-    interface={table}
+    render={table}
   >
-      <string keyName="title" title="Title" interface={stringInput} />
-      <string keyName="description" title="Description" interface={stringInput} />
-      <string keyName="content" title="Content" interface={stringInput} />
+      <string keyName="title" title="Title" render={stringInput} />
+      <string keyName="description" title="Description" render={stringInput} />
+      <string keyName="content" title="Content" render={stringInput} />
   </record>
 );
 
