@@ -1,15 +1,13 @@
 ---
-title: String
+title: Record
 root: "/docs"
-parents: ["II. Data Types"]
-weight: 0
+parents: ["III. Tags"]
+weight: 2
 ---
-
-# String
-
-Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in parenthesis. Can store up to 255 characters
+# Record
+[To do]
 ```
- <string />
+ <boolean />
 ```
 <br/>
 

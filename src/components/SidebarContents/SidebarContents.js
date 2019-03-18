@@ -26,7 +26,6 @@ const convertToTree = (data) => {
 const constructTree = (list) => {
   let tree = []
   let dir = []
-  console.log('list', list)
   list.forEach(item => {
     if (item.parents === [] || item.parents === null) tree.push(item)
     else {
@@ -128,7 +127,7 @@ class SidebarContents extends Component {
             .filter(item => path === item.node.fields.slug ||
               (path.slice(0,-1) === item.node.fields.slug && path.slice(-1) === '/'))
             .length > 0 ? [expandedKeys] : []
-          const defaultOpenKeys = dir.map(item => item.key)
+          let defaultOpenKeys = dir.map(item => item.key)
           return (
               <Menu 
                 mode="inline"
