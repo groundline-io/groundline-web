@@ -13,21 +13,16 @@ Below is a quick example on how to get started
 ##### /App.js
 ```
 import React, { Component } from 'react';
-import Groundline, {Router as R} from 'groundline';
+import Groundline from 'groundline';
 import schema from './schema/index.js';
 
 class App extends Component {
   render() {
 
-    const router = new R({
-      baseUrl: "/"
-    });
-
     return (
         <Groundline 
           schema={schema} 
-          routes={router.getRoutes()}
-          goTo={router.goTo}
+          baseUrl='/sample'
         />
     );
 

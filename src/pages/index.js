@@ -21,7 +21,7 @@ const IndexPage = () => {
       }}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={10} xs={24} >
-            <Badge count={'Beta'} />
+            <Badge count={'Alpha 0.0.12'} />
             <h3 style={{color: "#364962", fontSize: 32, marginTop: '5px'}}>
             Customizable declarative API for back-end connections
           </h3>
