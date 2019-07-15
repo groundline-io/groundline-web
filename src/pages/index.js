@@ -21,12 +21,12 @@ const IndexPage = () => {
       }}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={10} xs={24} >
-            <Badge count={'Alpha 0.0.12'} />
+            <Badge count={'Alpha 0.0.16 - unstable'} />
             <h3 style={{color: "#364962", fontSize: 32, marginTop: '5px'}}>
-            Customizable declarative API for back-end connections
+            Build analytics and dashboards using declarative API and GraphQL
           </h3>
           <p style={{color: "#364962", fontSize: 16 }}>
-            Speed up CMS development by utilizing exsiting UI frameworks and BAAS using high-order components.
+            Speed up development by connecting data sources and platforms to your chart frameworks.
           </p>
           <br/>
           <Link to="/docs/get-started/introduction">
@@ -51,21 +51,21 @@ const IndexPage = () => {
               <Icon type="api" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
               <h4>Declarative API</h4>
               <p>
-                Focus on what your app can do instead of how it works under the hood. Build your schema using components and it will automatically connect to your chosen database and render your interface.
+                Build your schema using components and it will automatically connect to your platform and render your interface.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               <Icon type="layout" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>UI framework flexible</h4>
+              <h4>Framework agnostic</h4>
               <p>
-                Components are not attached to a specific UI framework. Whether you are using Bootstrap, Ant Design or Material Design, our system will render your schema to your preferred interface designs.
+                Build your dasboard using different frameworks. Create your custom charts or use exisitng frameowrks to speed up development.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               <Icon type="database" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Back-end agnostic</h4>
+              <h4>Built-in platform connections</h4>
               <p>
-                Create one schema and connect your data to one of our available back-end connectors. You can switch to another back-end without re-coding your schema, just configure your connectors and your done.
+                Create one schema and connect your data to one of our available back-end connectors. You can switch to another back-end without re-writing your schema.
               </p>
             </Col>
           </Row>
