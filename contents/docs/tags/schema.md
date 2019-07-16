@@ -2,13 +2,12 @@
 title: Schema
 root: "/docs"
 parents: ["III. Tags"]
-weight: 3
+weight: 1
 ---
 # Schema
-
-[To do]
+Schema declaration. Use as identifier and root declaration for all groundline components.
 ```
- <dateTime />
+ <schema connector={connectorConfig} />
 ```
 <br/>
 
@@ -16,8 +15,4 @@ weight: 3
 
 | Props   |      Description      |  Required |
 |----------|:-------------:|------:|
-| keyName |  The keyname of the field. | true |
-| value |  The value of the field when retrieving data. | true|
-| onChange |  Call this function when the value is changed in your field. | true |
-| refId |  Built-in function pass in to your rendered field. | true |
-| render |    Render the UI for the schema   |   true |
+| connector |  Connector configuration. | true |
