@@ -19,36 +19,33 @@ class Header extends Component {
           top: 0,
           width: "100%",
           zIndex: 1000,
-          background: 'white',
-          marginBottom: '1.45rem',
+         // marginBottom: '1.45rem',
+          color:"#FFFFFF",
+          background: "#FFFFFF"
         }}
       >
         <div
           style={{
             margin: '0 auto',
             maxWidth: 1360,
-            padding: '0.8rem 1.0875rem',
+            padding: '0.8rem 3.2rem',
           }}
         >
           <div style={{
             float: 'left',
             marginBottom: '0.8em',
           }}>
-            <h1 style={{ 
-                margin: 0, 
-                fontSize: "1.25rem"
-              }}>
               <Link
                 to="/"
                 style={{
-                  color: '#666',
+                  color: '#000',
                   textDecoration: 'none',
                   fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                <img src={LogoPath} alt="groundline.io" /> 
+                <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
+                &nbsp; Groundline
               </Link>
-            </h1>
           </div>
           <Menu />
         </div>

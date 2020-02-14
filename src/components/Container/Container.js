@@ -13,20 +13,21 @@ class Container extends Component {
     return (
       <div
         style={{
-          position: "absolute",
-          top: (!sidebarDocked && onPostPage) ? headerHeight + 70: headerHeight + 30,
-          left: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "20%",
-          right: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "15%",
-          bottom: 0,
-          overflow: !sidebarDocked ? "auto" : "visible",
+          //position: "absolute",
+          top: (!sidebarDocked && onPostPage) ? headerHeight + 70: headerHeight + 0,
+          //left: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "20%",
+          //right: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "15%",
+        //  bottom: "175px",
+          //overflow: !sidebarDocked ? "auto" : "visible",
+        //  background: "#0c77fa"
         }}
       >
         <div
           style={{
-              maxWidth: '68.75rem',
-              width: '90%',
-              marginLeft: 'auto',
-              marginRight: 'auto'
+            //  maxWidth: '68.75rem',
+            //  width: '90%',
+            //  marginLeft: 'auto',
+            //  marginRight: 'auto'
           }}
         >
           {this.props.children}
