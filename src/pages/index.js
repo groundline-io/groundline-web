@@ -4,14 +4,15 @@ import Button from 'antd/lib/button'
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
 import Icon from 'antd/lib/icon'
-import Badge from 'antd/lib/badge'
 import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-import InfoPath from '../images/infographic-2.png'
+import InfoPath from '../images/infographic-3.png'
 import FarmVectorPath from '../images/farm-vector.png'
-import EnvVectorPath from '../images/environment-vector.png'
+import AppMapPath from '../images/app-map.jpg'
+import ParkingPath from '../images/parking.jpg'
+import SkylinePath from '../images/skyline.jpg'
 //import FirebaseLogo from '../images/firebase-logo-standard.png'
 //import MongoDBLogo from '../images/mongodb-logo-standard.jpg'
 //import PrismaLogo from '../images/prisma-logo-standard.png'
@@ -22,29 +23,34 @@ const IndexPage = () => {
   return (
     <Layout>
 
+<img src={SkylinePath} style={{
+       position: 'absolute',
+       top: '80px',
+      }} />
       <div style={{
-        background: "#0c77fa",
         margin: '0 auto',
-        padding: '3rem 5.2rem',
+        padding: '3rem 5.2rem'
       }}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={11} xs={24} >
             <Row type="flex" justify="start" align="middle">
-              <Badge count={'Beta'} style={{marginBottom:"1rem" }} />
-              <h2 style={{color: "#FFF"}}>
-                Turn satellite and aerial imagery into actionable data
-              </h2>
-              <p style={{color: "#FFF", marginBottom:"3rem"}}>
-                Create and train models using your own images. Want to know more? Request for an early access.
-              </p>
-              <a href='https://app.groundline.io'>
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Sign Up for Beta Access</Button>
+              <h1 style={{color: "#2c5b86", fontWeight: "700"}}>
+                Scalable real-time tracking and monitoring
+              </h1>
+              <h4 style={{color: "#666", marginBottom:"1rem"}}>
+                Build your own device tracking apps by taking advantage of our tools and APIs.
+              </h4>
+              <a href='https://dashboard.groundline.io/register'>
+                <Button type="danger" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" >Get started</Button>
               </a>
           </Row>
           </Col>
           <Col lg={13} xs={24}>
             <Row type="flex" justify="space-around" align="middle">
-              <img src={InfoPath} alt="Groundline.io how it works?" />
+              <img src={InfoPath} alt="Groundline.io how it works?" style={{
+        position: 'relative',
+        top:'100px'
+      }} />
             </Row>
           </Col>
         </Row>
@@ -59,23 +65,23 @@ const IndexPage = () => {
           <Row gutter={96}>
             <Col lg={8} xs={24}>
               <Icon type="api" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>API-first approach</h4>
+              <h4>Deploy faster</h4>
               <p>
-                Create your own application on top of our API or connect existing infrastructure to improve business workflow.
-              </p>
-            </Col>
-            <Col lg={8} xs={24}>
-              <Icon type="build" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Generate training data</h4>
-              <p>
-                Create and train models using your own data. Simply upload images and annotate relevant objects. Analyze your data using your trained models.
+                Build and deploy fleet managemet systems using our APIs and tools. Focus on your user interface and we will handle your data tracking.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               <Icon type="pie-chart" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Reports and analytics</h4>
+              <h4>Real-time tracking</h4>
               <p>
-                Extract actionable information. From object detection to data prediction, we can help you make right decision through machine learning.
+                Extract actionable information. Monitor your assets in real-time using our dashboard and integrate your data to your existing application. 
+              </p>
+            </Col>
+            <Col lg={8} xs={24}>
+              <Icon type="build" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
+              <h4>Integration</h4>
+              <p>
+                Add location based features into your existing apps and platforms. Offer more features to your customers by doing less.
               </p>
             </Col>
           </Row>
@@ -90,49 +96,35 @@ const IndexPage = () => {
           INDUSTRIES
         </h5>
 
-        <h2 style={{color: "#666", margin: '20px 0', padding:"0 7rem", fontWeight: "normal"}} align="center">
-         We provide machine-learning tools to extract actionable data and insights from raw images used in different industries. 
-        </h2>
+        <h3 style={{color: "#666", margin: '20px 0', padding:"0 7rem", fontWeight: "normal"}} align="center">
+         We help ensure the control and management of different logistics operations.
+        </h3>
 
-        <Row type="flex" justify="space-around" align="middle">
-          <Col lg={12} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              <img src={EnvVectorPath} height="300" alt="Groundline Agriculture Industry" />
-            </Row>
+        <Row gutter={96}>
+          <Col lg={8} xs={24}>
+            <img src={AppMapPath} height="300" alt="Groundline Tracking Apps" />
+            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Tracking apps</h3>
+            <p>
+              Build your own delivery apps and ridesharing applications. Trips and device tracking is in the core of our API.
+            </p>
           </Col>
-          <Col lg={12} xs={24}>
-            <Row >
-              <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Humanitarian Efforts</h3>
-                <p>
-                  In the midst of crisis, it is important to make accurate assessment of the area before taking actions.
-                </p>
-                <p>
-                  Groundline helps organizations collect and analyze geospatial data through satellite and aerial images to improve decision making. 
-                  Through aerial imagery and machine learning, we can help in aid distribution, site monitoring and emergency response. 
-                </p>
-            </Row>
+          <Col lg={8} xs={24}>
+            <img src={ParkingPath} height="300" alt="Groundline Agriculture Industry" />
+            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Fleet management</h3>
+            <p>
+              Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
+            </p>
+          </Col>
+          <Col lg={8} xs={24}>
+            <img src={FarmVectorPath} height="300" alt="Groundline Agriculture Industry" />
+            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Internet of Things</h3>
+            <p>
+              Transmit and monitor data from your tracking devices. Create applications to control hardwares remotely.
+            </p>
           </Col>
         </Row>
 
-        <Row type="flex" justify="space-around" align="middle">
-          <Col lg={12} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              <img src={FarmVectorPath} height="300" alt="Groundline Agriculture Industry" />
-            </Row>
-          </Col>
-          <Col lg={12} xs={24}>
-            <Row >
-              <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Precision Agriculture</h3>
-                <p>
-                Improve farm management through image monitoring and analysis.
-                </p>
-                <p>
-                Farm health assessment can help improve yield and detect early signs of diseases. 
-                Groundline can help identify crucial changes in your area so you can make necessary adjustments. 
-                </p>
-            </Row>
-          </Col>
-        </Row>
+        
       </div>
 
 {/*
@@ -159,7 +151,36 @@ const IndexPage = () => {
       </div>
 */}
 
-    <div style={{
+    <div id="docs" style={{
+        background: "#FFF",
+        margin: '0 auto',
+        padding: '2rem 5.2rem',
+      }}>
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+          <Col lg={18} xs={24} >
+            <Row type="flex" justify="start" align="middle">
+              <h2 style={{color: "#0c77fa"}}>
+                Documentation?
+              </h2>
+            </Row>
+            <Row type="flex" justify="start" align="middle">
+              <p style={{color: "#666"}}>
+                We are still polishing the documentation and it will be up soon. How about signing up now and we will inform you when it is ready?
+              </p>
+          </Row>
+          </Col>
+          <Col lg={6} xs={24}>
+            <Row type="flex" justify="space-around" align="middle">
+              
+            <a href='https://dashboard.groundline.io/register'>
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta access</Button>
+              </a>
+            </Row>
+          </Col>
+        </Row>
+      </div>
+
+    <div id="pricing" style={{
         background: "#0c77fa",
         margin: '0 auto',
         padding: '2rem 5.2rem',
@@ -168,19 +189,19 @@ const IndexPage = () => {
           <Col lg={18} xs={24} >
             <Row type="flex" justify="start" align="middle">
               <h2 style={{color: "#FFF"}}>
-                Sign up to get early access
+                Pricing? Get started for free!
               </h2>
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#FFF"}}>
-                Or email us to let us know how we can help you
+                Our platform is free while we are still in Beta stage. Sign up now and let's talk on how we can help you with your use case.
               </p>
           </Row>
           </Col>
           <Col lg={6} xs={24}>
             <Row type="flex" justify="space-around" align="middle">
               
-            <a href='https://app.groundline.io'>
+            <a href='https://dashboard.groundline.io/register'>
                 <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta access</Button>
               </a>
             </Row>
@@ -196,6 +217,7 @@ const IndexPage = () => {
       }}>
         <Row gutter={16} justify="space-between">
             <Col span={20}>
+                <h5>
               <Link
                 to="/"
                 style={{
@@ -205,9 +227,11 @@ const IndexPage = () => {
                 }}
               >
                 <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
-                &nbsp; Groundline
+                &nbsp; Groundline Software Solutions
               </Link>
-              <h6>Groundline</h6>
+                </h5>
+                <br />
+              
               
             </Col>
             <Col span={4}>

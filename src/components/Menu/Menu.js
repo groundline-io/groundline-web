@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import Button from 'antd/lib/button'
+import { Link } from 'gatsby'
 
 const Menu = () => {
   return (
@@ -18,14 +19,23 @@ const Menu = () => {
         }
       `}
       render={data => {
-        //const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
+        const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
         return (
           <div style={{ fontSize: "0.8rem"}}>
-            {/*
+            <div 
+               style={{ marginLeft: "2em", float: "right" }}
+             >
+                 <a href='https://dashboard.groundline.io/register'
+                   style={{ color: '#34404e', textDecoration: 'none' }}
+                 >
+                   <Button type="danger" shape="round" 
+                   ghost style={{marginRight: 10}} icon="arrow-right" >Sign Up</Button>
+                 </a>
+             </div>
             {menuItems.map(item => {
               return (
                 <div 
-                  style={{ marginLeft: "2em", float: "right" }}
+                  style={{ marginLeft: "2em", marginTop: "0.4em", float: "right" }}
                   key={menuItems.indexOf(item)}
                 >
                     <Link
@@ -37,16 +47,6 @@ const Menu = () => {
                 </div>
               )
             })}
-             */}
-             <div 
-                  style={{ marginLeft: "2em", float: "right" }}
-                >
-                    <a href='https://app.groundline.io'
-                      style={{ color: '#34404e', textDecoration: 'none' }}
-                    >
-                      <Button type="danger" shape="round" style={{marginRight: 10}} icon="arrow-right" >Beta Access</Button>
-                    </a>
-                </div>
           </div>
         )
       }}

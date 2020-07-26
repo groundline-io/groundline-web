@@ -39,12 +39,13 @@ class Header extends Component {
                 to="/"
                 style={{
                   color: '#000',
+                  fontWeight: "bold",
                   textDecoration: 'none',
                   fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
-                &nbsp; Groundline
+                <h4><img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
+                &nbsp; groundline</h4>
               </Link>
           </div>
           <Menu />

@@ -1,14 +1,10 @@
 [
   { 
     "name": "Docs",
-    "link":  "/docs/get-started/introduction"
+    "link":  "#docs"
   },
   { 
-    "name": "Tutorials",
-    "link":  "/docs/get-started/introduction"
-  },
-  { 
-    "name": "Github",
-    "link":  "https://github.com/groundline/groundline"
+    "name": "Pricing",
+    "link":  "#pricing"
   }
 ]
