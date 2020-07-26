@@ -23,7 +23,7 @@ const IndexPage = () => {
   return (
     <Layout>
 
-<img src={SkylinePath} style={{
+<img src={SkylinePath} alt="Skyline background" style={{
        position: 'absolute',
        top: '80px',
       }} />
