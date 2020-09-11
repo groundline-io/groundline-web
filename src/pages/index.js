@@ -81,25 +81,25 @@ const IndexPage = () => {
 
       <div style={{
         margin: '0 auto',
-        padding: '4rem 5.2rem',
+        padding: '4rem 5.2rem 2rem',
       }}>
         <div>
           <Row gutter={96}>
             <Col lg={8} xs={24}>
-              <h3>Integration</h3>
+              <h3 style={{color: "#000000"}}>Integration</h3>
               <p style={{fontSize:"18px"}}>
                 Add location-based features to your existing applications and platforms using our APIs and tools.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
-              <h3>Scalable</h3>
+              <h3 style={{color: "#000000"}}>Scalable</h3>
               <p style={{fontSize:"18px"}}>
                 Our system was built to handle big data and information for realtime monitoring of geolocations and device status.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3>Analytics</h3>
+              <h3 style={{color: "#000000"}}>Analytics</h3>
               <p style={{fontSize:"18px"}}>
                 Extract actionable information. Monitor your assets in real-time using our dashboard. 
               </p>
@@ -112,17 +112,15 @@ const IndexPage = () => {
         margin: '0 auto',
         padding: '0rem 5.2rem',
       }}>
-        {/*
-        <h5 style={{color: "#0c77fa", margin: '20px 0', fontWeight: "normal"}} align="center">
+        <h5 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
           INDUSTRIES
         </h5>
-        */}
 
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
-            <h2 style={{color: "#000", padding: '2rem 0rem', fontWeight: "bold"}} align="center">
-              We help ensure the control and management of different logistics operations.
-            </h2>
+            <h1 style={{color: "#000", padding: '2rem 0rem', fontWeight: "bold"}} align="center">
+              We help ensure proper management and control of different logistics operations.
+            </h1>
           </Col>
         </Row>
 {/*
@@ -156,35 +154,35 @@ const IndexPage = () => {
         margin: '0 auto',
         padding: '0rem 5.2rem',
       }}>
-        <Row type="flex" justify="center" align="middle">
-          <Col lg={12} xs={24}>
-            <Row span={24} justify="center" align="space-around">
-              <div>
-              <img src={AppMapPath} height="300" alt="Groundline Tracking Apps" />
-              </div>
-            </Row>
+        <Row type="flex" >
+          <Col 
+            lg={12} xs={24}
+            justify="center" 
+            align="middle"
+          >
+              <img src={AppMapPath} height="350" alt="Groundline Tracking Apps" />
           </Col>
-          <Col lg={12} xs={24}>
-            <Row gutter={48} >
+          <Col lg={12} xs={24} >
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet management</h3>
                 <p style={{fontSize:"18px"}}>
                   Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
                 </p>
               </Row>
+              <div style={{margin:"2rem 0"}} />
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
                 <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices. Create applications to control hardwares remotely.
+                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
                 </p>
               </Row>
+              <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking apps</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking applications</h3>
                 <p style={{fontSize:"18px"}}>
-                  Build your own delivery apps and ridesharing applications. Trips and device tracking is in the core of our API.
+                  Build delivery and ridesharing applications for your business. Trips and device tracking is in the core of our API.
                 </p>
               </Row>
-            </Row>
           </Col>
         </Row>
       </div>
@@ -215,29 +213,25 @@ const IndexPage = () => {
 
     <div id="docs" style={{
         background: "#FFF",
-        margin: '0 auto',
-        padding: '2rem 5.2rem',
+        margin: '0 auto 4rem',
+        padding: '2rem, 5.2rem 4rem',
       }}>
-        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+        <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={18} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h2 style={{color: "#0c77fa"}}>
-                Documentation?
-              </h2>
+            <Row type="flex" justify="center" align="middle">
+              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+                Learn More
+              </h1>
             </Row>
-            <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#666"}}>
-                We are still polishing the documentation and it will be up soon. How about signing up now and we will inform you when it is ready?
+            <Row type="flex" justify="center" align="middle">
+              <p style={{color: "#666", fontSize:"18px", textAlign:"center"}}>
+                To know more about our product and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
+                Please bear with us as we are currently working on our documentation and the other pages of the site. You can email us or sign up now so we can inform you as we make progress.
               </p>
-          </Row>
-          </Col>
-          <Col lg={6} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              
-            <a href='https://dashboard.groundline.io/register'>
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta access</Button>
+              <a href='https://dashboard.groundline.io/register'>
+                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
               </a>
-            </Row>
+          </Row>
           </Col>
         </Row>
       </div>
@@ -245,7 +239,7 @@ const IndexPage = () => {
     <div id="pricing" style={{
         background: "#0c77fa",
         margin: '0 auto',
-        padding: '2rem 5.2rem',
+        padding: '3rem 5.2rem',
       }}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={18} xs={24} >
@@ -256,7 +250,7 @@ const IndexPage = () => {
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#FFF"}}>
-                Our platform is free while we are still in Beta stage. Sign up now and let's talk on how we can help you with your use case.
+                Our platform is free while we are still in Beta stage. Sign up now to get lifetime freebies.
               </p>
           </Row>
           </Col>
@@ -264,9 +258,31 @@ const IndexPage = () => {
             <Row type="flex" justify="space-around" align="middle">
               
             <a href='https://dashboard.groundline.io/register'>
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta access</Button>
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
               </a>
             </Row>
+          </Col>
+        </Row>
+      </div>
+
+      <div id="docs" style={{
+        background: "#FFF",
+        margin: '0 auto',
+        padding: '0 5.2rem 2rem',
+      }}>
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+          <Col lg={24} xs={24} >
+            <Row type="flex" justify="start" align="middle">
+              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+                We are hiring!
+              </h1>
+            </Row>
+            <Row type="flex" justify="start" align="middle">
+              <p style={{color: "#666", fontSize:"18px"}}>
+                Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
+                To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
+              </p>
+          </Row>
           </Col>
         </Row>
       </div>

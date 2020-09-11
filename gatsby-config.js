@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Groundline - Turn aerial imagery to actionable data',
+    title: 'Groundline - Real-time tracking and monitoring',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Groundline - Turn aerial imagery to actionable data',
+        name: 'Groundline - Real-time tracking and monitoring',
         short_name: 'Groundline',
         start_url: '/',
         background_color: '#663399',
