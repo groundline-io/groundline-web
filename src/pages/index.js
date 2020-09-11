@@ -3,16 +3,15 @@ import Layout from '../components/Layout'
 import Button from 'antd/lib/button'
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
-import Icon from 'antd/lib/icon'
 import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-import InfoPath from '../images/infographic-3.png'
-import FarmVectorPath from '../images/farm-vector.png'
+//import InfoPath from '../images/infographic-3.png'
+//import FarmVectorPath from '../images/farm-vector.png'
 import AppMapPath from '../images/app-map.jpg'
-import ParkingPath from '../images/parking.jpg'
-import SkylinePath from '../images/skyline.jpg'
+//import ParkingPath from '../images/parking.jpg'
+import SkylinePath from '../images/night-top-view.jpg'
 //import FirebaseLogo from '../images/firebase-logo-standard.png'
 //import MongoDBLogo from '../images/mongodb-logo-standard.jpg'
 //import PrismaLogo from '../images/prisma-logo-standard.png'
@@ -23,36 +22,59 @@ const IndexPage = () => {
   return (
     <Layout>
 
-<img src={SkylinePath} alt="Skyline background" style={{
-       position: 'absolute',
-       top: '80px',
-      }} />
       <div style={{
-        margin: '0 auto',
-        padding: '3rem 5.2rem'
+        marginTop:"60px",
+        backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+SkylinePath+')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}>
-        <Row gutter={48} type="flex" justify="space-around" align="middle" >
-          <Col lg={11} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h1 style={{color: "#2c5b86", fontWeight: "700"}}>
-                Scalable real-time tracking and monitoring
-              </h1>
-              <h4 style={{color: "#666", marginBottom:"1rem"}}>
-                Build your own device tracking apps by taking advantage of our tools and APIs.
-              </h4>
-              <a href='https://dashboard.groundline.io/register'>
-                <Button type="danger" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" >Get started</Button>
-              </a>
-          </Row>
+        <Row gutter={48} type="flex">
+          <Col lg={16} xs={24} >
+            <Row 
+              type="flex" 
+              justify="start" 
+              align="middle"
+              style={{
+                minHeight: "600px",
+                padding: '0 5.2rem', 
+              }}
+            >
+              <div>
+                <div 
+                  style={{
+                    marginBottom:"1rem", 
+                    background: "#FFFA00", 
+                    padding:"2px 5px",
+                    display:"inline-block",
+                    borderRadius: "4px",
+                    fontWeight:"bold",
+                    color: "#000000"
+                  }}>
+                    Beta
+                </div>
+                <h1 style={{color: "#FFFFFF", letterSpacing: "4px", lineHeight: "1.3"}}>
+                  Enterprise solution for real-time tracking and monitoring
+                </h1>
+                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
+                  Groundline is a location-based solution for logistics operations and asset monitoring.
+                </p>
+                <a href='https://dashboard.groundline.io/register'>
+                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
+                </a>
+              </div>
+            </Row>
           </Col>
+          {/*
           <Col lg={13} xs={24}>
             <Row type="flex" justify="space-around" align="middle">
               <img src={InfoPath} alt="Groundline.io how it works?" style={{
-        position: 'relative',
-        top:'100px'
-      }} />
+                position: 'relative',
+                top:'100px'
+              }} />
             </Row>
           </Col>
+            */}
         </Row>
       </div>
             
@@ -64,24 +86,22 @@ const IndexPage = () => {
         <div>
           <Row gutter={96}>
             <Col lg={8} xs={24}>
-              <Icon type="api" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Deploy faster</h4>
-              <p>
-                Build and deploy fleet managemet systems using our APIs and tools. Focus on your user interface and we will handle your data tracking.
+              <h3>Integration</h3>
+              <p style={{fontSize:"18px"}}>
+                Add location-based features to your existing applications and platforms using our APIs and tools.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <Icon type="pie-chart" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Real-time tracking</h4>
-              <p>
-                Extract actionable information. Monitor your assets in real-time using our dashboard and integrate your data to your existing application. 
+              {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
+              <h3>Scalable</h3>
+              <p style={{fontSize:"18px"}}>
+                Our system was built to handle big data and information for realtime monitoring of geolocations and device status.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <Icon type="build" theme="twoTone" style={{ fontSize: '38px', marginBottom: '20px' }} />
-              <h4>Integration</h4>
-              <p>
-                Add location based features into your existing apps and platforms. Offer more features to your customers by doing less.
+              <h3>Analytics</h3>
+              <p style={{fontSize:"18px"}}>
+                Extract actionable information. Monitor your assets in real-time using our dashboard. 
               </p>
             </Col>
           </Row>
@@ -90,16 +110,22 @@ const IndexPage = () => {
 
       <div style={{
         margin: '0 auto',
-        padding: '4rem 5.2rem',
+        padding: '0rem 5.2rem',
       }}>
+        {/*
         <h5 style={{color: "#0c77fa", margin: '20px 0', fontWeight: "normal"}} align="center">
           INDUSTRIES
         </h5>
+        */}
 
-        <h3 style={{color: "#666", margin: '20px 0', padding:"0 7rem", fontWeight: "normal"}} align="center">
-         We help ensure the control and management of different logistics operations.
-        </h3>
-
+        <Row gutter={48} type="flex" justify="center" align="middle">
+          <Col lg={16} xs={24} >
+            <h2 style={{color: "#000", padding: '2rem 0rem', fontWeight: "bold"}} align="center">
+              We help ensure the control and management of different logistics operations.
+            </h2>
+          </Col>
+        </Row>
+{/*
         <Row gutter={96}>
           <Col lg={8} xs={24}>
             <img src={AppMapPath} height="300" alt="Groundline Tracking Apps" />
@@ -123,8 +149,44 @@ const IndexPage = () => {
             </p>
           </Col>
         </Row>
+ */}  
+      </div>
 
-        
+      <div style={{
+        margin: '0 auto',
+        padding: '0rem 5.2rem',
+      }}>
+        <Row type="flex" justify="center" align="middle">
+          <Col lg={12} xs={24}>
+            <Row span={24} justify="center" align="space-around">
+              <div>
+              <img src={AppMapPath} height="300" alt="Groundline Tracking Apps" />
+              </div>
+            </Row>
+          </Col>
+          <Col lg={12} xs={24}>
+            <Row gutter={48} >
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet management</h3>
+                <p style={{fontSize:"18px"}}>
+                  Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
+                </p>
+              </Row>
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
+                <p style={{fontSize:"18px"}}>
+                  Transmit and monitor data from your tracking devices. Create applications to control hardwares remotely.
+                </p>
+              </Row>
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking apps</h3>
+                <p style={{fontSize:"18px"}}>
+                  Build your own delivery apps and ridesharing applications. Trips and device tracking is in the core of our API.
+                </p>
+              </Row>
+            </Row>
+          </Col>
+        </Row>
       </div>
 
 {/*

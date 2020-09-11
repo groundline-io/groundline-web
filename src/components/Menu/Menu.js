@@ -28,8 +28,7 @@ const Menu = () => {
                  <a href='https://dashboard.groundline.io/register'
                    style={{ color: '#34404e', textDecoration: 'none' }}
                  >
-                   <Button type="danger" shape="round" 
-                   ghost style={{marginRight: 10}} icon="arrow-right" >Sign Up</Button>
+                   <Button type="primary" size="large" style={{borderRadius: 0}} >Sign Up</Button>
                  </a>
              </div>
             {menuItems.map(item => {
@@ -40,7 +39,7 @@ const Menu = () => {
                 >
                     <Link
                       to={item.link}
-                      style={{ color: '#34404e', textDecoration: 'none' }}
+                      style={{ color: '#CCCCCC', textDecoration: 'none' }}
                     >
                       {item.name}
                     </Link>

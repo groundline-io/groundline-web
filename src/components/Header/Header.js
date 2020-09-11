@@ -4,7 +4,7 @@ import sizeMe  from 'react-sizeme';
 import { connect } from "react-redux";
 import { updateHeaderHeight } from '../../actions/layout';
 import Menu from '../Menu';
-import LogoPath from '../../images/logo.png';
+import LogoPath from '../../images/logo-white.png';
 
 class Header extends Component {
   componentDidUpdate = () => {
@@ -21,7 +21,7 @@ class Header extends Component {
           zIndex: 1000,
          // marginBottom: '1.45rem',
           color:"#FFFFFF",
-          background: "#FFFFFF"
+          background: "#000000"
         }}
       >
         <div
@@ -38,14 +38,21 @@ class Header extends Component {
               <Link
                 to="/"
                 style={{
-                  color: '#000',
+                  color: '#FFF',
                   fontWeight: "bold",
                   textDecoration: 'none',
                   fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                <h4><img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
-                &nbsp; groundline</h4>
+                <h4
+                  style={{
+                    color:"#FFF",
+                    letterSpacing: "1px"
+                  }}  
+                >
+                  <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
+                  &nbsp; groundline
+                </h4>
               </Link>
           </div>
           <Menu />
