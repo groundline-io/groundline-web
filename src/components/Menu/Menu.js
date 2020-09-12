@@ -21,7 +21,7 @@ const MenuWrapper = () => {
       render={data => {
         const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
         return (
-          <Menu className="float-right" theme="dark" mode="horizontal" defaultSelectedKeys={['999']}>
+          <Menu className="float-right" style={{backgroundColor: "#000"}} theme="dark" mode="horizontal" defaultSelectedKeys={['999']}>
             {menuItems.map(item => {
               return (
                 <Menu.Item key={menuItems.indexOf(item)}>
