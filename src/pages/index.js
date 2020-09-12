@@ -78,7 +78,7 @@ const IndexPage = () => {
       </div>
             
 
-      <div className="pt-10 px-8 md:px-20 md:pt-16" >
+      <div className="pt-10 px-8 md:px-20 md:pt-16 bg-white" >
         <div>
           <Row gutter={96}>
             <Col lg={8} xs={24}>
