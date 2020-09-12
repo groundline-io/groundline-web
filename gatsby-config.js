@@ -3,6 +3,7 @@ module.exports = {
     title: 'Groundline - Real-time tracking and monitoring',
   },
   plugins: [
+    'gatsby-plugin-antd',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,

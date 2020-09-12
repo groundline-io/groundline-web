@@ -8,6 +8,7 @@
     "gatsby": "^2.19.16",
     "gatsby-cli": "^2.8.29",
     "gatsby-image": "^2.2.40",
+    "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^3.0.34",
     "gatsby-plugin-react-helmet": "^3.1.22",
@@ -32,16 +33,21 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "build": "npm run watch:css && gatsby build",
+    "develop": "npm run watch:css && gatsby develop",
+    "start": "npm run watch:css && npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "npm run watch:css && gatsby build --prefix-paths && gh-pages -d public",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "gatsby-plugin-remove-trailing-slashes": "^2.1.21",
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1"
+    "postcss-cli": "^7.1.2",
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.8.8"
   }
 }

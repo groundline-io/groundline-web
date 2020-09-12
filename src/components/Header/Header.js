@@ -5,65 +5,36 @@ import { connect } from "react-redux";
 import { updateHeaderHeight } from '../../actions/layout';
 import Menu from '../Menu';
 import LogoPath from '../../images/logo-white.png';
+import {  Layout, Row, Col } from 'antd';
+const { Header } = Layout;
 
-class Header extends Component {
+class HeaderWrapper extends Component {
   componentDidUpdate = () => {
     this.props.updateHeaderHeight(this.props.size.height)
   }
 
   render() {
     return(
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          width: "100%",
-          zIndex: 1000,
-         // marginBottom: '1.45rem',
-          color:"#FFFFFF",
-          background: "#000000"
-        }}
-      >
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 1360,
-            padding: '0.8rem 3.2rem',
-          }}
-        >
-          <div style={{
-            float: 'left',
-            marginBottom: '0.8em',
-          }}>
-              <Link
-                to="/"
-                style={{
-                  color: '#FFF',
-                  fontWeight: "bold",
-                  textDecoration: 'none',
-                  fontFamily: 'Montserrat, sans-serif',
-                }}
-              >
-                <h4
-                  style={{
-                    color:"#FFF",
-                    letterSpacing: "1px"
-                  }}  
-                >
-                  <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
-                  &nbsp; groundline
-                </h4>
+      <Header className="px-0 md:px-20 fixed top-0 w-full z-50 text-white bg-black " >
+        <Row justify="space-between" align="middle">
+          <Col span={8} >
+            <Link to="/" >
+              <h4 className="text-white tracking-wider pt-3 pl-2">
+                <img src={LogoPath} alt="groundline.io" className="h-6 inline" /> 
+                &nbsp; <span className="hidden md:inline">groundline</span>
+              </h4>
               </Link>
-          </div>
-          <Menu />
-        </div>
-      </div>
+          </Col>
+          <Col span={16}>
+            <Menu />
+          </Col>
+        </Row>
+    </Header>
     )
   }
 }
-
 const mapDispatchToProps = {
   updateHeaderHeight
 }
 
-export default connect(()=>({}), mapDispatchToProps) (sizeMe({monitorHeight: true})(Header))
+export default connect(()=>({}), mapDispatchToProps) (sizeMe({monitorHeight: true})(HeaderWrapper))

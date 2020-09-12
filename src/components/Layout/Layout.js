@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import {  Layout } from 'antd';
 import Header from '../Header/Header'
+import '../../assets/main.css'
 import './Layout.css'
 import ResponsiveSidebar from '../ResponsiveSidebar';
 import Container from '../Container';
@@ -15,7 +17,7 @@ import MediaQuery from "react-responsive";
 import { onSetSidebarDocked } from "../../actions/layout";
 import { getContentOnPostPageState } from "../../store/selectors";
 
-const Layout = ({ 
+const LayoutWrapper = ({ 
   children,
   setPostPageOn,
   setPostPageOff,
@@ -65,22 +67,23 @@ const Layout = ({
       >
         {(matches) => (
           <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        {(matches && onPostPage) ? <ResponsiveTopBar root={sidebarRoot}/> : null}
-        {(!matches && onPostPage) ? 
-        <><ResponsiveSidebar root={sidebarRoot}/> <ResponsiveAnchor /> </>: null }
-        <Container sidebarDocked={!matches} onPostPage={onPostPage}>
-          {children}
-        </Container>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'Sample' },
+              { name: 'keywords', content: 'sample, something' },
+            ]}
+          >
+            <html lang="en" />
+          </Helmet>
+          <Layout className="overflow-hidden">
+            <Header siteTitle={data.site.siteMetadata.title} />
+            {(matches && onPostPage) ? <ResponsiveTopBar root={sidebarRoot}/> : null}
+            {(!matches && onPostPage) ?  <><ResponsiveSidebar root={sidebarRoot}/> <ResponsiveAnchor /> </>: null }
+            <Container sidebarDocked={!matches} onPostPage={onPostPage}>
+              {children}
+            </Container>
+          </Layout>
         </>)}
         </MediaQuery>
       )
@@ -88,7 +91,7 @@ const Layout = ({
   />
 )
 
-Layout.propTypes = {
+LayoutWrapper.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
@@ -104,4 +107,4 @@ const mapDispatchToProps = {
   onSetSidebarDocked
 }
 
-export default connect(mapStateToProps, mapDispatchToProps) (Layout)
+export default connect(mapStateToProps, mapDispatchToProps) (LayoutWrapper)

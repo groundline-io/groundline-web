@@ -22,23 +22,22 @@ const IndexPage = () => {
   return (
     <Layout>
 
-      <div style={{
-        marginTop:"60px",
-        backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+SkylinePath+')',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
+      <div 
+        className="py-20 px-8 md:px-20 md:py-40" 
+        style={{
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+SkylinePath+')',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <Row gutter={48} type="flex">
-          <Col lg={16} xs={24} >
+          <Col lg={14} xs={24} >
             <Row 
               type="flex" 
               justify="start" 
               align="middle"
-              style={{
-                minHeight: "600px",
-                padding: '0 5.2rem', 
-              }}
+              
             >
               <div>
                 <div 
@@ -53,7 +52,7 @@ const IndexPage = () => {
                   }}>
                     Beta
                 </div>
-                <h1 style={{color: "#FFFFFF", letterSpacing: "4px", lineHeight: "1.3"}}>
+                <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
                   Enterprise solution for real-time tracking and monitoring
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
@@ -79,10 +78,7 @@ const IndexPage = () => {
       </div>
             
 
-      <div style={{
-        margin: '0 auto',
-        padding: '4rem 5.2rem 2rem',
-      }}>
+      <div className="py-10 px-8 md:px-20 md:py-16" >
         <div>
           <Row gutter={96}>
             <Col lg={8} xs={24}>
@@ -108,10 +104,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div style={{
-        margin: '0 auto',
-        padding: '0rem 5.2rem',
-      }}>
+      <div className="pb-10 px-8 md:px-20 md:pb-16" >
         <h5 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
           INDUSTRIES
         </h5>
@@ -123,44 +116,21 @@ const IndexPage = () => {
             </h1>
           </Col>
         </Row>
-{/*
-        <Row gutter={96}>
-          <Col lg={8} xs={24}>
-            <img src={AppMapPath} height="300" alt="Groundline Tracking Apps" />
-            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Tracking apps</h3>
-            <p>
-              Build your own delivery apps and ridesharing applications. Trips and device tracking is in the core of our API.
-            </p>
-          </Col>
-          <Col lg={8} xs={24}>
-            <img src={ParkingPath} height="300" alt="Groundline Agriculture Industry" />
-            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Fleet management</h3>
-            <p>
-              Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
-            </p>
-          </Col>
-          <Col lg={8} xs={24}>
-            <img src={FarmVectorPath} height="300" alt="Groundline Agriculture Industry" />
-            <h3 style={{color: "#0c77fa", fontWeight: "bold"}}>Internet of Things</h3>
-            <p>
-              Transmit and monitor data from your tracking devices. Create applications to control hardwares remotely.
-            </p>
-          </Col>
-        </Row>
- */}  
-      </div>
 
-      <div style={{
-        margin: '0 auto',
-        padding: '0rem 5.2rem',
-      }}>
         <Row type="flex" >
           <Col 
             lg={12} xs={24}
             justify="center" 
             align="middle"
           >
-              <img src={AppMapPath} height="350" alt="Groundline Tracking Apps" />
+              <img 
+                src={AppMapPath} 
+                style={{
+                  height:"20rem",
+                  width: "auto"
+                }}
+                alt="Groundline Tracking Apps" 
+              />
           </Col>
           <Col lg={12} xs={24} >
               <Row >
@@ -211,11 +181,7 @@ const IndexPage = () => {
       </div>
 */}
 
-    <div id="docs" style={{
-        background: "#FFF",
-        margin: '0 auto 4rem',
-        padding: '2rem, 5.2rem 4rem',
-      }}>
+    <div id="docs" className="pb-10 px-8 md:px-20 md:pb-16" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={18} xs={24} >
             <Row type="flex" justify="center" align="middle">
@@ -225,8 +191,8 @@ const IndexPage = () => {
             </Row>
             <Row type="flex" justify="center" align="middle">
               <p style={{color: "#666", fontSize:"18px", textAlign:"center"}}>
-                To know more about our product and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
-                Please bear with us as we are currently working on our documentation and the other pages of the site. You can email us or sign up now so we can inform you as we make progress.
+                To know more about our products and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
+                We are currently working on our documentation and other pages of the site. You can email us or sign up now so we can inform you as we make progress.
               </p>
               <a href='https://dashboard.groundline.io/register'>
                 <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
@@ -236,11 +202,7 @@ const IndexPage = () => {
         </Row>
       </div>
 
-    <div id="pricing" style={{
-        background: "#0c77fa",
-        margin: '0 auto',
-        padding: '3rem 5.2rem',
-      }}>
+    <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={18} xs={24} >
             <Row type="flex" justify="start" align="middle">
@@ -265,11 +227,7 @@ const IndexPage = () => {
         </Row>
       </div>
 
-      <div id="docs" style={{
-        background: "#FFF",
-        margin: '0 auto',
-        padding: '0 5.2rem 2rem',
-      }}>
+      <div id="docs" className="py-10 px-8 md:px-20 md:py-10">
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={24} xs={24} >
             <Row type="flex" justify="start" align="middle">
@@ -287,38 +245,28 @@ const IndexPage = () => {
         </Row>
       </div>
 
-    <div style={{
-        background: "#151515",
-        margin: '0 auto',
-        padding: '3rem 5.2rem',
-        color: '#FFFFFF'
-      }}>
+    <div className="py-10 px-8 md:px-20 md:py-16 text-white bg-gray-900">
         <Row gutter={16} justify="space-between">
-            <Col span={20}>
-                <h5>
-              <Link
-                to="/"
-                style={{
-                  color: '#FFF',
-                  textDecoration: 'none',
-                  fontFamily: 'Montserrat, sans-serif',
-                }}
-              >
-                <img src={LogoPath} alt="groundline.io" height="30" style={{ margin: 0 }} /> 
-                &nbsp; Groundline Software Solutions
-              </Link>
+            <Col lg={16} sm={24} className="text-center md:text-left">
+                <h5 >
+                  <Link
+                    to="/"
+                    style={{
+                      color: '#FFF',
+                      textDecoration: 'none',
+                      fontFamily: 'Montserrat, sans-serif',
+                    }}
+                  >
+                    <img src={LogoPath} alt="groundline.io" className="h-8 inline" style={{ margin: 0 }} /> 
+                    &nbsp; Groundline Software Solutions
+                  </Link>
                 </h5>
                 <br />
               
               
             </Col>
-            <Col span={4}>
-              <p style={{
-                    color: '#FFF',
-                    fontSize: '11px',
-                    textDecoration: 'none',
-                    fontFamily: 'Montserrat, sans-serif',
-                  }}>
+            <Col lg={8} sm={24} className="text-center md:text-right">
+              <p className="text-white" >
                   © 2020. All Rights Reserved
                 </p>
             </Col>
