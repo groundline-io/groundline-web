@@ -180,8 +180,8 @@ const IndexPage = () => {
         </Row>
       </div>
 */}
-
-    <div id="docs" className="pb-10 px-8 md:px-20 md:pb-16" >
+    <div id="docs" className="p-4"></div>
+    <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={18} xs={24} >
             <Row type="flex" justify="center" align="middle">
@@ -227,7 +227,7 @@ const IndexPage = () => {
         </Row>
       </div>
 
-      <div id="docs" className="py-10 px-8 md:px-20 md:py-10">
+      <div id="docs" className="pb-10 px-8 md:px-20 md:pb-10">
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={24} xs={24} >
             <Row type="flex" justify="start" align="middle">

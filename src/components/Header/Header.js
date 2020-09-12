@@ -20,7 +20,7 @@ class HeaderWrapper extends Component {
           <Col span={8} >
             <Link to="/" >
               <h4 className="text-white tracking-wider pt-3 pl-2">
-                <img src={LogoPath} alt="groundline.io" className="h-6 inline" /> 
+                <img src={LogoPath} alt="groundline.io" className="h-5 md:h-6 inline" /> 
                 &nbsp; <span className="hidden md:inline">groundline</span>
               </h4>
               </Link>
