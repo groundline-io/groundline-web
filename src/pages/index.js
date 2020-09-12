@@ -78,7 +78,7 @@ const IndexPage = () => {
       </div>
             
 
-      <div className="py-10 px-8 md:px-20 md:py-16" >
+      <div className="pt-10 px-8 md:px-20 md:pt-16" >
         <div>
           <Row gutter={96}>
             <Col lg={8} xs={24}>
@@ -104,7 +104,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="pb-10 px-8 md:px-20 md:pb-16 bg-white" >
+      <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
         <h5 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
           INDUSTRIES
         </h5>
@@ -174,14 +174,13 @@ const IndexPage = () => {
             <img src={MongoDBLogo} alt="MongoDB" />
           </Col>
           <Col lg={6} xs={18}>
-            <img src={PrismaLogo} alt="Prisma" />
-          </Col>
+            <img src={PrismaLogo} alt="Prisma" />d8d8          </Col>
           <Col lg={2} xs={0}>
           </Col>
         </Row>
       </div>
 */}
-    <div id="docs" className="p-4"></div>
+    <div id="docs" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={18} xs={24} >
