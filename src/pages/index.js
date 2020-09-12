@@ -23,7 +23,7 @@ const IndexPage = () => {
     <Layout>
 
       <div 
-        className="py-20 px-8 md:px-20 md:py-40" 
+        className="py-24 px-8 md:px-20 md:py-40" 
         style={{
           backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+SkylinePath+')',
           backgroundRepeat: 'no-repeat',
@@ -104,7 +104,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="pb-10 px-8 md:px-20 md:pb-16" >
+      <div className="pb-10 px-8 md:px-20 md:pb-16 bg-white" >
         <h5 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
           INDUSTRIES
         </h5>
@@ -127,7 +127,8 @@ const IndexPage = () => {
                 src={AppMapPath} 
                 style={{
                   height:"20rem",
-                  width: "auto"
+                  width: "auto",
+                  marginBottom: "12px"
                 }}
                 alt="Groundline Tracking Apps" 
               />
@@ -247,7 +248,7 @@ const IndexPage = () => {
 
     <div className="py-10 px-8 md:px-20 md:py-16 text-white bg-gray-900">
         <Row gutter={16} justify="space-between">
-            <Col lg={16} sm={24} className="text-center md:text-left">
+            <Col lg={16} sm={24} className="text-center lg:text-left">
                 <h5 >
                   <Link
                     to="/"
@@ -257,15 +258,12 @@ const IndexPage = () => {
                       fontFamily: 'Montserrat, sans-serif',
                     }}
                   >
-                    <img src={LogoPath} alt="groundline.io" className="h-8 inline" style={{ margin: 0 }} /> 
+                    <img src={LogoPath} alt="groundline.io" className="h-5 md:h-8 inline" style={{ margin: 0 }} /> 
                     &nbsp; Groundline Software Solutions
                   </Link>
-                </h5>
-                <br />
-              
-              
+                </h5>            
             </Col>
-            <Col lg={8} sm={24} className="text-center md:text-right">
+            <Col lg={8} sm={24} className="text-center lg:text-right">
               <p className="text-white" >
                   © 2020. All Rights Reserved
                 </p>

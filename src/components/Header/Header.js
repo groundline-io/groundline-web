@@ -15,7 +15,7 @@ class HeaderWrapper extends Component {
 
   render() {
     return(
-      <Header className="px-0 md:px-20 fixed top-0 w-full z-50 text-white bg-black " >
+      <Header className="px-0 md:px-20 fixed top-0 w-full z-50 text-white bg-black " style={{maxHeight: "46px"}} >
         <Row justify="space-between" align="middle">
           <Col span={6} >
             <Link to="/" >
