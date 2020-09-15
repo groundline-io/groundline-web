@@ -91,7 +91,7 @@ const IndexPage = () => {
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
               <h3 style={{color: "#000000"}}>Scalable</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built primarily for handling big data of geolocations and device status.
+                Our system was built primarily to handle big data of information from geolocations and device status.
               </p>
             </Col>
             <Col lg={8} xs={24}>
