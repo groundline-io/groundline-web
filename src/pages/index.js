@@ -84,20 +84,20 @@ const IndexPage = () => {
             <Col lg={8} xs={24}>
               <h3 style={{color: "#000000"}}>Integration</h3>
               <p style={{fontSize:"18px"}}>
-                Add location-based features to your existing applications and platforms using our APIs and tools.
+                Add location-based features to your existing applications and platforms using our API and tools.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
               <h3 style={{color: "#000000"}}>Scalable</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built to handle big data and information for realtime monitoring of geolocations and device status.
+                Our system was built primarily for handling big data of geolocations and device status.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               <h3 style={{color: "#000000"}}>Analytics</h3>
               <p style={{fontSize:"18px"}}>
-                Extract actionable information. Monitor your assets in real-time using our dashboard. 
+                Extract actionable information. Monitor your assets in real-time using our dashboard or your application. 
               </p>
             </Col>
           </Row>
