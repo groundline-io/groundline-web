@@ -142,16 +142,16 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking applications</h3>
                 <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                  Build delivery and last mile applications for your business. Trips and device tracking is in the core of our API.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking applications</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
                 <p style={{fontSize:"18px"}}>
-                  Build delivery and ridesharing applications for your business. Trips and device tracking is in the core of our API.
+                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
                 </p>
               </Row>
           </Col>
