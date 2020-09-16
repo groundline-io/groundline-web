@@ -142,9 +142,9 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Tracking applications</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Last mile</h3>
                 <p style={{fontSize:"18px"}}>
-                  Build delivery and last mile applications for your business. Trips and device tracking is in the core of our API.
+                  Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
