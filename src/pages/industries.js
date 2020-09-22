@@ -17,6 +17,14 @@ import SkylinePath from '../images/night-top-view.jpg'
 //import PrismaLogo from '../images/prisma-logo-standard.png'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
+import {
+  DollarOutlined,
+  CarOutlined,
+  InboxOutlined,
+  ClearOutlined,
+  FormatPainterOutlined,
+  ExperimentOutlined
+} from '@ant-design/icons';
 
 const IndexPage = () => {
   return (
@@ -32,36 +40,16 @@ const IndexPage = () => {
         }}
       >
         <Row gutter={48} type="flex">
-          <Col lg={14} xs={24} >
+          <Col lg={24} xs={24} >
             <Row 
               type="flex" 
-              justify="start" 
+              justify="center" 
               align="middle"
               
             >
-              <div>
-                <div 
-                  style={{
-                    marginBottom:"1rem", 
-                    background: "#FFFA00", 
-                    padding:"2px 5px",
-                    display:"inline-block",
-                    borderRadius: "4px",
-                    fontWeight:"bold",
-                    color: "#000000"
-                  }}>
-                    Beta
-                </div>
-                <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Enterprise solution for real-time tracking and monitoring
-                </h1>
-                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a location-based solution for logistics operations and asset monitoring.
-                </p>
-                <a href='https://dashboard.groundline.io/register'>
-                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
-                </a>
-              </div>
+              <h1 className="tracking-wider md:tracking-widest text-center text-white leading-10 md:leading-10" >
+                Industries
+              </h1>
             </Row>
           </Col>
           {/*
@@ -81,23 +69,46 @@ const IndexPage = () => {
       <div className="relative md:-mt-32 md:px-20 md:pt-16 " >
         <div className="pt-10 px-16 bg-white">
           <Row gutter={96}>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Integrated</h3>
+            <Col lg={8} xs={24} className="mb-8">
+              <DollarOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Gig Economy</h3>
               <p style={{fontSize:"18px"}}>
-                Connect your existing applications and third party platforms using our API and tools.
+                Build on-demand delivery and ridesharing apps to scale your business.
               </p>
             </Col>
-            <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
-              {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
-              <h3 className="text-black">Scalable</h3>
+            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+              <CarOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Transportation</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built primarily to handle big data of information from geolocation monitoring to analytics.
+                Improve transportation management, traffic monitoring and vehicle maintenance. 
               </p>
             </Col>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Smart</h3>
+            <Col lg={8} xs={24}  className="mb-8">
+              <InboxOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Logistics</h3>
               <p style={{fontSize:"18px"}}>
-                Extract actionable information using artificial intelligence and machine learning. 
+                Automate logistics operations through real-time tracking of shipments and delivery. 
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <ClearOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Service Provider</h3>
+              <p style={{fontSize:"18px"}}>
+                Monitor on-duty workers and vehicles to improve business workflow and customer service.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+              <FormatPainterOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Field projects</h3>
+              <p style={{fontSize:"18px"}}>
+                Increase workforce productivity for better project management through real-time updates.
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <ExperimentOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Analytics</h3>
+              <p style={{fontSize:"18px"}}>
+                Perform traffic analysis and monitor driving behaviors using our API and devices. 
               </p>
             </Col>
           </Row>
@@ -158,35 +169,13 @@ const IndexPage = () => {
         </Row>
       </div>
 
-{/*
-      <div>
-        <h4 style={{color: "#666", margin: '20px 0', fontWeight: "normal"}} align="center">
-          Supported database and platform
-        </h4>
-
-        <Row gutter={200} justify="space-around" align="center">
-          <Col lg={2} xs={0}>
-          </Col>
-          <Col lg={6} xs={18}>
-            <img src={FirebaseLogo} alt="Firebase" />
-          </Col>
-          <Col lg={6} xs={18}>
-            <img src={MongoDBLogo} alt="MongoDB" />
-          </Col>
-          <Col lg={6} xs={18}>
-            <img src={PrismaLogo} alt="Prisma" />d8d8          </Col>
-          <Col lg={2} xs={0}>
-          </Col>
-        </Row>
-      </div>
-*/}
     <div id="docs" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
-        <Row gutter={48} type="flex" justify="center" align="middle" >
+        <Row gutter={48} type="flex" justify="start" align="middle" >
           <Col lg={20} xs={24} >
             <Row type="flex" justify="start" align="middle">
               <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-                Learn More
+                Ready to get started?
               </h1>
             </Row>
             <Row type="flex" justify="start" align="middle">
@@ -198,49 +187,6 @@ const IndexPage = () => {
                 <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
               </a>
           </Row>
-          </Col>
-        </Row>
-      </div>
-
-<div id="docs" className="pb-10 px-8 md:px-20 md:pb-10">
-  <Row gutter={48} type="flex" justify="space-around" align="middle" >
-    <Col lg={20} xs={24} >
-      <Row type="flex" justify="start" align="middle">
-        <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-          We are hiring!
-        </h1>
-      </Row>
-      <Row type="flex" justify="start" align="middle">
-        <p style={{color: "#666", fontSize:"18px"}}>
-          Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
-          To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
-        </p>
-    </Row>
-    </Col>
-  </Row>
-</div>
-
-    <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
-        <Row gutter={48} type="flex" justify="space-around" align="middle" >
-          <Col lg={18} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h2 style={{color: "#FFF"}}>
-                Pricing? Get started for free!
-              </h2>
-            </Row>
-            <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#FFF"}}>
-                Our platform is free while we are still in Beta stage. Sign up now to get lifetime freebies.
-              </p>
-          </Row>
-          </Col>
-          <Col lg={6} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              
-            <a href='https://dashboard.groundline.io/register'>
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
-              </a>
-            </Row>
           </Col>
         </Row>
       </div>

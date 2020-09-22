@@ -1,6 +1,10 @@
 [
   { 
-    "name": "Learn More",
+    "name": "Contact",
     "link":  "#docs"
+  },
+  { 
+    "name": "Industries",
+    "link":  "/industries"
   }
 ]
