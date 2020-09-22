@@ -76,7 +76,7 @@ const LayoutWrapper = ({
           >
             <html lang="en" />
           </Helmet>
-          <Layout className="overflow-hidden">
+          <Layout className="overflow-hidden bg-white">
             <Header siteTitle={data.site.siteMetadata.title} />
             {(matches && onPostPage) ? <ResponsiveTopBar root={sidebarRoot}/> : null}
             {(!matches && onPostPage) ?  <><ResponsiveSidebar root={sidebarRoot}/> <ResponsiveAnchor /> </>: null }

@@ -78,26 +78,26 @@ const IndexPage = () => {
       </div>
             
 
-      <div className="pt-10 px-8 md:px-20 md:pt-16 bg-white" >
-        <div>
+      <div className="relative md:-mt-32 md:px-20 md:pt-16 " >
+        <div className="pt-10 px-16 bg-white">
           <Row gutter={96}>
             <Col lg={8} xs={24}>
-              <h3 style={{color: "#000000"}}>Integration</h3>
+              <h3 className="text-black">Integrated</h3>
               <p style={{fontSize:"18px"}}>
-                Add location-based features to your existing applications and platforms using our API and tools.
+                Connect your existing applications and third party platforms using our API and tools.
               </p>
             </Col>
-            <Col lg={8} xs={24}>
+            <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
-              <h3 style={{color: "#000000"}}>Scalable</h3>
+              <h3 className="text-black">Scalable</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built primarily to handle big data of information from geolocations and device status.
+                Our system was built primarily to handle big data of information from geolocation monitoring to analytics.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3 style={{color: "#000000"}}>Analytics</h3>
+              <h3 className="text-black">Smart</h3>
               <p style={{fontSize:"18px"}}>
-                Extract actionable information. Monitor your assets in real-time using our dashboard or your application. 
+                Extract actionable information using artificial intelligence and machine learning. 
               </p>
             </Col>
           </Row>
@@ -105,13 +105,13 @@ const IndexPage = () => {
       </div>
 
       <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
-        <h5 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
-          INDUSTRIES
-        </h5>
+        <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
+          SOLUTIONS
+        </h4>
 
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
-            <h1 style={{color: "#000", padding: '2rem 0rem', fontWeight: "bold"}} align="center">
+            <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
               We help ensure proper management and control of different logistics operations.
             </h1>
           </Col>
@@ -135,14 +135,14 @@ const IndexPage = () => {
           </Col>
           <Col lg={12} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet management</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
                 <p style={{fontSize:"18px"}}>
                   Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Last mile</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Last Mile Automation</h3>
                 <p style={{fontSize:"18px"}}>
                   Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
                 </p>
