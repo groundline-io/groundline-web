@@ -202,27 +202,27 @@ const IndexPage = () => {
         </Row>
       </div>
 
-<div id="docs" className="pb-10 px-8 md:px-20 md:pb-10">
-  <Row gutter={48} type="flex" justify="space-around" align="middle" >
-    <Col lg={20} xs={24} >
-      <Row type="flex" justify="start" align="middle">
-        <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-          We are hiring!
-        </h1>
-      </Row>
-      <Row type="flex" justify="start" align="middle">
-        <p style={{color: "#666", fontSize:"18px"}}>
-          Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
-          To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
-        </p>
-    </Row>
-    </Col>
-  </Row>
-</div>
+      <div id="docs" className="pb-10 px-8 md:px-20 md:pb-10">
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+          <Col lg={20} xs={24} >
+            <Row type="flex" justify="start" align="middle">
+              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+                We are hiring!
+              </h1>
+            </Row>
+            <Row type="flex" justify="start" align="middle">
+              <p style={{color: "#666", fontSize:"18px"}}>
+                Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
+                To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
+              </p>
+          </Row>
+          </Col>
+        </Row>
+      </div>
 
     <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
-          <Col lg={18} xs={24} >
+          <Col lg={12} xs={24} >
             <Row type="flex" justify="start" align="middle">
               <h2 style={{color: "#FFF"}}>
                 Pricing? Get started for free!
@@ -234,20 +234,21 @@ const IndexPage = () => {
               </p>
           </Row>
           </Col>
-          <Col lg={6} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              
-            <a href='https://dashboard.groundline.io/register'>
+          <Col lg={4} xs={24}>
+            <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
+              <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
                 <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
               </a>
             </Row>
           </Col>
         </Row>
       </div>
+      
 
     <div className="py-10 px-8 md:px-20 md:py-16 text-white bg-gray-900">
-        <Row gutter={16} justify="space-between">
-            <Col lg={16} sm={24} className="text-center lg:text-left">
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+            <Col lg={12} sm={24} className="text-center lg:text-left">
+              <Row type="flex" justify="start" align="middle">
                 <h5 >
                   <Link
                     to="/"
@@ -260,12 +261,15 @@ const IndexPage = () => {
                     <img src={LogoPath} alt="groundline.io" className="h-5 md:h-8 inline" style={{ margin: 0 }} /> 
                     &nbsp; Groundline Software Solutions
                   </Link>
-                </h5>            
+                </h5> 
+              </Row>           
             </Col>
-            <Col lg={8} sm={24} className="text-center lg:text-right">
-              <p className="text-white" >
+            <Col lg={5} sm={24} className="text-center lg:text-right">
+              <Row type="flex" justify="end" align="middle">
+                <p className="text-white" >
                   © 2020. All Rights Reserved
                 </p>
+              </Row>
             </Col>
           {/*
             <Col span={4}>

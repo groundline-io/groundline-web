@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import {  Layout } from 'antd';
-import Header from '../Header/Header'
+import Header from '../Header'
 import '../../assets/main.css'
 import './Layout.css'
 import ResponsiveSidebar from '../ResponsiveSidebar';
