@@ -6,5 +6,9 @@
   { 
     "name": "Industries",
     "link":  "/industries"
+  },
+  { 
+    "name": "Solutions",
+    "link":  "/solutions"
   }
 ]
