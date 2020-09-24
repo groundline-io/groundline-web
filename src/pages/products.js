@@ -7,14 +7,14 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-//import InfoPath from '../images/infographic-3.png'
-//import FarmVectorPath from '../images/farm-vector.png'
-import AppMapPath from '../images/app-map.jpg'
-//import ParkingPath from '../images/parking.jpg'
+import FleetUiPath1 from '../images/fleet-ui-1.png'
+import FleetUiPath2 from '../images/fleet-ui-2.png'
+import FleetUiPath3 from '../images/fleet-ui-3.png'
+import ApplestorePath from '../images/apple_store.svg'
+import PlaystorePath from '../images/play_store.svg'
 import SkylinePath from '../images/night-top-view.jpg'
-//import FirebaseLogo from '../images/firebase-logo-standard.png'
-//import MongoDBLogo from '../images/mongodb-logo-standard.jpg'
-//import PrismaLogo from '../images/prisma-logo-standard.png'
+import GPSTrackerPath from '../images/gps-tracker.jpg'
+import InfoPath from '../images/infographic-3.png'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
 
@@ -31,32 +31,19 @@ const IndexPage = () => {
           backgroundPosition: 'center',
         }}
       >
-        <Row gutter={48} type="flex">
+        <Row gutter={48} type="flex" justify="center" >
           <Col lg={14} xs={24} >
             <Row 
               type="flex" 
-              justify="start" 
+              justify="center" 
               align="middle"
-              
             >
-              <div>
-                <div 
-                  style={{
-                    marginBottom:"1rem", 
-                    background: "#FFFA00", 
-                    padding:"2px 5px",
-                    display:"inline-block",
-                    borderRadius: "4px",
-                    fontWeight:"bold",
-                    color: "#000000"
-                  }}>
-                    Beta
-                </div>
+              <div className="text-center">
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Enterprise solution for real-time tracking and monitoring
+                  Monitor your workforce and assets in real-time
                 </h1>
-                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a location-based solution for logistics operations and asset monitoring.
+                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
+                  Use our API to integrate data into your application and third-party softwares.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -64,182 +51,169 @@ const IndexPage = () => {
               </div>
             </Row>
           </Col>
-          {/*
-          <Col lg={13} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              <img src={InfoPath} alt="Groundline.io how it works?" style={{
-                position: 'relative',
-                top:'100px'
-              }} />
-            </Row>
-          </Col>
-            */}
         </Row>
       </div>
             
 
-      <div className="relative md:-mt-32 md:px-20 md:pt-16 " >
-        <div className="pt-10 px-16 bg-white">
-          <Row gutter={96}>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Integrated</h3>
-              <p style={{fontSize:"18px"}}>
-                Connect your existing applications and third party platforms using our API and tools.
-              </p>
-            </Col>
-            <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
-              {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
-              <h3 className="text-black">Scalable</h3>
-              <p style={{fontSize:"18px"}}>
-                Our system was built primarily to handle big data of information from geolocation monitoring to analytics.
-              </p>
-            </Col>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Smart</h3>
-              <p style={{fontSize:"18px"}}>
-                Extract actionable information using artificial intelligence and machine learning. 
-              </p>
+      <div className="relative -mt-20 md:-mt-40 md:px-20 md:pt-16 " >
+          <Row type="flex" justify="center" align="middle">
+            <Col lg={18} xs={20}>
+                <img src={FleetUiPath1} className="rounded-lg" alt="Groundline fleet management software" />
             </Col>
           </Row>
-        </div>
       </div>
 
       <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
-        <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
-          SOLUTIONS
-        </h4>
-
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
-              We help ensure proper management and control of different logistics operations.
+              Features
             </h1>
           </Col>
         </Row>
 
-        <Row type="flex" >
+        <Row gutter={48} type="flex" justify="center" align="middle">
           <Col 
-            lg={12} xs={24}
-            justify="center" 
-            align="middle"
+            lg={8} xs={24}
           >
               <img 
-                src={AppMapPath} 
+                src={FleetUiPath2} 
                 style={{
                   height:"20rem",
                   width: "auto",
                   marginBottom: "12px"
                 }}
+                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
                 alt="Groundline Tracking Apps" 
               />
           </Col>
-          <Col lg={12} xs={24} >
+          <Col lg={8} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Trip Management</h3>
                 <p style={{fontSize:"18px"}}>
-                  Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
+                  Create and manage trips for your fleet service, delivery or visit. Assign a trip to a team member or schedule one for future use.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Last Mile Automation</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Team management</h3>
                 <p style={{fontSize:"18px"}}>
-                  Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
+                  Manage team members with other Groundline users or use our API to connect with your existing database of users.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Track members</h3>
                 <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                  Monitor trips and team members location in real-time using interactive map.
                 </p>
               </Row>
           </Col>
         </Row>
-      </div>
-
-{/*
-      <div>
-        <h4 style={{color: "#666", margin: '20px 0', fontWeight: "normal"}} align="center">
-          Supported database and platform
-        </h4>
-
-        <Row gutter={200} justify="space-around" align="center">
-          <Col lg={2} xs={0}>
+        <Row type="flex" gutter={48} justify="center" align="middle">
+          <Col lg={8} xs={24} >
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Messaging</h3>
+                <p style={{fontSize:"18px"}}>
+                  Communicate with team members for seamless monitoring. Increase productivity by sending or receiving regular updates to your team members.
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Geofencing</h3>
+                <p style={{fontSize:"18px"}}>
+                  Take full control by setting geofences to constrain your team and devices location.
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Notifications and Alerts</h3>
+                <p style={{fontSize:"18px"}}>
+                  Receive alerts and notifications for important updates. You can also send alerts to your team for urgent announcements.
+                </p>
+              </Row>
           </Col>
-          <Col lg={6} xs={18}>
-            <img src={FirebaseLogo} alt="Firebase" />
-          </Col>
-          <Col lg={6} xs={18}>
-            <img src={MongoDBLogo} alt="MongoDB" />
-          </Col>
-          <Col lg={6} xs={18}>
-            <img src={PrismaLogo} alt="Prisma" />d8d8          </Col>
-          <Col lg={2} xs={0}>
+          <Col lg={8} xs={24} >
+            <img 
+                src={FleetUiPath3} 
+                style={{
+                  height:"20rem",
+                  width: "auto",
+                  marginBottom: "12px"
+                }}
+                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
+                alt="Groundline Tracking Apps" 
+              />
           </Col>
         </Row>
       </div>
-*/}
+
     <div id="docs" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
-          <Col lg={20} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-                Learn More
-              </h1>
-            </Row>
-            <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                To know more about our products and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
-                We are currently working on our documentation and other pages of the site. You can email us or sign up now so we can inform you as we make progress.
-              </p>
-              <a href='https://dashboard.groundline.io/register'>
-                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
-              </a>
-          </Row>
+        <Col 
+            lg={8} xs={24}
+          >
+              <img 
+                src={InfoPath} 
+                style={{
+                  width: "auto",
+                  marginBottom: "12px",
+                  marginTop:"2rem"
+                }}
+                alt="Groundline Tracking Apps" 
+              />
           </Col>
-        </Row>
-      </div>
-
-      <div id="docs" className="pb-10 px-8 md:px-20 md:pb-10">
-        <Row gutter={48} type="flex" justify="space-around" align="middle" >
-          <Col lg={20} xs={24} >
+          <Col lg={8} xs={24} >
             <Row type="flex" justify="start" align="middle">
-              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-                We are hiring!
-              </h1>
-            </Row>
-            <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#666", fontSize:"18px"}}>
-                Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
-                To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
-              </p>
-          </Row>
-          </Col>
-        </Row>
-      </div>
-
-    <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
-        <Row gutter={48} type="flex" justify="space-around" align="middle" >
-          <Col lg={12} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h2 style={{color: "#FFF"}}>
-                Pricing? Get started for free!
+              <h2 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+                Groundline <span className="font-normal">Workforce</span>
               </h2>
             </Row>
             <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#FFF"}}>
-                Our platform is free while we are still in Beta stage. Sign up now to get lifetime freebies.
+              <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
+                Receive live updates from your team remotely. Use it for your drivers, field workers or anyone in your team that requires real-time location tracking.
+              </p>            
+              <p style={{color: "#666", fontSize:"18px", marginTop:"1rem"}}>
+                Coming Soon...
               </p>
           </Row>
+              <Row type="flex" justify="start" align="middle">
+                <img src={ApplestorePath} alt="Groundline Workforce Apple store" />&nbsp;
+                <img src={PlaystorePath} alt="Groundline Workforce Play store" />
+          </Row>
           </Col>
-          <Col lg={4} xs={24}>
-            <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
-              <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
-              </a>
+        </Row>
+      </div>
+
+    <div id="pricing" className="py-4 px-8 md:px-20 md:py-4" style={{background: "#0c77fa"}}>
+        <Row gutter={48} type="flex" justify="center" align="middle" >
+          <Col lg={12} xs={24} >
+            <Row type="flex" justify="start" align="middle">
+              <img 
+                src={GPSTrackerPath} 
+                style={{
+                  width: "auto"
+                }}
+                alt="Groundline Tracking Apps" 
+              />
             </Row>
+            <Row>
+              <h2 className="text-center" style={{color: "#FFF", fontWeight:"bold"}}>
+                Groundline <span className="font-normal">Tracker</span>
+              </h2>
+            </Row>            
+            <Row type="flex" justify="center" align="middle">
+              <p style={{color: "#FFF", fontSize: "14px"}} className="text-center">
+                Advance tracking device for better monitoring
+              </p>
+            </Row>
+            <Row type="flex" justify="center" align="middle">
+              <p style={{color: "#FFF", fontSize: "14px"}} className="text-center">
+                Coming 2021
+              </p>
+          </Row>
           </Col>
         </Row>
       </div>

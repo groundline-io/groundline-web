@@ -8,6 +8,10 @@
     "link":  "/industries"
   },
   { 
+    "name": "Products",
+    "link":  "/products"
+  },
+  { 
     "name": "Solutions",
     "link":  "/solutions"
   }
