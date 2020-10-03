@@ -53,10 +53,10 @@ const IndexPage = () => {
                     Beta
                 </div>
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Enterprise solution for real-time tracking and monitoring
+                  Enterprise solution for real-time monitoring and analysis
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a location-based solution for logistics operations and asset monitoring.
+                  Groundline is a telemetry solution for logistics operations and asset monitoring.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -91,7 +91,7 @@ const IndexPage = () => {
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
               <h3 className="text-black">Scalable</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built primarily to handle big data of information from geolocation monitoring to analytics.
+                Our system was built primarily to handle big data of information of telemetry and analytics.
               </p>
             </Col>
             <Col lg={8} xs={24}>
@@ -142,18 +142,26 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Remote Access</h3>
+                <p style={{fontSize:"18px"}}>
+                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
+                <p style={{fontSize:"18px"}}>
+                  View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
+                </p>
+              </Row>
+              {/*
+              <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Last Mile Automation</h3>
                 <p style={{fontSize:"18px"}}>
                   Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
                 </p>
               </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
-                <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
-                </p>
-              </Row>
+              */}
           </Col>
         </Row>
       </div>

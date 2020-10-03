@@ -71,9 +71,9 @@ const IndexPage = () => {
           <Row gutter={96}>
             <Col lg={8} xs={24} className="mb-8">
               <DollarOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">Gig Economy</h3>
+              <h3 className="text-black">Smart City</h3>
               <p style={{fontSize:"18px"}}>
-                Build on-demand delivery and ridesharing apps to scale your business.
+                Monitor and analyze remotely controlled devices for your home or business.
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
@@ -153,16 +153,16 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Last Mile Automation</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Remote Access</h3>
                 <p style={{fontSize:"18px"}}>
-                  Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
+                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Internet of Things</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
                 <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                  View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
                 </p>
               </Row>
           </Col>

@@ -13,7 +13,7 @@ import FleetUiPath3 from '../images/fleet-ui-3.png'
 import ApplestorePath from '../images/apple_store.svg'
 import PlaystorePath from '../images/play_store.svg'
 import SkylinePath from '../images/night-top-view.jpg'
-import GPSTrackerPath from '../images/gps-tracker.jpg'
+//import GPSTrackerPath from '../images/gps-tracker.jpg'
 import InfoPath from '../images/infographic-3.png'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
@@ -40,7 +40,7 @@ const IndexPage = () => {
             >
               <div className="text-center">
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Monitor your workforce and assets in real-time
+                  Monitor your devices and workforce in real-time
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                   Use our API to integrate data into your application and third-party softwares.
@@ -89,13 +89,6 @@ const IndexPage = () => {
           </Col>
           <Col lg={8} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Trip Management</h3>
-                <p style={{fontSize:"18px"}}>
-                  Create and manage trips for your fleet service, delivery or visit. Assign a trip to a team member or schedule one for future use.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Team management</h3>
                 <p style={{fontSize:"18px"}}>
                   Manage team members with other Groundline users or use our API to connect with your existing database of users.
@@ -103,9 +96,16 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
+                <p style={{fontSize:"18px"}}>
+                  Create custom dashboard based on your needs. Share dashboard within your organization or other stake holders. 
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Track members</h3>
                 <p style={{fontSize:"18px"}}>
-                  Monitor trips and team members location in real-time using interactive map.
+                  Monitor devices and team members location in real-time using interactive map.
                 </p>
               </Row>
           </Col>
@@ -128,7 +128,7 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Notifications and Alerts</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Notifications and Triggers</h3>
                 <p style={{fontSize:"18px"}}>
                   Receive alerts and notifications for important updates. You can also send alerts to your team for urgent announcements.
                 </p>
@@ -186,7 +186,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-
+{/*
     <div id="pricing" className="py-4 px-8 md:px-20 md:py-4" style={{background: "#0c77fa"}}>
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={12} xs={24} >
@@ -217,7 +217,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-      
+              */}
 
     <div className="py-10 px-8 md:px-20 md:py-16 text-white bg-gray-900">
         <Row gutter={48} type="flex" justify="space-around" align="middle" >

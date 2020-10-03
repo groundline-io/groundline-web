@@ -58,21 +58,21 @@ const IndexPage = () => {
         <div className="pt-10 px-16 bg-white">
           <Row gutter={96}>
             <Col lg={8} xs={24}>
-              <h3 className="text-black">Fleet Management System</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
               <p style={{fontSize:"18px"}}>
-                Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications.
+                Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
               </p>
             </Col>
             <Col lg={8} xs={24} >
-              <h3 className="text-black">Last Mile Automation</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Remote Access</h3>
               <p style={{fontSize:"18px"}}>
-              Build delivery and tracking applications for your business. Trips and device tracking is in the core of our API.
+                Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3 className="text-black">Internet of Things</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
               <p style={{fontSize:"18px"}}>
-              Transmit and monitor data from your tracking devices and build applications to control hardwares remotely. 
+                View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
               </p>
             </Col>
           </Row>
