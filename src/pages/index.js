@@ -134,9 +134,9 @@ const IndexPage = () => {
           </Col>
           <Col lg={12} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Aerial Imagery</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Telemetry</h3>
                 <p style={{fontSize:"18px"}}>
-                  Access open source or paid satelite imagery using our platform. You can optionally upload images from your drone and geo-servers. 
+                  Retrieve data from your remote devices and view results in real-time using our customizable dashboard.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
@@ -148,9 +148,9 @@ const IndexPage = () => {
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Telemetry</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Aerial Imagery</h3>
                 <p style={{fontSize:"18px"}}>
-                  Retrieve data from your remote devices and view results in real-time using our customizable dashboard.
+                  Access open source or paid satelite imagery using our platform. You can optionally upload images from your drone and geo-servers. 
                 </p>
               </Row>
             {/*
