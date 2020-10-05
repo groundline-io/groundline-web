@@ -53,10 +53,10 @@ const IndexPage = () => {
                     Beta
                 </div>
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Enterprise solution for real-time monitoring and analysis
+                  Enterprise solution for geospatial monitoring and analysis
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a telemetry solution for logistics operations and asset monitoring.
+                  Groundline is a location-based platform for logistics operations and asset monitoring.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -84,20 +84,20 @@ const IndexPage = () => {
             <Col lg={8} xs={24}>
               <h3 className="text-black">Integrated</h3>
               <p style={{fontSize:"18px"}}>
-                Connect your existing applications and third party platforms using our API and tools.
+                Connect third-party platforms and existing applications using built-in modules and API.
               </p>
             </Col>
             <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
               {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />*/}
               <h3 className="text-black">Scalable</h3>
               <p style={{fontSize:"18px"}}>
-                Our system was built primarily to handle big data of information of telemetry and analytics.
+                Built primarily to handle big data of information of imagery, telemetry and analytics.
               </p>
             </Col>
             <Col lg={8} xs={24}>
               <h3 className="text-black">Smart</h3>
               <p style={{fontSize:"18px"}}>
-                Extract actionable information using artificial intelligence and machine learning. 
+                Generate reports and extract actionable information using artificial intelligence.
               </p>
             </Col>
           </Row>
@@ -112,7 +112,7 @@ const IndexPage = () => {
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
-              We help ensure proper management and control of different logistics operations.
+              We help ensure proper management and monitoring of different logistics operations.
             </h1>
           </Col>
         </Row>
@@ -128,12 +128,32 @@ const IndexPage = () => {
                 style={{
                   height:"20rem",
                   width: "auto",
-                  marginBottom: "12px"
                 }}
                 alt="Groundline Tracking Apps" 
               />
           </Col>
           <Col lg={12} xs={24} >
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Aerial Imagery</h3>
+                <p style={{fontSize:"18px"}}>
+                  Access open source or paid satelite imagery using our platform. You can optionally upload images from your drone and geo-servers. 
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Object Detection</h3>
+                <p style={{fontSize:"18px"}}>
+                  Create and train models to help you identify objects in your images. Automatically identify changes in your location through machine learning.
+                </p>
+              </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row >
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Telemetry</h3>
+                <p style={{fontSize:"18px"}}>
+                  Retrieve data from your remote devices and view results in real-time using our customizable dashboard.
+                </p>
+              </Row>
+            {/*
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
                 <p style={{fontSize:"18px"}}>
@@ -148,12 +168,7 @@ const IndexPage = () => {
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
-                <p style={{fontSize:"18px"}}>
-                  View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
-                </p>
-              </Row>
+            */}
               {/*
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Last Mile Automation</h3>
