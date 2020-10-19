@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Groundline - Real-time tracking and monitoring',
+    title: 'Groundline - Geospatial monitoring and analysis',
   },
   plugins: [
     'gatsby-plugin-antd',
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Groundline - Real-time tracking and monitoring',
+        name: 'Groundline - Geospatial monitoring and analysis',
         short_name: 'Groundline',
         start_url: '/',
         background_color: '#663399',
