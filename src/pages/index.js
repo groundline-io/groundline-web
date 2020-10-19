@@ -106,7 +106,7 @@ const IndexPage = () => {
 
       <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
         <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
-          SOLUTIONS
+          USE CASE
         </h4>
 
         <Row gutter={48} type="flex" justify="center" align="middle">
@@ -134,23 +134,23 @@ const IndexPage = () => {
           </Col>
           <Col lg={12} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Telemetry</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Collection and Telemetry</h3>
                 <p style={{fontSize:"18px"}}>
-                  Retrieve data from your remote devices and view results in real-time using our customizable dashboard.
+                  Retrieve data from field workers, remote devices and aerial imagery. Our platform can help you manage your data for processing and visualization.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Object Detection</h3>
                 <p style={{fontSize:"18px"}}>
-                  Create and train models to help you identify objects in your images. Automatically identify changes in your location through machine learning.
+                  Create and train models to help you identify objects in your image. Automatically identify changes in your location through machine learning.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Aerial Imagery</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
                 <p style={{fontSize:"18px"}}>
-                  Access open source or paid satelite imagery using our platform. You can optionally upload images from your drone and geo-servers. 
+                  Process your data and images for proper visualization. Monitor your data in real-time and integrate photogrammetry for better understanding.
                 </p>
               </Row>
             {/*
