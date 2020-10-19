@@ -106,7 +106,7 @@ const IndexPage = () => {
 
       <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
         <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
-          USE CASE
+          SOLUTIONS
         </h4>
 
         <Row gutter={48} type="flex" justify="center" align="middle">
@@ -214,11 +214,11 @@ const IndexPage = () => {
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                To know more about our products and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
-                We are currently working on our documentation and other pages of the site. You can email us or sign up now so we can inform you as we make progress.
+                We are more than happy to hear from you.
+                To know more about our products and how we can help improve your workflow and business, please click the link below to sign up and we will get in touch with you as soon as possible.
               </p>
               <a href='https://dashboard.groundline.io/register'>
-                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
+                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
               </a>
           </Row>
           </Col>
@@ -236,7 +236,7 @@ const IndexPage = () => {
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#666", fontSize:"18px"}}>
                 Our <b>Development</b> and <b>Sales</b> Teams are actively looking for amazing talents. If you are interested in tech industry and believe you have something to share in what we are building - why not join our team.
-                To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.ph</b>.
+                To know more about the jobs and other stuff, please email us your CV at <b>hello@groundline.io</b>.
               </p>
           </Row>
           </Col>

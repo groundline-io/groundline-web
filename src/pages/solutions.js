@@ -7,11 +7,11 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-import InfoPath from '../images/infographic-4.png'
-import FarmVectorPath from '../images/farm-vector.png'
-import AppMapPath from '../images/app-map.jpg'
-import ParkingPath from '../images/parking.jpg'
-//import SkylinePath from '../images/night-top-view.jpg'
+import InfoPath from '../images/infographic-2.png'
+//import FarmVectorPath from '../images/farm-vector.png'
+//import AppMapPath from '../images/app-map.jpg'
+//import ParkingPath from '../images/parking.jpg'
+import SkylinePath from '../images/skyline.jpg'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
 
@@ -20,10 +20,9 @@ const IndexPage = () => {
     <Layout>
 
       <div 
-        className="py-24 px-8 md:px-20 md:py-20 bg-white" 
+        className="py-24 px-8 md:px-20 md:py-20 bg-blue-500" 
         style={{
-
-         // backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+InfoPath+')',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 255, 0.1)), url('+SkylinePath+')',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -32,10 +31,10 @@ const IndexPage = () => {
         <Row gutter={48} type="flex"   align="middle">
           <Col lg={11} xs={24} >
               <div className="text-left">
-                <h1 className="tracking-wider md:tracking-wide text-black leading-10 md:leading-10" >
-                  Track your assets with one simplified solution
+                <h1 className="tracking-wider md:tracking-wide text-white leading-10 md:leading-10" >
+                  Monitor assets with our simplified solutions
                 </h1>
-                <p style={{fontSize:"15px", color: "#000", letterSpacing: "1px", marginBottom:"3rem"}}>
+                <p style={{fontSize:"15px", color: "#FFF", letterSpacing: "1px", marginBottom:"3rem"}}>
                   We make sure you are not constrained to existing solutions and give you the freedom to build on top of our system
                 </p>
                 <a href='#solutions-learn-more' className="inline m-2">
@@ -53,24 +52,24 @@ const IndexPage = () => {
         </Row>
       </div>
             
-
+{/*
       <div id="solutions-learn-more" className="relative -mt-24 md:px-20 md:pt-16 " >
         <div className="pt-10 px-16 bg-white">
           <Row gutter={96}>
             <Col lg={8} xs={24}>
-              <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Collect</h3>
               <p style={{fontSize:"18px"}}>
-                Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
+                We help build applications for data gathering from remote devices and field workers. We help retrieve and manage aerial images from UAV and satellites. 
               </p>
             </Col>
             <Col lg={8} xs={24} >
-              <h3 style={{color: "#333", fontWeight: "bold"}}>Remote Access</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Analyze</h3>
               <p style={{fontSize:"18px"}}>
-                Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                We provide platform to view and process all retrieved data. Use object detection to help monitor changes in your field.
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
+              <h3 style={{color: "#333", fontWeight: "bold"}}>Visualize</h3>
               <p style={{fontSize:"18px"}}>
                 View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
               </p>
@@ -78,8 +77,9 @@ const IndexPage = () => {
           </Row>
         </div>
       </div>
-
-      <div className="py-4 px-8 md:px-20 md:py-4 bg-white" >
+*/}
+      <div className="bg-white" >
+        {/*
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
@@ -87,68 +87,79 @@ const IndexPage = () => {
             </h1>
           </Col>
         </Row>
-
+        */}
         <Row type="flex" align="middle" justify="center">
-          <Col lg={16} xs={24} >
-              <Row type="flex" align="middle" justify="space-around">
-                <Col lg={12} xs={24}>
-                  <img 
-                    src={AppMapPath} 
-                    style={{
-                      height:"20rem",
-                      width: "auto",
-                      marginBottom: "12px"
-                    }}
-                    alt="Groundline Tracking Apps" 
-                  />
+          <Col lg={24} xs={24} >
+              <div className="flex flex-wrap items-center bg-red-600">
+                <Col lg={12} xs={24} 
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/CeHGoFLzvNU)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
                 </Col>
-                <Col lg={12} xs={24} >
-                  <h3 style={{color: "#333", fontWeight: "bold"}}>API Ready</h3>
-                  <p style={{fontSize:"18px"}}>
-                    Build your own tracking apps or connect to existing softwares to scale up your application. You can integrate third-party softwares for better business workflow. 
-                  </p>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white" >Collect</h2>
+                    <p style={{fontSize:"16px"}}>
+                      We help build applications for data gathering. Retrieve data from remote devices and field workers or gather aerial images from UAV and satellites. 
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Build your own tracking apps or connect to existing softwares to scale up your application. You can integrate third-party softwares for better business workflow. 
+                    </p>
+                  </div>
                 </Col>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row type="flex" align="middle" justify="space-around">
-                <Col lg={12} xs={24}>
-                  <img 
-                    src={ParkingPath} 
-                    style={{
-                      height:"20rem",
-                      width: "auto",
-                      marginBottom: "12px"
-                    }}
-                    alt="Groundline Tracking Apps" 
-                  />
+              </div>
+              <div  className="flex flex-wrap md:flex-row-reverse items-center bg-yellow-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/G1N9kDHqBrQ)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
                 </Col>
-                <Col lg={12} xs={24} >
-                  <h3 style={{color: "#333", fontWeight: "bold"}}>Real-time</h3>
-                  <p style={{fontSize:"18px"}}>
-                    Our system uses latest technology to monitor devices in real-time. Transmit geolocations and message alerts and we will handle everything in the background. 
-                  </p>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Analyze</h2>
+                    <p style={{fontSize:"16px"}}>
+                      We provide a platform to view and process all retrieved data. We use object detection to help monitor changes in your field.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Connect compatible devices to retrieve more information such as location, temperature and status to gain more insight and better decision making.
+                    </p>
+                  </div>
                 </Col>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row type="flex" align="middle" justify="space-around">
-                <Col lg={10} xs={24}>
-                  <img 
-                    src={FarmVectorPath} 
-                    style={{
-                      height:"20rem",
-                      width: "auto",
-                      marginBottom: "12px"
-                    }}
-                    alt="Groundline Tracking Apps" 
-                  />
+              </div>
+              <div className="flex flex-wrap items-center bg-green-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundColor: '#FFF',
+                    backgroundImage: 'url(https://source.unsplash.com/6ba_vdgx_go)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
                 </Col>
-                <Col lg={12} xs={24} >
-                  <h3 style={{color: "#333", fontWeight: "bold"}}>Device compatibility</h3>
-                  <p style={{fontSize:"18px"}}>
-                    Connect compatible devices to retrieve more information such as location, temperature and fuel to gain more insight and better decsion making.
-                  </p>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Visualize</h2>
+                    <p style={{fontSize:"16px"}}>
+                      View your data in using our customizable dashboard. Use triggers and get notified for updates and anomalies.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Our system uses latest technology to monitor devices in real-time. Transmit geolocations and actions for better monitiring and analysis. 
+                    </p>
+                  </div>
                 </Col>
-              </Row>
+              </div>
           </Col>
         </Row>
       </div>
@@ -175,7 +186,7 @@ const IndexPage = () => {
         </Row>
       </div>
 */}
-    <div id="docs" className="p-4 bg-white"></div>
+
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={20} xs={24} >
@@ -186,11 +197,11 @@ const IndexPage = () => {
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                To know more about our products and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
-                We are currently working on our documentation and other pages of the site. You can email us or sign up now so we can inform you as we make progress.
+                We are more than happy to hear from you.
+                To know more about our products and how we can help improve your workflow and business, please click the link below to sign up and we will get in touch with you as soon as possible.
               </p>
               <a href='https://dashboard.groundline.io/register'>
-                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
+                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
               </a>
           </Row>
           </Col>

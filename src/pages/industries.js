@@ -18,12 +18,12 @@ import SkylinePath from '../images/night-top-view.jpg'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
 import {
-  DollarOutlined,
-  CarOutlined,
-  InboxOutlined,
-  ClearOutlined,
-  FormatPainterOutlined,
-  ExperimentOutlined
+  PictureOutlined,
+  HomeOutlined,
+  BankOutlined,
+//  ClearOutlined,
+//  FormatPainterOutlined,
+//  ExperimentOutlined
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -70,6 +70,28 @@ const IndexPage = () => {
         <div className="pt-10 px-16 bg-white">
           <Row gutter={96}>
             <Col lg={8} xs={24} className="mb-8">
+              <PictureOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Agriculture</h3>
+              <p style={{fontSize:"18px"}}>
+                Monitor fields to increase crop yields and identify changes in your area.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+              <HomeOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Real Estate</h3>
+              <p style={{fontSize:"18px"}}>
+                View properties differently to improve maintenance and develoment. 
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <BankOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Government</h3>
+              <p style={{fontSize:"18px"}}>
+                Improve security and maintenance of local government operations. 
+              </p>
+            </Col>
+            {/*}
+            <Col lg={8} xs={24} className="mb-8">
               <DollarOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Smart City</h3>
               <p style={{fontSize:"18px"}}>
@@ -111,6 +133,7 @@ const IndexPage = () => {
                 Perform traffic analysis and monitor driving behaviors using our API and devices. 
               </p>
             </Col>
+          */}
           </Row>
         </div>
       </div>
@@ -123,7 +146,7 @@ const IndexPage = () => {
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
-              We help ensure proper management and control of different logistics operations.
+              We help ensure proper management and monitoring of different logistics operations.
             </h1>
           </Col>
         </Row>
@@ -139,30 +162,29 @@ const IndexPage = () => {
                 style={{
                   height:"20rem",
                   width: "auto",
-                  marginBottom: "12px"
                 }}
                 alt="Groundline Tracking Apps" 
               />
           </Col>
           <Col lg={12} xs={24} >
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Collection and Telemetry</h3>
                 <p style={{fontSize:"18px"}}>
-                  Monitor your assets and workforce in real-time. Build and integrate your data into your existing applications
+                  Retrieve data from field workers, remote devices and aerial imagery. Our platform can help you manage your data for processing and visualization.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Remote Access</h3>
+                <h3 style={{color: "#333", fontWeight: "bold"}}>Object Detection</h3>
                 <p style={{fontSize:"18px"}}>
-                  Transmit and monitor data from your tracking devices and build applications to control hardwares remotely.
+                  Create and train models to help you identify objects in your image. Automatically identify changes in your location through machine learning.
                 </p>
               </Row>
               <div style={{margin:"2rem 0"}} />
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
                 <p style={{fontSize:"18px"}}>
-                  View your data in real-time using our customizable dashboard. Use triggers and get notified for updates or anomalies.
+                  Process your data and images for proper visualization. Monitor your data in real-time and integrate photogrammetry for better understanding.
                 </p>
               </Row>
           </Col>
@@ -179,9 +201,8 @@ const IndexPage = () => {
               </h1>
             </Row>
             <Row type="flex" justify="start" align="middle">
-              <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                To know more about our products and how location tracking system can help improve your workflow and business, please email us at <b>hello@groundline.ph</b>. 
-                We are currently working on our documentation and other pages of the site. You can email us or sign up now so we can inform you as we make progress.
+            <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
+                To know more about our products and how we can help improve your workflow and business, please click the link below to sign up and we will get in touch with you as soon as possible.
               </p>
               <a href='https://dashboard.groundline.io/register'>
                 <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>

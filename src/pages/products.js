@@ -40,7 +40,7 @@ const IndexPage = () => {
             >
               <div className="text-center">
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Monitor your devices and workforce in real-time
+                  Monitor field workers and collect data in real-time
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                   Use our API to integrate data into your application and third-party softwares.

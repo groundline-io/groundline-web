@@ -25,7 +25,6 @@ const MenuWrapper = () => {
         }
       `}
       render={data => {
-        console.log('data', data)
         const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
         return (
           <>
