@@ -5,11 +5,23 @@
   },
   { 
     "name": "Industries",
-    "link":  "/industries"
+    "link":  "/industries",
+    "submenu": [
+      {
+        "name" : "All",
+        "link" : "industries"
+      }
+    ]
   },
   { 
     "name": "Products",
-    "link":  "/products"
+    "link":  "/products",
+    "submenu": [
+      {
+        "name" : "All",
+        "link" : "/products"
+      }
+    ]
   },
   { 
     "name": "Solutions",

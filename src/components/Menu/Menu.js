@@ -15,17 +15,37 @@ const MenuWrapper = () => {
               node {
                 name
                 link
+                submenu {
+                  name
+                  link
+                }
               }
             }
           }
         }
       `}
       render={data => {
+        console.log('data', data)
         const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
         return (
           <>
           <Menu className="hidden md:block float-right bg-black" style={{backgroundColor: "#000"}} theme="dark" mode="horizontal" defaultSelectedKeys={['999']}>
             {menuItems.map(item => {
+              if (item.submenu) {
+                return (
+                    <SubMenu key={menuItems.indexOf(item) + "-submenu"}  title={item.name}>
+                      {item.submenu.map(submenuItem => {
+                        return (
+                          <Menu.Item key={item.submenu.indexOf(submenuItem)}>
+                            <Link to={submenuItem.link} >
+                              {submenuItem.name}
+                            </Link>
+                          </Menu.Item>
+                        )
+                      })}
+                    </SubMenu>
+                )
+              } 
               return (
                 <Menu.Item key={menuItems.indexOf(item)}>
                   <Link to={item.link} >
@@ -43,6 +63,21 @@ const MenuWrapper = () => {
           <Menu className="block md:hidden float-right bg-black" style={{backgroundColor: "#000"}} theme="dark" mode="horizontal" defaultSelectedKeys={['999']}>
             <SubMenu key="SubMenu"  title="Learn More">
               {menuItems.map(item => {
+                if (item.submenu) {
+                  return (
+                      <SubMenu key={menuItems.indexOf(item) + "-submenu"}  title={item.name}>
+                        {item.submenu.map(submenuItem => {
+                          return (
+                            <Menu.Item key={item.submenu.indexOf(submenuItem)}>
+                              <Link to={submenuItem.link} >
+                                {submenuItem.name}
+                              </Link>
+                            </Menu.Item>
+                          )
+                        })}
+                      </SubMenu>
+                  )
+                } 
                 return (
                   <Menu.Item key={menuItems.indexOf(item)}>
                     <Link to={item.link} >
