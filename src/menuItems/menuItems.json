@@ -5,13 +5,7 @@
   },
   { 
     "name": "Industries",
-    "link":  "/industries",
-    "submenu": [
-      {
-        "name" : "All",
-        "link" : "industries"
-      }
-    ]
+    "link":  "/industries"
   },
   { 
     "name": "Products",

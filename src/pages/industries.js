@@ -21,9 +21,9 @@ import {
   PictureOutlined,
   HomeOutlined,
   BankOutlined,
-//  ClearOutlined,
-//  FormatPainterOutlined,
-//  ExperimentOutlined
+  ApiOutlined,
+  FormatPainterOutlined,
+  GlobalOutlined
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -87,7 +87,28 @@ const IndexPage = () => {
               <BankOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Government</h3>
               <p style={{fontSize:"18px"}}>
-                Improve security and maintenance of local government operations. 
+                Improve security and maintenance of local government operations through aerial monitoring. 
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <FormatPainterOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Construction</h3>
+              <p style={{fontSize:"18px"}}>
+                Improve productivity in project development through aerial and field updates.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+              <ApiOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Energy</h3>
+              <p style={{fontSize:"18px"}}>
+                Check oil spills or conduct maintenance check on wind mills. 
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <GlobalOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Environment</h3>
+              <p style={{fontSize:"18px"}}>
+                View forestry, oceans and wild animal sanctuary for better insights.
               </p>
             </Col>
             {/*}
