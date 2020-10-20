@@ -12,8 +12,12 @@
     "link":  "/products",
     "submenu": [
       {
-        "name" : "Groundline Workforce",
-        "link" : "/products"
+        "name" : "Vision",
+        "link" : "/products/vision"
+      },
+      {
+        "name" : "Workforce",
+        "link" : "/products/workforce"
       }
     ]
   },
