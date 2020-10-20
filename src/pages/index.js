@@ -17,6 +17,9 @@ import SkylinePath from '../images/night-top-view.jpg'
 //import PrismaLogo from '../images/prisma-logo-standard.png'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
+import {
+  ArrowRightOutlined
+} from '@ant-design/icons';
 
 const IndexPage = () => {
   return (
@@ -153,6 +156,13 @@ const IndexPage = () => {
                   Process your data and images for proper visualization. Monitor your data in real-time and integrate photogrammetry for better understanding.
                 </p>
               </Row>
+              <div style={{margin:"2rem 0"}} />
+              <Row>
+                <a href='/solutions'>
+                  <Button type="link"  size="large" style={{borderRadius: 0, padding: 0}} >Learn More <ArrowRightOutlined /></Button>
+                </a>
+              </Row>
+
             {/*
               <Row >
                 <h3 style={{color: "#333", fontWeight: "bold"}}>Fleet Management</h3>
