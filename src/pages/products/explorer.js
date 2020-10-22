@@ -38,22 +38,12 @@ const IndexPage = () => {
               justify="center" 
               align="middle"
             >
-              <div className="text-center">
-                <h1 style={{marginTop:"0rem", fontWeight:"bold", color:"#FFF"}}>
+              <div className="text-center">                
+                <h6 className="tracking-widest text-white font-normal">
+                  PRE-BETA
+                </h6>
+                <h1 style={{fontWeight:"bold", color:"#FFF"}}>
                   Groundline <span className="font-normal">Explorer</span>
-                <sup 
-                  style={{
-                    background: "#FFFA00", 
-                    padding:"2px 5px",
-                    borderRadius: "4px",
-                    fontWeight:"bold",
-                    color: "#000000",
-                    fontSize:"10px",
-                    marginLeft:"2px",
-                    verticalAlign: "super"
-                  }}>
-                    Pre-beta
-                </sup>
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                 Monitor field workers and collect data in real-time. Use our API to integrate data into your application and third-party softwares.
