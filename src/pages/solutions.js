@@ -78,7 +78,7 @@ const IndexPage = () => {
         </div>
       </div>
 */}
-      <div className="bg-white" >
+      <div className="bg-white" id="solutions-learn-more">
         {/*
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >

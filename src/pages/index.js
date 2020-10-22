@@ -60,8 +60,11 @@ const IndexPage = () => {
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
                   Groundline is a location-based platform for logistics operations and asset monitoring.
-                </p>
-                <a href='https://dashboard.groundline.io/register'>
+                </p>                
+                <a href='/solutions' className="inline m-2">
+                  <Button type="default"  size="large" style={{borderRadius: 0}} >Learn More</Button>
+                </a>
+                <a href='https://dashboard.groundline.io/register' className="inline m-2">
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
                 </a>
               </div>
