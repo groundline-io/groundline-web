@@ -12,12 +12,16 @@
     "link":  "/products",
     "submenu": [
       {
-        "name" : "Vision",
-        "link" : "/products/vision"
+        "name" : "Explorer",
+        "link" : "/products/explorer"
       },
       {
-        "name" : "Workforce",
-        "link" : "/products/workforce"
+        "name" : "Observer",
+        "link" : "/products/observer"
+      },
+      {
+        "name" : "Envision",
+        "link" : "/products/envision"
       }
     ]
   },

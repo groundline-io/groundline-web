@@ -27,7 +27,7 @@ const IndexPage = () => {
       <div 
         className="py-24 px-8 md:px-20 md:py-40" 
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/Gup8MCvSsf0)',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/NN9HQkDgguc)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -41,16 +41,19 @@ const IndexPage = () => {
               align="middle"
             >
               <div className="text-center">
-                <h1 style={{marginTop:"2rem", fontWeight:"bold", color:"#FFF"}}>
-                  Groundline <span className="font-normal">Vision</span>
+                <h6 className="tracking-widest text-white font-normal">
+                  COMING SOON
+                </h6>
+                <h1 style={{fontWeight:"bold", color:"#FFF"}}>
+                  Groundline <span className="font-normal">Envision</span>
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                  We are excited to anounce the development of Groundline Vision. Using deep learning, you will be able to 
-                  identify objects in your aerial images based on the trained models you created - all done within our platform.
+                  We are excited to anounce the development of Groundline Envision. Convert photogrammtery and LIDAR data 
+                  to 3D images to better understand your projects. 
                 </p>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                  Monitor crucial changes in your field or easily count assets based on a given timeframe. View results in your
-                  dashboard and generate reports to share your data within organization or stakeholders.
+                  Image results are ready to be integrated to your VR and AR apps. You can also simply view it using the platform for sharing. 
+                  Sign up now so we can discuss how you want to use this feature and we can better understand your use case. 
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -94,9 +97,9 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col lg={8} xs={24}  className="mb-8">
-              <h3 className="text-black">Automate</h3>
+              <h3 className="text-black">For AR and VR</h3>
               <p style={{fontSize:"18px"}}>
-                Create schedules and triggers for crucial changes and updates.
+                Process photogrammery and LIDAR data for augmented and virtual reality apps. 
               </p>
             </Col>
           </Row>

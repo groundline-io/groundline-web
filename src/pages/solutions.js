@@ -32,7 +32,7 @@ const IndexPage = () => {
           <Col lg={11} xs={24} >
               <div className="text-left">
                 <h1 className="tracking-wider md:tracking-wide text-white leading-10 md:leading-10" >
-                  Monitor assets with our simplified solutions
+                  Monitoring assets with simplified solutions
                 </h1>
                 <p style={{fontSize:"15px", color: "#FFF", letterSpacing: "1px", marginBottom:"3rem"}}>
                   We make sure you are not constrained to existing solutions and give you the freedom to build on top of our system
@@ -105,7 +105,7 @@ const IndexPage = () => {
                   <div className="p-12">
                     <h2 className="text-white" >Collect</h2>
                     <p style={{fontSize:"16px"}}>
-                      We help build applications for data gathering. Retrieve data from remote devices and field workers or gather aerial images from UAV and satellites. 
+                      We help build applications for data gathering and real-time tracking. Gather data from remote devices and field workers or retrieve aerial images from UAV and satellites. 
                     </p>
                     <p style={{fontSize:"16px"}}>
                       Build your own tracking apps or connect to existing softwares to scale up your application. You can integrate third-party softwares for better business workflow. 
@@ -128,10 +128,11 @@ const IndexPage = () => {
                   <div className="p-12">
                     <h2 className="text-white">Analyze</h2>
                     <p style={{fontSize:"16px"}}>
-                      We provide a platform to view and process all retrieved data. We use object detection to help monitor changes in your field.
+                      We provide a platform for viewing and analyzing aerial imagery. We use machine learning to help monitor changes in specific location and identify objects when needed.
                     </p>
                     <p style={{fontSize:"16px"}}>
-                      Connect compatible devices to retrieve more information such as location, temperature and status to gain more insight and better decision making.
+                      Monitor crucial changes in your field or easily count assets based on a given timeframe. View results in your
+                      dashboard and generate reports to share your data within organization or stakeholders.
                     </p>
                   </div>
                 </Col>
@@ -140,7 +141,7 @@ const IndexPage = () => {
                 <Col lg={12} xs={24}
                   style={{
                     backgroundColor: '#FFF',
-                    backgroundImage: 'url(https://source.unsplash.com/6ba_vdgx_go)',
+                    backgroundImage: 'url(https://source.unsplash.com/87oz2SoV9Ug)',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -152,10 +153,12 @@ const IndexPage = () => {
                   <div className="p-12">
                     <h2 className="text-white">Visualize</h2>
                     <p style={{fontSize:"16px"}}>
-                      View your data in using our customizable dashboard. Use triggers and get notified for updates and anomalies.
+                      Generate 3D images from photogrammtery and LIDAR data and integrate it to your location-based AR apps to
+                      help your customers and stakeholders visualize your project.
                     </p>
                     <p style={{fontSize:"16px"}}>
-                      Our system uses latest technology to monitor devices in real-time. Transmit geolocations and actions for better monitiring and analysis. 
+                      We also help monitor IoT devices using customizable dashboards. Our system uses latest technologies to 
+                      receive data in real-time. 
                     </p>
                   </div>
                 </Col>
@@ -208,24 +211,24 @@ const IndexPage = () => {
         </Row>
       </div>
 
-    <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
+      <div id="pricing" className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
         <Row gutter={48} type="flex" justify="space-around" align="middle" >
           <Col lg={12} xs={24} >
             <Row type="flex" justify="start" align="middle">
               <h2 style={{color: "#FFF"}}>
-                Pricing? Get started for free!
+                Pricing? Talk to us.
               </h2>
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#FFF"}}>
-                Our platform is free while we are still in Beta stage. Sign up now to get lifetime freebies.
+                We are streamlining our services and platform to make it easier for you to achieve your goals.
               </p>
           </Row>
           </Col>
           <Col lg={4} xs={24}>
             <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
               <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Sign Up</Button>
               </a>
             </Row>
           </Col>

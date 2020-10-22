@@ -258,19 +258,19 @@ const IndexPage = () => {
           <Col lg={12} xs={24} >
             <Row type="flex" justify="start" align="middle">
               <h2 style={{color: "#FFF"}}>
-                Pricing? Get started for free!
+                Pricing? Talk to us.
               </h2>
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#FFF"}}>
-                Our platform is free while we are still in Beta stage. Sign up now to get lifetime freebies.
+                We are streamlining our services and platform to make it easier for you to achieve your goals.
               </p>
           </Row>
           </Col>
           <Col lg={4} xs={24}>
             <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
               <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup for Beta Access</Button>
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Sign Up</Button>
               </a>
             </Row>
           </Col>

@@ -7,14 +7,16 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
+/*
 import FleetUiPath1 from '../../images/fleet-ui-1.png'
 import FleetUiPath2 from '../../images/fleet-ui-2.png'
 import FleetUiPath3 from '../../images/fleet-ui-3.png'
 import ApplestorePath from '../../images/apple_store.svg'
 import PlaystorePath from '../../images/play_store.svg'
-//import SkylinePath from '../../images/night-top-view.jpg'
+import SkylinePath from '../../images/night-top-view.jpg'
 //import GPSTrackerPath from '../../images/gps-tracker.jpg'
 import InfoPath from '../../images/infographic-3.png'
+*/
 import { Link } from "gatsby"
 import LogoPath from '../../images/logo-white.png'
 
@@ -25,7 +27,7 @@ const IndexPage = () => {
       <div 
         className="py-24 px-8 md:px-20 md:py-40" 
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/x-ghf9LjrVg)',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/Gup8MCvSsf0)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -38,25 +40,20 @@ const IndexPage = () => {
               justify="center" 
               align="middle"
             >
-              <div className="text-center">
-                <h1 style={{marginTop:"0rem", fontWeight:"bold", color:"#FFF"}}>
-                  Groundline <span className="font-normal">Workforce</span>
-                <sup 
-                  style={{
-                    background: "#FFFA00", 
-                    padding:"2px 5px",
-                    borderRadius: "4px",
-                    fontWeight:"bold",
-                    color: "#000000",
-                    fontSize:"10px",
-                    marginLeft:"2px",
-                    verticalAlign: "super"
-                  }}>
-                    Beta
-                </sup>
+              <div className="text-center">                
+                <h6 className="tracking-widest text-white font-normal">
+                  COMING SOON
+                </h6>
+                <h1 style={{fontWeight:"bold", color:"#FFF"}}>
+                  Groundline <span className="font-normal">Observer</span>
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                Monitor field workers and collect data in real-time. Use our API to integrate data into your application and third-party softwares.
+                  We are excited to anounce the development of Groundline Observer. Using deep learning, you will be able to 
+                  identify objects in your aerial images based on the trained models you created - all done within our platform.
+                </p>
+                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
+                  Monitor crucial changes in your field or easily count assets based on a given timeframe. View results in your
+                  dashboard and generate reports to share your data within organization or stakeholders.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -67,16 +64,17 @@ const IndexPage = () => {
         </Row>
       </div>
             
-
+{/*}
       <div className="relative -mt-20 md:-mt-40 md:px-20 md:pt-16 " >
           <Row type="flex" justify="center" align="middle">
             <Col lg={18} xs={20}>
-                <img src={FleetUiPath1} className="rounded-lg" alt="Groundline fleet management software" />
+                <img src={"https://source.unsplash.com/Gup8MCvSsf0"} className="rounded-lg" alt="Groundline fleet management software" />
             </Col>
           </Row>
       </div>
+*/}
 
-      <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
+      <div className="py-10 px-8 md:px-20 md:py-8 bg-white" >
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
@@ -84,84 +82,41 @@ const IndexPage = () => {
             </h1>
           </Col>
         </Row>
-
+        <div className="pt-10 px-16 bg-white">
+          <Row gutter={96}>
+            <Col lg={8} xs={24} className="mb-8">
+              <h3 className="text-black">Cloud-based</h3>
+              <p style={{fontSize:"18px"}}>
+                Work using our web-based platform. No installation and configurations needed
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+              <h3 className="text-black">API ready</h3>
+              <p style={{fontSize:"18px"}}>
+                Integrate to your existing applications or create a new one using our API.
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <h3 className="text-black">Automate</h3>
+              <p style={{fontSize:"18px"}}>
+                Create schedules and triggers for crucial changes and updates.
+              </p>
+            </Col>
+          </Row>
+        </div>
         <Row gutter={48} type="flex" justify="center" align="middle">
-          <Col 
-            lg={8} xs={24}
-          >
-              <img 
-                src={FleetUiPath2} 
-                style={{
-                  height:"20rem",
-                  width: "auto",
-                  marginBottom: "12px"
-                }}
-                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
-                alt="Groundline Tracking Apps" 
-              />
-          </Col>
-          <Col lg={8} xs={24} >
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Team management</h3>
-                <p style={{fontSize:"18px"}}>
-                  Manage team members with other Groundline users or use our API to connect with your existing database of users.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
-                <p style={{fontSize:"18px"}}>
-                  Create custom dashboard based on your needs. Share dashboard within your organization or other stake holders. 
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Track members</h3>
-                <p style={{fontSize:"18px"}}>
-                  Monitor devices and team members location in real-time using interactive map.
-                </p>
-              </Row>
-          </Col>
-        </Row>
-        <Row type="flex" gutter={48} justify="center" align="middle">
-          <Col lg={8} xs={24} >
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Messaging</h3>
-                <p style={{fontSize:"18px"}}>
-                  Communicate with team members for seamless monitoring. Increase productivity by sending or receiving regular updates to your team members.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Geofencing</h3>
-                <p style={{fontSize:"18px"}}>
-                  Take full control by setting geofences to constrain your team and devices location.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Notifications and Triggers</h3>
-                <p style={{fontSize:"18px"}}>
-                  Receive alerts and notifications for important updates. You can also send alerts to your team for urgent announcements.
-                </p>
-              </Row>
-          </Col>
-          <Col lg={8} xs={24} >
-            <img 
-                src={FleetUiPath3} 
-                style={{
-                  height:"20rem",
-                  width: "auto",
-                  marginBottom: "12px"
-                }}
-                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
-                alt="Groundline Tracking Apps" 
-              />
+          <Col lg={16} xs={24} className="text-center">
+            <h4 className="text-balck" style={{padding: '2rem 0rem'}} align="center">
+              More features are coming. Sign up now to get early access.
+            </h4>
+            <a href='https://dashboard.groundline.io/register'>
+              <Button type="outline"   style={{borderRadius: 0}} icon="arrow-right" >Sign up now</Button>
+            </a>
           </Col>
         </Row>
       </div>
 
+{/*
     <div id="docs" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
         <Row gutter={48} type="flex" justify="center" align="middle" >
@@ -186,7 +141,7 @@ const IndexPage = () => {
             </Row>
             <Row type="flex" justify="start" align="middle">
               <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                Receive live updates from your remote team. Use it for your field workers, researchers, drivers or anyone in your team that requires real-time tracking and data gathering.
+                Receive live updates from your team remotely. Use it for your drivers, field workers or anyone in your team that requires real-time location tracking.
               </p>            
               <p style={{color: "#666", fontSize:"18px", marginTop:"1rem"}}>
                 Coming Soon...
@@ -199,7 +154,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-{/*
+
     <div id="pricing" className="py-4 px-8 md:px-20 md:py-4" style={{background: "#0c77fa"}}>
         <Row gutter={48} type="flex" justify="center" align="middle" >
           <Col lg={12} xs={24} >
