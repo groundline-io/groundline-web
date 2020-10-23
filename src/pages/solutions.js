@@ -38,7 +38,7 @@ const IndexPage = () => {
                   We make sure you are not constrained to existing solutions and give you the freedom to build on top of our system
                 </p>
                 <a href='https://dashboard.groundline.io/register' className="inline m-2">
-                  <Button type="danger"  size="medium" style={{borderRadius: 0, borderColor: "#dc7b17", backgroundColor:"#dc7b17"}} icon="arrow-right" >Get Started</Button>
+                  <Button type="outline" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Started</Button>
                 </a>
                 <a href='#solutions-learn-more' className="inline m-2">
                   <Button type="link"  size="medium" style={{borderRadius: 0, color: "#FFF"}} >Learn More</Button>
