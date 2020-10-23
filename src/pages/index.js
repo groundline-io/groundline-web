@@ -18,7 +18,8 @@ import SkylinePath from '../images/night-top-view.jpg'
 import { Link } from "gatsby"
 import LogoPath from '../images/logo-white.png'
 import {
-  ArrowRightOutlined
+  ArrowRightOutlined,
+  ArrowDownOutlined
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -60,12 +61,12 @@ const IndexPage = () => {
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
                   Groundline is a location-based platform for logistics operations and asset monitoring.
-                </p>                
-                <a href='/solutions' className="inline m-2">
-                  <Button type="default"  size="large" style={{borderRadius: 0}} >Learn More</Button>
-                </a>
+                </p>
                 <a href='https://dashboard.groundline.io/register' className="inline m-2">
-                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
+                  <Button type="primary"  size="large" style={{borderRadius: 0, marginBottom: "10px" }} icon="arrow-right" >Get Early Access</Button>
+                </a>                
+                <a href='/solutions' className="inline text-white md:hidden">
+                  <Button type="link"  size="large" style={{borderRadius: 0, color: "#FFF", marginBottom: "10px"}} >Learn More <ArrowDownOutlined /></Button>
                 </a>
               </div>
             </Row>
