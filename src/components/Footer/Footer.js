@@ -17,26 +17,28 @@ class FooterWrapper extends Component {
       <Footer className="p-0">
         <div className="py-10 px-8 md:px-20 md:py-12 text-white bg-gray-900">
         <Row gutter={48} type="flex" justify="space-around" align="top" >
-            <Col lg={3} sm={24} offset={2}>
+            <Col sm={1} xs={24} >
+             
+            </Col>
+            <Col sm={3} xs={24}  className="mb-4">
               <h4 className="text-white font-bold mb-2">Solutions</h4>
               <div className="mb-2"><Link to="/platform" className="text-gray-400">Platform</Link></div>
               <div className="mb-2"><Link to="/industries" className="text-gray-400">Industries</Link></div>
-              <div className="mb-2"><Link to="/contact-us" className="text-gray-400">Contact Us</Link></div>
-              <div className="mb-2"><Link to="/dashboard" className="text-gray-400">Dashboard</Link></div>
+              <div className="mb-2"><Link to="#docs" className="text-gray-400">Contact Us</Link></div>
             </Col>
-            <Col lg={3} sm={24}>
+            <Col sm={3} xs={24} className="mb-4">
               <h4 className="text-white font-bold mb-2">Developers</h4>
               <div className="mb-2"><Link to="#" className="text-gray-400">Documentation</Link></div>
-              <div className="mb-2"><Link to="#" className="text-gray-400">API</Link></div>
               <div className="mb-2"><Link to="#" className="text-gray-400">User Guide</Link></div>
+              <div className="mb-2"><Link to="#" className="text-gray-400">API</Link></div>
             </Col>
-            <Col lg={4} sm={24} >
+            <Col sm={4} xs={24}  className="mb-4">
               <h4 className="text-white font-bold mb-2">Company</h4>
               <div className="mb-2"><Link to="#" className="text-gray-400">About Us</Link></div>
               <div className="mb-2"><Link to="#" className="text-gray-400">Terms & Conditions</Link></div>
               <div className="mb-2"><Link to="#" className="text-gray-400">Privacy Policy</Link></div>
             </Col>
-            <Col lg={6} sm={24} className="text-center lg:text-left">     
+            <Col sm={6} xs={24} className="text-center lg:text-left">     
               <Row type="flex" justify="start" align="middle">
                 <h3 className="block">
                   <Link
@@ -52,12 +54,12 @@ class FooterWrapper extends Component {
                   </Link>
                 </h3> 
               </Row> 
-              <Row>
-                <p className="text-gray-400 block" >
+              <Row type="flex" justify="start" align="middle" >
+                <p className="text-gray-400" >
                   © 2020. All Rights Reserved
                 </p>
               </Row>  
-              <Row justify="space-between" className="mb-4">
+              <Row type="flex" justify="start" align="middle" className="mb-4">
                 <LinkedinOutlined className="text-3xl text-gray-400 mr-4" />
                 <TwitterOutlined  className="text-3xl text-gray-400 mr-4" />
                 <InstagramOutlined className="text-3xl text-gray-400 mr-4" />

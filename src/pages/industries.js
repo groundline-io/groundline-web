@@ -7,14 +7,9 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-import AppMapPath from '../images/app-map.jpg'
-import SkylinePath from '../images/night-top-view.jpg'
 import {
-  PictureOutlined,
   HomeOutlined,
-  BankOutlined,
   ApiOutlined,
-  FormatPainterOutlined,
   GlobalOutlined
 } from '@ant-design/icons';
 
@@ -25,82 +20,150 @@ const IndexPage = () => {
       <div 
         className="py-24 px-8 md:px-20 md:py-40" 
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+SkylinePath+')',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/PhYq704ffdA)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <Row gutter={48} type="flex">
-          <Col lg={24} xs={24} >
+        <Row gutter={48} type="flex" justify="center">
+          <Col lg={14} xs={24} >
             <Row 
               type="flex" 
               justify="center" 
               align="middle"
               
             >
-              <h1 className="tracking-wider md:tracking-widest text-center text-white leading-10 md:leading-10" >
-                Industries
-              </h1>
+              <div className="text-center">
+                <h1 className="tracking-wider md:tracking-widest text-center text-white leading-10 md:leading-10" >
+                  Industries
+                </h1>
+                <p style={{fontSize:"18px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
+                    Remote sensing are used in a wide range of industries by giving them invaluable souce of information. 
+                    We work with different sectors to help them improve business workflow and decision-making.
+                </p>
+              </div>
             </Row>
           </Col>
-          {/*
-          <Col lg={13} xs={24}>
-            <Row type="flex" justify="space-around" align="middle">
-              <img src={InfoPath} alt="Groundline.io how it works?" style={{
-                position: 'relative',
-                top:'100px'
-              }} />
-            </Row>
-          </Col>
-            */}
         </Row>
       </div>
             
+      <div className="bg-white">
+        <Row type="flex" align="middle" justify="center">
+          <Col lg={24} xs={24} >
+              <div className="flex flex-wrap items-center bg-red-600">
+                <Col lg={12} xs={24} 
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/Wv2U24G2F78)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white" >Construction & Infrastructure</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Satellite and aerial imagery provides a different perspective for construction and infrastructure projects. 
+                      It help site managers track work progress at regular intervals and make better decisions based on collected images from the field.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Images taken by satellites and UAV also helps managers monitor infrastructure for damages and maintenance work. It eliminates manual 
+                      assessment for areas that are difficult to access such as high-rise buildings, bridges, pipelines etc.
+                    </p>
+                  </div>
+                </Col>
+              </div>
+              <div  className="flex flex-wrap md:flex-row-reverse items-center bg-yellow-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/5E3x1--qI9w)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Agriculture</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Farm owners and agricultural companies are constantly monitoring fields to create a better crop management plan.
+                      Through remote sensing, it gives them an overview and effective monitoring of crops at a given timeframe.
+                      
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Historical archives of imagery helps farm owners analyze changes in their fields. It helps them make necessary adjustments
+                      in resources and grow better crops for higher yield.
+                    </p>
+                  </div>
+                </Col>
+              </div>
+              <div className="flex flex-wrap items-center bg-green-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundColor: '#FFF',
+                    backgroundImage: 'url(https://source.unsplash.com/CkZF0-etxU8)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Government</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Satellite and UAV images are essential tools for national and local government operations.
+                      Public works and safety can benefit from the data found in satellite imagery that cannot be seen in the eye level. 
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Local government can use aerial and satellite imagery to assess damages caused by accidents or natural event. 
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Government regulatory agencies uses aerial surveliiance to identify non-compliance and help create better policies 
+                      that will benefit its constituents.
+                    </p>
+                  </div>
+                </Col>
+              </div>
+          </Col>
+        </Row>
+      </div>
 
-      <div className="relative md:-mt-32 md:px-20 md:pt-16 " >
+      <div className="relative md:px-20  " >
         <div className="pt-10 px-16 bg-white">
-          <Row gutter={96}>
-            <Col lg={8} xs={24} className="mb-8">
-              <PictureOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">Agriculture</h3>
-              <p style={{fontSize:"18px"}}>
-                Monitor fields to increase crop yields and identify changes in your area.
-              </p>
+          <Row gutter={48} type="flex" justify="start" align="middle">
+            <Col lg={16} xs={24} >
+              <h1 className="text-balck font-bold mb-12" align="left">
+                Other industries
+              </h1>
             </Col>
-            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+          </Row>
+          <Row gutter={96}>
+            <Col lg={8} xs={24} className="mb-8 ">
               <HomeOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Real Estate</h3>
               <p style={{fontSize:"18px"}}>
-                View properties differently to improve maintenance and develoment. 
+                View properties from above to improve marketing and develoment. 
               </p>
             </Col>
-            <Col lg={8} xs={24}  className="mb-8">
-              <BankOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">Government</h3>
-              <p style={{fontSize:"18px"}}>
-                Improve security and maintenance of local government operations through aerial monitoring. 
-              </p>
-            </Col>
-            <Col lg={8} xs={24} className="mb-8">
-              <FormatPainterOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">Construction</h3>
-              <p style={{fontSize:"18px"}}>
-                Improve productivity in project development through aerial and field updates.
-              </p>
-            </Col>
-            <Col lg={8} xs={24} className="mb-8 md:border-r-2 md:border-l-2 border-gray-300">
+            <Col lg={8} xs={24} className="mb-8 ">
               <ApiOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Energy</h3>
               <p style={{fontSize:"18px"}}>
-                Check oil spills or conduct maintenance check on wind mills. 
+                Check oil spills, wind mills and other resources that are difficult to access. 
               </p>
             </Col>
             <Col lg={8} xs={24}  className="mb-8">
               <GlobalOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Environment</h3>
               <p style={{fontSize:"18px"}}>
-                View forestry, oceans and wild animal sanctuary for better insights.
+                Monitor forestry, wild animal sanctuary and other high-risk areas.
               </p>
             </Col>
             {/*}
@@ -151,79 +214,27 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
-        <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
-          SOLUTIONS
-        </h4>
-
-        <Row gutter={48} type="flex" justify="center" align="middle">
-          <Col lg={16} xs={24} >
-            <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
-              We help ensure proper management and monitoring of different logistics operations.
-            </h1>
-          </Col>
-        </Row>
-
-        <Row type="flex" >
-          <Col 
-            lg={12} xs={24}
-            justify="center" 
-            align="middle"
-          >
-              <img 
-                src={AppMapPath} 
-                style={{
-                  height:"20rem",
-                  width: "auto",
-                }}
-                alt="Groundline Tracking Apps" 
-              />
-          </Col>
-          <Col lg={12} xs={24} >
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Collection and Telemetry</h3>
-                <p style={{fontSize:"18px"}}>
-                  Retrieve data from field workers, remote devices and aerial imagery. Our platform can help you manage your data for processing and visualization.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Object Detection</h3>
-                <p style={{fontSize:"18px"}}>
-                  Create and train models to help you identify objects in your image. Automatically identify changes in your location through machine learning.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
-                <p style={{fontSize:"18px"}}>
-                  Process your data and images for proper visualization. Monitor your data in real-time and integrate photogrammetry for better understanding.
-                </p>
-              </Row>
-          </Col>
-        </Row>
-      </div>
-
     <div id="docs" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-gray-300" >
-        <Row gutter={48} type="flex" justify="start" align="middle" >
-          <Col lg={20} xs={24} >
-            <Row type="flex" justify="start" align="middle">
-              <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-                Ready to get started?
-              </h1>
-            </Row>
-            <Row type="flex" justify="start" align="middle">
-            <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
-                To know more about our products and how we can help improve your workflow and business, please click the link below to sign up and we will get in touch with you as soon as possible.
-              </p>
-              <a href='https://dashboard.groundline.io/register'>
-                <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Get Early Access</Button>
-              </a>
+      <Row gutter={48} type="flex" justify="center" align="middle" >
+        <Col lg={20} xs={24} >
+          <Row type="flex" justify="start" align="middle">
+            <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+              Ready to get started?
+            </h1>
           </Row>
-          </Col>
+          <Row type="flex" justify="start" align="middle">
+            <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
+              We are happy to hear from you.
+              To know more about our products and how we can help improve your business workflow, please click the link below to sign up and we will get in touch with you as soon as possible.
+            </p>
+            <a href='https://dashboard.groundline.io/register'>
+              <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
+            </a>
         </Row>
-      </div>
+        </Col>
+      </Row>
+    </div>
 
     </Layout>
   )

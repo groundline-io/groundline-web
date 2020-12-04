@@ -1,9 +1,5 @@
 [
   { 
-    "name": "Dashboard",
-    "link":  "https://dashboard.groundline.io/explore"
-  },
-  { 
     "name": "Contact Us",
     "link":  "#docs"
   },

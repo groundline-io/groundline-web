@@ -48,7 +48,7 @@ const IndexPage = () => {
                   Enterprise solution for geospatial monitoring and analysis
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is an aerial imagery management platform for asset monitoring.
+                  Groundline is a satellite and aerial imagery management platform for asset monitoring.
                 </p>
                 <a href='https://dashboard.groundline.io/register' className="inline m-2">
                   <Button type="primary"  size="large" style={{borderRadius: 0, marginBottom: "10px" }} icon="arrow-right" >Get Early Access</Button>
@@ -65,7 +65,7 @@ const IndexPage = () => {
             <Col lg={8} xs={24}>
               <h3 className="text-black">Up-to-date Imagery</h3>
               <p style={{fontSize:"18px"}}>
-                Find the latest high-resolution aerial images from the leading satellite and UAV operators - all in one platform.
+                Get the latest high-resolution images from the leading satellite and UAV operators - all in one platform.
               </p>
             </Col>
             <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
@@ -145,10 +145,10 @@ const IndexPage = () => {
                   <div className="mt-32">
                     <h1 className="text-white" >Image Services</h1>
                     <h3 style={{color: "#EEE"}}>
-                      Access up-to-date high-resolution aerial imagery
+                      Access up-to-date high-resolution satellite and aerial imagery
                     </h3>
                     <p className="text-gray-400" style={{fontSize:"16px"}}>
-                      Aerial imagery provides invaluable information for many businesses that are not visible in the eye level. 
+                      Satellite and aerial imagery provides invaluable information for many businesses that are not visible in the eye level. 
                       It allows greater areas of coverage even in the most difficult areas making it an ideal tool for asset monitoring. 
                       Groundline makes it easier for everyone to access the latest aerial imagery from different satellite and UAV providers in one platform.
                     </p>
@@ -267,17 +267,22 @@ const IndexPage = () => {
             >
               <div className="py-24 px-8 md:px-20 md:py-28 md:pb-20  text-center">
                 <h1 style={{fontWeight:"bold", color:"#FFF"}}>
-                  Explore the world
+                  Explore the World
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                   Search for the latest aerial imagery using our Explorer. Download and print selected images for free.
                   Please take note that this tool is still in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io'>
-                  <Button type="primary"  size="large" style={{borderRadius: 0}} >Start</Button>
+                  <Button type="primary" size="large" style={{borderRadius: 0}} >Get Started</Button>
+                </a>
+                &nbsp;
+                &nbsp;
+                <a href='/platform'>
+                  <Button type="outline" ghost size="large" style={{border: 0, borderRadius: 0}} >Learn More</Button>
                 </a>
               </div>
-              <div className="">
+              <div className="px-4 sm:p-0">
                 <img src={PlatformUI} className="rounded-lg" alt="Groundline fleet management software" />
               </div>
             </Row>
@@ -385,13 +390,14 @@ const IndexPage = () => {
         <Col lg={20} xs={24} >
           <Row type="flex" justify="start" align="middle">
             <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
-              Learn More
+              Get in touch
             </h1>
           </Row>
           <Row type="flex" justify="start" align="middle">
             <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
               We are happy to hear from you.
-              To know more about our products and how we can help improve your business workflow, please click the link below to sign up and we will get in touch with you as soon as possible.
+              To know more about our products and how we can help improve your business workflow, 
+              email us at hello@groundline.io or click the link below to sign up and we will get in touch with you as soon as possible.
             </p>
             <a href='https://dashboard.groundline.io/register'>
               <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
