@@ -7,9 +7,15 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-import FleetUiPath2 from '../images/fleet-ui-2.png'
-import FleetUiPath3 from '../images/fleet-ui-3.png'
-import PlatformUI from '../images/platform-search-1.jpg'
+import PlatformUI from '../images/platform-search-results-1.jpg'
+import {
+  FilterTwoTone,
+  EditTwoTone,
+  DatabaseTwoTone,
+  InteractionTwoTone,
+  ClockCircleTwoTone,
+  CodeTwoTone
+} from '@ant-design/icons';
 
 const IndexPage = () => {
   return (
@@ -18,7 +24,7 @@ const IndexPage = () => {
       <div 
         className="py-24 px-8 md:px-20 md:py-40" 
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/x-ghf9LjrVg)',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/nF1FvXdJL7o)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -39,7 +45,8 @@ const IndexPage = () => {
                   Groundline <span className="font-normal">Explorer</span>
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                Monitor field workers and collect data in real-time. Use our API to integrate data into your application and third-party softwares.
+                  Search for the latest aerial imagery using our Explorer tool. Download and print selected images for free.
+                  Please take note that this tool is still in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -59,7 +66,7 @@ const IndexPage = () => {
           </Row>
       </div>
 
-      <div className="py-10 px-8 md:px-20 md:py-16 bg-white" >
+      <div className="relative md:px-20 md:pt-16 " >
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold" style={{padding: '2rem 0rem'}} align="center">
@@ -67,80 +74,75 @@ const IndexPage = () => {
             </h1>
           </Col>
         </Row>
+        <div className="pt-10 px-16 bg-white mb-16">
+          <Row gutter={96}>
+            <Col lg={8} xs={24} className="mb-8">
+              <FilterTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Search and Filtering</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                Search images from different satellite and drone providers available. Filter results based on location, date or cloud coverage.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <EditTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Annotation</h3>
+              <p style={{fontSize:"18px"}} className="mb-8">
+                Add annotation such as distance and area using the measure tool. All annotation will be superimposed when you download or print your image.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <DatabaseTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Data Management</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                Save your images in your assets folder for future use. All images are stored in your account and can be easily accessed using our portal.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <InteractionTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Team Management</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                Share images with other members by adding them to your team. All assets are accessible by your team members and can be downloaded as needed.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
+              <ClockCircleTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Up-to-date listing</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                We make sure that the latest images are availbale as soon as it is ready. Images may take a couple of days to show up depending on the provider.
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <CodeTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">API ready</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                Connect and integrate our data to your own system and applications. Documentation will be provided soon. 
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </div>
 
-        <Row gutter={48} type="flex" justify="center" align="middle">
-          <Col 
-            lg={8} xs={24}
-          >
-              <img 
-                src={FleetUiPath2} 
-                style={{
-                  height:"20rem",
-                  width: "auto",
-                  marginBottom: "12px"
-                }}
-                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
-                alt="Groundline Tracking Apps" 
-              />
+      <div  className="py-8 px-8 md:px-20 md:py-10" style={{background: "#0c77fa"}}>
+        <Row gutter={48} type="flex" justify="space-around" align="middle" >
+          <Col lg={12} xs={24} >
+            <Row type="flex" justify="start" align="middle">
+              <h2 style={{color: "#FFF"}}>
+                More features coming soon
+              </h2>
+            </Row>
+            <Row type="flex" justify="start" align="middle">
+              <p style={{color: "#FFF"}}>
+                We are streamlining our services and platform to make it easier for you to achieve your goals. 
+                Sign up now and let us know how we can improve our product.
+              </p>
+          </Row>
           </Col>
-          <Col lg={8} xs={24} >
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Team management</h3>
-                <p style={{fontSize:"18px"}}>
-                  Manage team members with other Groundline users or use our API to connect with your existing database of users.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Data Visualization</h3>
-                <p style={{fontSize:"18px"}}>
-                  Create custom dashboard based on your needs. Share dashboard within your organization or other stake holders. 
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Track members</h3>
-                <p style={{fontSize:"18px"}}>
-                  Monitor devices and team members location in real-time using interactive map.
-                </p>
-              </Row>
-          </Col>
-        </Row>
-        <Row type="flex" gutter={48} justify="center" align="middle">
-          <Col lg={8} xs={24} >
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Messaging</h3>
-                <p style={{fontSize:"18px"}}>
-                  Communicate with team members for seamless monitoring. Increase productivity by sending or receiving regular updates to your team members.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Geofencing</h3>
-                <p style={{fontSize:"18px"}}>
-                  Take full control by setting geofences to constrain your team and devices location.
-                </p>
-              </Row>
-              <div style={{margin:"2rem 0"}} />
-              <Row >
-                <h3 style={{color: "#333", fontWeight: "bold"}}>Notifications and Triggers</h3>
-                <p style={{fontSize:"18px"}}>
-                  Receive alerts and notifications for important updates. You can also send alerts to your team for urgent announcements.
-                </p>
-              </Row>
-          </Col>
-          <Col lg={8} xs={24} >
-            <img 
-                src={FleetUiPath3} 
-                style={{
-                  height:"20rem",
-                  width: "auto",
-                  marginBottom: "12px"
-                }}
-                className="rounded-lg border-2 border-solid border-color-gray-100 shadow-lg"
-                alt="Groundline Tracking Apps" 
-              />
+          <Col lg={4} xs={24}>
+            <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
+              <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Sign Up</Button>
+              </a>
+            </Row>
           </Col>
         </Row>
       </div>

@@ -274,7 +274,7 @@ const IndexPage = () => {
                   Please take note that this tool is still in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io'>
-                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Start</Button>
+                  <Button type="primary"  size="large" style={{borderRadius: 0}} >Start</Button>
                 </a>
               </div>
               <div className="">
