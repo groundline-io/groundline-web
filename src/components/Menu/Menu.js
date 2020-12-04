@@ -87,9 +87,14 @@ const MenuWrapper = () => {
                 )
               })}
             </SubMenu>
+            <Menu.Item key={'888'}>
+              <a href="https://dashboard.groundline.io/explore"  >
+                Dashboard
+              </a>
+            </Menu.Item>
             <Menu.Item key={'999'}>
               <a href="https://dashboard.groundline.io/register"  >
-                Get Started
+                Sign Up
               </a>
             </Menu.Item>
           </Menu>
