@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import {  Layout } from 'antd';
-import Header from '../Header'
+import Header from '../Header';
+import Footer from '../Footer';
 import '../../assets/main.css'
 import './Layout.css'
 import ResponsiveSidebar from '../ResponsiveSidebar';
@@ -83,6 +84,7 @@ const LayoutWrapper = ({
             <Container sidebarDocked={!matches} onPostPage={onPostPage}>
               {children}
             </Container>
+            <Footer />
           </Layout>
         </>)}
         </MediaQuery>

@@ -1,6 +1,10 @@
 [
   { 
-    "name": "Contact",
+    "name": "Dashboard",
+    "link":  "https://dashboard.groundline.io/explore"
+  },
+  { 
+    "name": "Contact Us",
     "link":  "#docs"
   },
   { 
@@ -8,25 +12,13 @@
     "link":  "/industries"
   },
   { 
-    "name": "Products",
-    "link":  "/products",
+    "name": "Platform",
+    "link":  "/platform",
     "submenu": [
       {
         "name" : "Explorer",
         "link" : "/products/explorer"
-      },
-      {
-        "name" : "Observer",
-        "link" : "/products/observer"
-      },
-      {
-        "name" : "Envision",
-        "link" : "/products/envision"
       }
     ]
-  },
-  { 
-    "name": "Solutions",
-    "link":  "/solutions"
   }
 ]

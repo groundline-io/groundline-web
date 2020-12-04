@@ -15,10 +15,6 @@ const MenuWrapper = () => {
               node {
                 name
                 link
-                submenu {
-                  name
-                  link
-                }
               }
             }
           }
@@ -55,7 +51,7 @@ const MenuWrapper = () => {
             })}
             <Menu.Item key={'999'}>
               <a href="https://dashboard.groundline.io/register"  >
-                Get Started
+                Sign-up
               </a>
             </Menu.Item>
           </Menu>

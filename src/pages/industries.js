@@ -7,16 +7,8 @@ import 'antd/lib/badge/style/css'
 import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
-//import InfoPath from '../images/infographic-3.png'
-//import FarmVectorPath from '../images/farm-vector.png'
 import AppMapPath from '../images/app-map.jpg'
-//import ParkingPath from '../images/parking.jpg'
 import SkylinePath from '../images/night-top-view.jpg'
-//import FirebaseLogo from '../images/firebase-logo-standard.png'
-//import MongoDBLogo from '../images/mongodb-logo-standard.jpg'
-//import PrismaLogo from '../images/prisma-logo-standard.png'
-import { Link } from "gatsby"
-import LogoPath from '../images/logo-white.png'
 import {
   PictureOutlined,
   HomeOutlined,
@@ -233,97 +225,6 @@ const IndexPage = () => {
         </Row>
       </div>
 
-    <div className="py-10 px-8 md:px-20 md:py-16 text-white bg-gray-900">
-        <Row gutter={16} justify="space-between">
-            <Col lg={16} sm={24} className="text-center lg:text-left">
-                <h5 >
-                  <Link
-                    to="/"
-                    style={{
-                      color: '#FFF',
-                      textDecoration: 'none',
-                      fontFamily: 'Montserrat, sans-serif',
-                    }}
-                  >
-                    <img src={LogoPath} alt="groundline.io" className="h-5 md:h-8 inline" style={{ margin: 0 }} /> 
-                    &nbsp; Groundline Software Solutions
-                  </Link>
-                </h5>            
-            </Col>
-            <Col lg={8} sm={24} className="text-center lg:text-right">
-              <p className="text-white" >
-                  © 2020. All Rights Reserved
-                </p>
-            </Col>
-          {/*
-            <Col span={4}>
-              <h6>Developers</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-            <Col span={4}>
-              <h6>Developers</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-            <Col span={4}>
-              <h6>Follow Us</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-          */}
-          </Row>
-      </div>
-{/*
-      <div style={{marginTop: "7.1875rem", padding: "3rem 0"}}>
-        <div>
-           <div align="center">
-              <h4>Groundline</h4>
-              <p>
-                Open source framework for visualizing data by connecting your back-end platform and charting libraries.
-              </p>
-            </div>
-        
-          <Row gutter={16}>
-            <Col span={10}>
-              <h6>groundline.io</h6>
-              <p>
-                Customizable declarative API for back-end connection
-              </p>
-            </Col>
-          
-            <Col span={4}>
-              <h6>Developers</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-            <Col span={4}>
-              <h6>Developers</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-            <Col span={4}>
-              <h6>Follow Us</h6>
-              <div><Link to="#">Link 1</Link></div>
-              <div><Link to="#">Link 2</Link></div>
-              <div><Link to="#">Link 3</Link></div>
-              <div><Link to="#">Link 4</Link></div>
-            </Col>
-          </Row>
-         
-        </div>
-      </div>
-*/}
     </Layout>
   )
 }
