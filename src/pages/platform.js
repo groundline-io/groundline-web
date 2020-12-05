@@ -44,8 +44,8 @@ const IndexPage = () => {
                 <h1 style={{fontWeight:"bold", color:"#FFF"}}>
                   Groundline <span className="font-normal">Explorer</span>
                 </h1>
-                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                  Search for the latest aerial imagery using our Explorer tool. Download and print selected images for free.
+                <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}> 
+                  Search for the latest satellite and aerial imagery. Download and print selected images for free.
                   Please take note that this tool is still in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
@@ -87,7 +87,7 @@ const IndexPage = () => {
               <EditTwoTone className="text-4xl mb-4" />
               <h3 className="text-gray-900 font-bold mb-4">Annotation</h3>
               <p style={{fontSize:"18px"}} className="mb-8">
-                Add annotation such as distance and area using the measure tool. All annotation will be superimposed when you download or print your image.
+                Add distance and area annotations using the measure tool. All annotations are superimposed when you download or print your image.
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8">
@@ -101,7 +101,7 @@ const IndexPage = () => {
               <InteractionTwoTone className="text-4xl mb-4" />
               <h3 className="text-gray-900 font-bold mb-4">Team Management</h3>
               <p style={{fontSize:"18px"}}  className="mb-8">
-                Share images with other members by adding them to your team. All assets are accessible by your team members and can be downloaded as needed.
+                Share images with other members by adding them to your team. All assets are accessible by members and can be downloaded as needed.
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8">

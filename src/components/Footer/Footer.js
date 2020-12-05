@@ -38,7 +38,12 @@ class FooterWrapper extends Component {
               <div className="mb-2"><Link to="#" className="text-gray-400">Terms & Conditions</Link></div>
               <div className="mb-2"><Link to="#" className="text-gray-400">Privacy Policy</Link></div>
             </Col>
-            <Col sm={6} xs={24} className="text-center lg:text-left">     
+            <Col sm={6} xs={24} className="text-center lg:text-left">    
+              <Row type="flex" justify="start" align="middle" className="mb-4">
+                <LinkedinOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                <TwitterOutlined  className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                <InstagramOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+              </Row>     
               <Row type="flex" justify="start" align="middle">
                 <h3 className="block">
                   <Link
@@ -48,6 +53,7 @@ class FooterWrapper extends Component {
                       textDecoration: 'none',
                       fontFamily: 'Montserrat, sans-serif',
                     }}
+                    className="text-sm lg:text-lg"
                   >
                     <img src={LogoPath} alt="groundline.io" className="h-5 md:h-5 inline" style={{ margin: 0 }} /> 
                     &nbsp; groundline
@@ -55,15 +61,10 @@ class FooterWrapper extends Component {
                 </h3> 
               </Row> 
               <Row type="flex" justify="start" align="middle" >
-                <p className="text-gray-400" >
+                <p className="text-gray-400 text-xs lg:text-sm" >
                   © 2020. All Rights Reserved
                 </p>
-              </Row>  
-              <Row type="flex" justify="start" align="middle" className="mb-4">
-                <LinkedinOutlined className="text-3xl text-gray-400 mr-4" />
-                <TwitterOutlined  className="text-3xl text-gray-400 mr-4" />
-                <InstagramOutlined className="text-3xl text-gray-400 mr-4" />
-              </Row>   
+              </Row> 
             </Col>
           </Row>
       </div>

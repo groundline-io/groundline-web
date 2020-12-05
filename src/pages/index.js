@@ -126,7 +126,7 @@ const IndexPage = () => {
       </div>
 
       <div className="bg-white relative">
-        <div className="w-full absolute top-0 -mt-8 z-10">
+        <div className="w-full absolute top-0 -mt-2 md:-mt-8 z-10">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,85.3C840,85,960,139,1080,138.7C1200,139,1320,85,1380,58.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
           </svg>
@@ -148,9 +148,9 @@ const IndexPage = () => {
                       Access up-to-date high-resolution satellite and aerial imagery
                     </h3>
                     <p className="text-gray-400" style={{fontSize:"16px"}}>
-                      Satellite and aerial imagery provides invaluable information for many businesses that are not visible in the eye level. 
+                      Satellite and aerial images provides invaluable information for many businesses that are not visible in the eye level. 
                       It allows greater areas of coverage even in the most difficult areas making it an ideal tool for asset monitoring. 
-                      Groundline makes it easier for everyone to access the latest aerial imagery from different satellite and UAV providers in one platform.
+                      Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators in one platform.
                     </p>
                     <a href='https://dashboard.groundline.io' className="mt-12">
                       <Button type="primary" ghost style={{borderRadius: 0, marginBottom: "10px", color:"#FFF", borderColor:"#FFF" }} icon="arrow-right" >Explore Beta</Button>
@@ -194,7 +194,7 @@ const IndexPage = () => {
                   Extract actionable information
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
-                  Image analysis plays a crucial role for any industry using aerial imagery in their business development strategies.
+                  Image analysis plays a crucial role for any industry using aerial imagery in business development strategies.
                   For instance, farm owners can use computer vision to easily identify objects in the field and help them with their yield prediction.
                   We aim to make it easier for our users to leverage the benefits of artificial intelligence to make better decisions.
                 </p>
@@ -270,7 +270,7 @@ const IndexPage = () => {
                   Explore the World
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                  Search for the latest aerial imagery using our Explorer. Download and print selected images for free.
+                  Search for the latest satellite and aerial imagery. Download and print selected images for free.
                   Please take note that this tool is still in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io'>

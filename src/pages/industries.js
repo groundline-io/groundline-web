@@ -10,7 +10,10 @@ import 'antd/lib/col/style/css'
 import {
   HomeOutlined,
   ApiOutlined,
-  GlobalOutlined
+  DollarOutlined,
+  GlobalOutlined,
+  UserAddOutlined,
+  SolutionOutlined
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -39,8 +42,8 @@ const IndexPage = () => {
                   Industries
                 </h1>
                 <p style={{fontSize:"18px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                    Remote sensing are used in a wide range of industries by giving them invaluable souce of information. 
-                    We work with different sectors to help them improve business workflow and decision-making.
+                    Remote sensing are used in a wide range of industries that gives them invaluable souce of information. 
+                    We work with different sectors to help improve business workflow and decision-making.
                 </p>
               </div>
             </Row>
@@ -149,7 +152,7 @@ const IndexPage = () => {
               <HomeOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Real Estate</h3>
               <p style={{fontSize:"18px"}}>
-                View properties from above to improve marketing and develoment. 
+                View properties from above to improve marketing and development. 
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8 ">
@@ -164,6 +167,27 @@ const IndexPage = () => {
               <h3 className="text-black">Environment</h3>
               <p style={{fontSize:"18px"}}>
                 Monitor forestry, wild animal sanctuary and other high-risk areas.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 ">
+              <SolutionOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Journalism</h3>
+              <p style={{fontSize:"18px"}}>
+                Use imagery for investigative reports and fact-finding tasks.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8 ">
+              <DollarOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Investments and Marketing</h3>
+              <p style={{fontSize:"18px"}}>
+                See different opportunities within your area of interest.
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <UserAddOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">NGO</h3>
+              <p style={{fontSize:"18px"}}>
+                Evaluate areas to improve operation and advocacy. 
               </p>
             </Col>
             {/*}
@@ -226,7 +250,8 @@ const IndexPage = () => {
           <Row type="flex" justify="start" align="middle">
             <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
               We are happy to hear from you.
-              To know more about our products and how we can help improve your business workflow, please click the link below to sign up and we will get in touch with you as soon as possible.
+              To know more about our products and how we can help improve your business workflow, 
+              email us at hello@groundline.io or click the link below to sign up and we will get in touch with you as soon as possible.
             </p>
             <a href='https://dashboard.groundline.io/register'>
               <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
