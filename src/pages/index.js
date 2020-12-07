@@ -148,7 +148,7 @@ const IndexPage = () => {
                       Access up-to-date high-resolution satellite and aerial imagery
                     </h3>
                     <p className="text-gray-400" style={{fontSize:"16px"}}>
-                      Satellite and aerial images provides invaluable information for many businesses that are not visible in the eye level. 
+                      Satellite and aerial images provide invaluable information for many businesses that are not visible in the eye level. 
                       It allows greater areas of coverage even in the most difficult areas making it an ideal tool for asset monitoring. 
                       Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators in one platform.
                     </p>

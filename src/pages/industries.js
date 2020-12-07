@@ -69,7 +69,7 @@ const IndexPage = () => {
                   <div className="p-12">
                     <h2 className="text-white" >Construction & Infrastructure</h2>
                     <p style={{fontSize:"16px"}}>
-                      Satellite and aerial imagery provides a different perspective for construction and infrastructure projects. 
+                      Satellite and aerial imagery provide a different perspective for construction and infrastructure projects. 
                       It help site managers track work progress at regular intervals and make better decisions based on collected images from the field.
                     </p>
                     <p style={{fontSize:"16px"}}>
