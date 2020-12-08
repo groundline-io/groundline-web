@@ -271,7 +271,7 @@ const IndexPage = () => {
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                   Search for the latest satellite and aerial imagery. Download and print selected images for free.
-                  Please take note that this tool is in its early stage of development - it may or may not work as expected.
+                  Please take note that this tool is in its early stage of development - some features may not be available without prior notice.
                 </p>
                 <a href='https://dashboard.groundline.io'>
                   <Button type="primary" size="large" style={{borderRadius: 0}} >Get Started</Button>
