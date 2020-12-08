@@ -71,7 +71,7 @@ const IndexPage = () => {
                     <h2 className="text-white" >Construction & Infrastructure</h2>
                     <p style={{fontSize:"16px"}}>
                       Satellite and aerial imagery provide a different perspective for construction and infrastructure projects. 
-                      It help site managers track work progress at regular intervals and make better decisions based on collected images from the field.
+                      It helps site managers track work progress at regular intervals and make better decisions based on collected images from the field.
                     </p>
                     <p style={{fontSize:"16px"}}>
                       Images taken by satellites and UAV also helps managers monitor infrastructure for damages and maintenance work. It eliminates manual 
@@ -174,7 +174,7 @@ const IndexPage = () => {
               <SolutionOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Journalism</h3>
               <p style={{fontSize:"18px"}}>
-                Use imagery for investigative reports and fact-finding tasks.
+                Use imagery for investigative reports and fact-finding.
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8 ">
@@ -188,7 +188,7 @@ const IndexPage = () => {
               <UserAddOutlined className="text-4xl mb-4" />
               <h3 className="text-black">NGO</h3>
               <p style={{fontSize:"18px"}}>
-                Evaluate areas to improve operation and advocacy. 
+                Evaluate areas to improve and maximize services. 
               </p>
             </Col>
             {/*}
