@@ -49,7 +49,7 @@ const IndexPage = () => {
                   Please take note that this tool is in its early stage of development - some features may not be available without prior notice.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
-                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
+                  <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Explore</Button>
                 </a>
               </div>
             </Row>
