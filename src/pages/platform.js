@@ -14,7 +14,7 @@ import {
   DatabaseTwoTone,
   InteractionTwoTone,
   ClockCircleTwoTone,
-  CodeTwoTone
+  SwitcherTwoTone
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -46,7 +46,7 @@ const IndexPage = () => {
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}> 
                   Search for the latest satellite and aerial imagery. Download and print selected images for free.
-                  Please take note that this tool is still in its early stage of development - it may or may not work as expected.
+                  Please take note that this tool is in its early stage of development - it may or may not work as expected.
                 </p>
                 <a href='https://dashboard.groundline.io/register'>
                   <Button type="primary"  size="large" style={{borderRadius: 0}} icon="arrow-right" >Get Early Access</Button>
@@ -77,10 +77,24 @@ const IndexPage = () => {
         <div className="pt-10 px-16 bg-white mb-16">
           <Row gutter={96}>
             <Col lg={8} xs={24} className="mb-8">
+              <ClockCircleTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Up-to-date listing</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                We make sure that the latest images are availbale as soon as it is ready. Images may take a couple of days to show up depending on the provider.
+              </p>
+            </Col>
+            <Col lg={8} xs={24} className="mb-8">
               <FilterTwoTone className="text-4xl mb-4" />
               <h3 className="text-gray-900 font-bold mb-4">Search and Filtering</h3>
               <p style={{fontSize:"18px"}}  className="mb-8">
                 Search images from different satellite and drone providers available. Filter results based on location, date or cloud coverage.
+              </p>
+            </Col>
+            <Col lg={8} xs={24}  className="mb-8">
+              <SwitcherTwoTone className="text-4xl mb-4" />
+              <h3 className="text-gray-900 font-bold mb-4">Request Image</h3>
+              <p style={{fontSize:"18px"}}  className="mb-8">
+                Coming soon. Request image from our providers by simply giving as the details such as date, location and technical specifications.
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8">
@@ -102,20 +116,6 @@ const IndexPage = () => {
               <h3 className="text-gray-900 font-bold mb-4">Team Management</h3>
               <p style={{fontSize:"18px"}}  className="mb-8">
                 Share images with other members by adding them to your team. All assets are accessible by members and can be downloaded as needed.
-              </p>
-            </Col>
-            <Col lg={8} xs={24} className="mb-8">
-              <ClockCircleTwoTone className="text-4xl mb-4" />
-              <h3 className="text-gray-900 font-bold mb-4">Up-to-date listing</h3>
-              <p style={{fontSize:"18px"}}  className="mb-8">
-                We make sure that the latest images are availbale as soon as it is ready. Images may take a couple of days to show up depending on the provider.
-              </p>
-            </Col>
-            <Col lg={8} xs={24}  className="mb-8">
-              <CodeTwoTone className="text-4xl mb-4" />
-              <h3 className="text-gray-900 font-bold mb-4">API ready</h3>
-              <p style={{fontSize:"18px"}}  className="mb-8">
-                Connect and integrate our data to your own system and applications. Documentation will be provided soon. 
               </p>
             </Col>
           </Row>

@@ -42,7 +42,8 @@ const IndexPage = () => {
                   Industries
                 </h1>
                 <p style={{fontSize:"18px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                    Remote sensing are used in a wide range of industries that gives them invaluable souce of information. 
+                    Remote sensing has a wide range of application in different industries. 
+                    It provides invaluable source of information and unique opportunities for businesses. 
                     We work with different sectors to help improve business workflow and decision-making.
                 </p>
               </div>
@@ -122,10 +123,10 @@ const IndexPage = () => {
                     <h2 className="text-white">Government</h2>
                     <p style={{fontSize:"16px"}}>
                       Satellite and UAV images are essential tools for national and local government operations.
-                      Public works and safety can benefit from the data found in satellite imagery that cannot be seen in the eye level. 
+                      Public works and safety can benefit from the data found in satellite imagery that cannot be seen at eye level. 
                     </p>
                     <p style={{fontSize:"16px"}}>
-                      Local government can use aerial and satellite imagery to assess damages caused by accidents or natural event. 
+                      Local government can use aerial and satellite imagery to assess damages caused by accidents or natural disaster. 
                     </p>
                     <p style={{fontSize:"16px"}}>
                       Government regulatory agencies uses aerial surveliiance to identify non-compliance and help create better policies 
