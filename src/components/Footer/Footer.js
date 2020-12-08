@@ -40,7 +40,9 @@ class FooterWrapper extends Component {
             </Col>
             <Col sm={6} xs={24} className="text-center lg:text-left">    
               <Row type="flex" justify="start" align="middle" className="mb-4">
-                <LinkedinOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                <a href="https://www.linkedin.com/company/groundline-tech/" target="blank" className="text-white">
+                  <LinkedinOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                </a>
                 <TwitterOutlined  className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
                 <InstagramOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
               </Row>     
