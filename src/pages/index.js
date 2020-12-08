@@ -153,7 +153,7 @@ const IndexPage = () => {
                       Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators in one platform.
                     </p>
                     <a href='https://dashboard.groundline.io' className="mt-12">
-                      <Button type="primary" ghost style={{borderRadius: 0, marginBottom: "10px", color:"#FFF", borderColor:"#FFF" }} icon="arrow-right" >Explore Beta</Button>
+                      <Button type="primary" ghost style={{borderRadius: 0, marginBottom: "10px", color:"#FFF", borderColor:"#FFF" }} icon="arrow-right" >Explore</Button>
                     </a>   
                   </div>
                 </Col>
@@ -195,7 +195,7 @@ const IndexPage = () => {
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
                   Image analysis plays a crucial role for industries using aerial imagery in creating business strategies.
-                  For instance, farm owners can use computer vision to easily identify objects in the field and help them in yield prediction.
+                  For instance, farm owners can use computer vision to easily identify object status on the field and help them predict yields efficiently.
                   We aim to make it easier for our users to leverage the benefits of artificial intelligence to make better decisions.
                 </p>
                 <a href='https://dashboard.groundline.io/register' className="inline m-2 ml-0">
