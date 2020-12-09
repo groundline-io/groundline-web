@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import {
   LinkedinOutlined,
   TwitterOutlined,
-  InstagramOutlined
+//  InstagramOutlined
 } from '@ant-design/icons';
 import LogoPath from '../../images/logo-white.png';
 import {  Layout, Row, Col } from 'antd';
@@ -43,8 +43,12 @@ class FooterWrapper extends Component {
                 <a href="https://www.linkedin.com/company/groundline-tech/" target="blank" className="text-white">
                   <LinkedinOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
                 </a>
-                <TwitterOutlined  className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                <a href="https://twitter.com/GroundlineTech" target="blank" className="text-white">
+                  <TwitterOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                </a>
+                {/* 
                 <InstagramOutlined className="text-2xl lg:text-3xl text-gray-400 mr-2 lg:mr-4" />
+                */}
               </Row>     
               <Row type="flex" justify="start" align="middle">
                 <h3 className="block">
