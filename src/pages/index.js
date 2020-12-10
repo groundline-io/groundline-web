@@ -71,7 +71,7 @@ const IndexPage = () => {
             <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
               <h3 className="text-black">Better Insights</h3>
               <p style={{fontSize:"18px"}}>
-                View your assets from a different perspective and extract actionable data for better decision-making.
+                View your assets from a different perspective and extract actionable data for better decisions.
               </p>
             </Col>
             <Col lg={8} xs={24}>
