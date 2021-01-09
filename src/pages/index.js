@@ -408,9 +408,7 @@ const IndexPage = () => {
         </Col>
         <Col  lg={10} xs={24}>
           <Row>
-          <form action="/#contact" name="contactForm" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="contact-form" class="contact-form">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="contact-form" value="contactForm" />
+          <form action="/#contact" name="contactForm" method="POST" data-netlify="true" id="contact-form" class="contact-form">
             <input 
               type="text" 
               name="name" 
