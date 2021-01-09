@@ -267,7 +267,7 @@ const IndexPage = () => {
             >
               <div className="py-24 px-8 md:px-20 md:py-28 md:pb-20  text-center">
                 <h1 style={{fontWeight:"bold", color:"#FFF"}}>
-                  Explore the World
+                  Explore Images
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
                   Search for the latest satellite and aerial imagery. Download and print selected images for free.
@@ -384,25 +384,65 @@ const IndexPage = () => {
         </Row>
       </div>
 */}
-    <div id="docs" className="p-4 bg-white"></div>
+    <div id="contact" className="p-4 bg-white"></div>
     <div className="pb-10 px-8 md:px-20 md:pb-16 bg-white" >
       <Row gutter={48} type="flex" justify="center" align="middle" >
-        <Col lg={20} xs={24} >
-          <Row type="flex" justify="start" align="middle">
-            <h1 style={{color: "#000", marginTop:"2rem", fontWeight:"bold"}}>
+        <Col lg={11} offset={1} xs={24} >
+        <Row type="flex" justify="start" align="top">
+            <h6 className="uppercase leading-4 tracking-widest text-black font-bold">
+              Contact Us
+            </h6>
+          </Row>
+          <Row type="flex" justify="start" align="top">
+            <h1 style={{color: "#000", fontWeight:"bold"}}>
               Get in touch
             </h1>
           </Row>
           <Row type="flex" justify="start" align="middle">
             <p style={{color: "#666", fontSize:"18px", textAlign:"left"}}>
               We are happy to hear from you.
-              To know more about our products and how we can help improve your business workflow, 
-              email us at hello@groundline.io or click the link below to sign up and we will get in touch with you as soon as possible.
+              To know more about our product and how we can help improve your business workflow, 
+              send your message using the form and we will get in touch with you as soon as possible.
             </p>
-            <a href='https://dashboard.groundline.io/register'>
-              <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
-            </a>
-        </Row>
+          </Row>
+        </Col>
+        <Col  lg={10} xs={24}>
+          <Row>
+          <form action="/#contact" name="simpleContactForm" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="contact-form" class="contact-form">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="contact-form" value="contact" />
+            <input 
+              type="text" 
+              name="name" 
+              id="contact-form-name" 
+              aria-labelledby="contact-form-name-label" 
+              className="p-4 mb-2 border-solid text-base border-gray-400 border rounded w-full block outline-none" 
+              placeholder="Name" 
+            />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Email Address" 
+              id="contact-form-email" 
+              aria-labelledby="contact-form-email-label" 
+              className="p-4 mb-2 border-solid text-base border-gray-400 border rounded w-full block outline-none" 
+            />
+            <textarea
+                name="message"
+                id="contact-form-message"
+                aria-labelledby="contact-form-message-label"
+                className="p-4 mb-2 border-solid text-base border-gray-400 border rounded w-full block outline-none"
+                rows="4"
+                placeholder="Message"
+            />
+            <button 
+              type="submit" 
+              style={{backgroundColor: "#1890ff"}}
+              className="text-white rounded border py-2 px-8 text-base"
+              > Send
+            </button>
+        </form>
+          </Row>
         </Col>
       </Row>
     </div>
