@@ -139,8 +139,8 @@ const IndexPage = () => {
           </Col>
           <Col lg={4} xs={24}>
             <Row type="flex" justify="end" align="middle"  className="text-left lg:text-right">
-              <a href='https://dashboard.groundline.io/register'  className="block w-full text-left lg:text-right">
-                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Sign Up</Button>
+              <a href='#contact'  className="block w-full text-left lg:text-right">
+                <Button type="outline" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Contact Us</Button>
               </a>
             </Row>
           </Col>

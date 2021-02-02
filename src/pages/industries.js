@@ -254,8 +254,8 @@ const IndexPage = () => {
               To know more about our products and how we can help improve your business workflow, 
               email us at hello@groundline.io or click the link below to sign up and we will get in touch with you as soon as possible.
             </p>
-            <a href='https://dashboard.groundline.io/register'>
-              <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Signup here</Button>
+            <a href='#contact'>
+              <Button type="primary" shape="round" size="large" style={{marginRight: 10}} icon="arrow-right" ghost>Contact Us</Button>
             </a>
         </Row>
         </Col>

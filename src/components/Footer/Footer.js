@@ -24,7 +24,7 @@ class FooterWrapper extends Component {
               <h4 className="text-white font-bold mb-2">Solutions</h4>
               <div className="mb-2"><Link to="/platform" className="text-gray-400">Platform</Link></div>
               <div className="mb-2"><Link to="/industries" className="text-gray-400">Industries</Link></div>
-              <div className="mb-2"><Link to="#docs" className="text-gray-400">Contact Us</Link></div>
+              <div className="mb-2"><Link to="#contact" className="text-gray-400">Contact Us</Link></div>
             </Col>
             <Col sm={3} xs={24} className="mb-4">
               <h4 className="text-white font-bold mb-2">Developers</h4>
@@ -68,7 +68,7 @@ class FooterWrapper extends Component {
               </Row> 
               <Row type="flex" justify="start" align="middle" >
                 <p className="text-gray-400 text-xs lg:text-sm" >
-                  © 2020. All Rights Reserved
+                  © 2021. All Rights Reserved
                 </p>
               </Row> 
             </Col>

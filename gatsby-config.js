@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Groundline - Geospatial monitoring and analysis',
+    title: 'Enterprise solution for large-scale geospatial data visualization | Clerkflow',
   },
   plugins: [
     {

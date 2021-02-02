@@ -1,20 +1,10 @@
 [
   { 
-    "name": "Contact Us",
-    "link":  "#contact"
-  },
-  { 
     "name": "Industries",
     "link":  "/industries"
   },
   { 
-    "name": "Platform",
-    "link":  "/platform",
-    "submenu": [
-      {
-        "name" : "Explorer",
-        "link" : "/products/explorer"
-      }
-    ]
+    "name": "Solutions",
+    "link":  "#solutions"
   }
 ]
