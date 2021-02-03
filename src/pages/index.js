@@ -169,7 +169,7 @@ const IndexPage = () => {
                     Integrated data processing
                   </h3>
                   <p className="text-gray-400" style={{fontSize:"16px"}}>
-                    Using industry standards and high-performance algorithms to process large datasets to create fully interactive experience for users.
+                    Using industry standards and high-performance algorithms for processing large datasets to create fully interactive experience for users.
                     We integrate with leading providers and tools to make sure we provide the best-in-class mapping experience. 
                     {/*}
                     Raw aerial photos are not enough to help visualize your idea. 
