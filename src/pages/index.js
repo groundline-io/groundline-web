@@ -8,8 +8,8 @@ import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
 import NightAerial from '../images/night-top-view.jpg'
-import InfoPath from '../images/infographic-2.png'
-//import PlatformUI from '../images/platform-search-1.jpg'
+//import InfoPath from '../images/infographic-2.png'
+import PlatformUI from '../images/platform-search-1.jpg'
 
 const IndexPage = () => {
   return (
@@ -46,11 +46,11 @@ const IndexPage = () => {
                     Beta
                 </div>
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Enterprise solution for large-scale geospatial data visualization
+                  Create better customer experience using maps and data visualization
                   {/*Enterprise solution for geospatial monitoring and analysis*/}
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a location-based mapping service for visualization and analytics.
+                  Groundline is a mapping service for geospatial data visualization and analytics.
                   {/*Groundline is a satellite and aerial imagery management platform for asset monitoring.*/}
                 </p>
                 <a href='#contact' className="inline m-2">
@@ -68,7 +68,7 @@ const IndexPage = () => {
             <Col lg={8} xs={24}>
               <h3 className="text-black">Immersive Experience</h3>
               <p style={{fontSize:"18px"}}>
-                Create fully interactive mapping experience for better user interaction and data analysis
+                Create fully interactive mapping experience for better customer engagement and interaction.
               </p>
             </Col>
             {/*
@@ -86,9 +86,9 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3 className="text-black">Diverse data sources</h3>
+              <h3 className="text-black">Data-driven</h3>
               <p style={{fontSize:"18px"}}>
-                Access global datasets and basemaps from our trusted sources to improve analysis.
+                Access your own data or integrate third-party datasets from our trusted sources for better analysis.
               </p>
             </Col>
             {/*
@@ -103,34 +103,6 @@ const IndexPage = () => {
         </div>
       </div>
 
-            
-{/*
-      <div className="relative md:-mt-32 md:px-20 md:pt-16 " >
-        <div className="pt-10 px-16 bg-white">
-          <Row gutter={96}>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Integrated</h3>
-              <p style={{fontSize:"18px"}}>
-                Connect third-party platforms and existing applications using built-in modules and API.
-              </p>
-            </Col>
-            <Col lg={8} xs={24} className="md:border-r-2 md:border-l-2 border-gray-300">
-              {/*<Icon type="api"  style={{ fontSize: '38px', marginBottom: '20px', color: '#000' }} />
-              <h3 className="text-black">Scalable</h3>
-              <p style={{fontSize:"18px"}}>
-                Built primarily to handle big data of information of imagery, telemetry and analytics.
-              </p>
-            </Col>
-            <Col lg={8} xs={24}>
-              <h3 className="text-black">Smart</h3>
-              <p style={{fontSize:"18px"}}>
-                Generate reports and extract actionable information using artificial intelligence.
-              </p>
-            </Col>
-          </Row>
-        </div>
-      </div>
-*/}
       <div id="solutions" className="py-10 px-8 md:px-20 md:py-12 " >
         <h4 style={{color: "#0c77fa", margin: '20px 0 0', fontWeight: "normal"}} align="center">
           SOLUTIONS
@@ -138,7 +110,8 @@ const IndexPage = () => {
         <Row gutter={48} type="flex" justify="center" align="middle">
           <Col lg={16} xs={24} >
             <h1 className="text-balck font-bold m-0" style={{padding: '2rem 0rem 0rem'}} align="center">
-              We help ensure proper management and monitoring of different logistics operations.
+              {/*We help ensure proper management and monitoring of different logistics operations.*/}
+              We help create positive customer engagement that elevates brand credibility.
             </h1>
           </Col>
         </Row>
@@ -157,31 +130,31 @@ const IndexPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/tmdIzj9n7Bg)',
+                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/dWwZBcjw3GE)',
                   }}
               >
                 <Col lg={14} xs={24}  offset={1}>
                   <div className="mt-32">
                     <h1 className="text-white">
-                    Data Visualization
+                    Geospatial data visualization
                   </h1>
                   <h3 style={{color: "#EEE"}}>
-                    Integrated data processing
+                    Create interactive and data-driven maps
                   </h3>
                   <p className="text-gray-400" style={{fontSize:"16px"}}>
-                    Using industry standards and high-performance algorithms for processing large datasets to create fully interactive experience for users.
-                    We integrate with leading providers and tools to make sure we provide the best-in-class mapping experience. 
+                    Integrate data from different sources and visualize using our high-performance algorithms for large datasets.
+                    Although traditional basemaps are enough to view your data for quick analysis, some business and industries 
+                    will benefit more by providing an interactive and immersive mapping experience. 
+                    We partner with leading GIS platforms and use cutting-edge technologies to create the best-in-class mapping solution. 
                     {/*}
                     Raw aerial photos are not enough to help visualize your idea. 
                     Real estate and construction companies use virtual and augmented reality for marketing and technical purposes.
                     We design our platform to help our users process images such as 3D rendering, photogrammetry and orthomosaic by integrating our platform to the leading third-party tools.
                   */}
                   </p>
-                    {/*
-                    <a href='https://dashboard.groundline.io' className="mt-12">
-                      <Button type="primary" ghost style={{borderRadius: 0, marginBottom: "10px", color:"#FFF", borderColor:"#FFF" }} icon="arrow-right" >Explore</Button>
-                    </a>   
-                    */}
+                    <a href='#contact' className="mt-12">
+                      <Button type="primary" ghost style={{borderRadius: 0, marginBottom: "10px", color:"#FFF", borderColor:"#FFF" }} icon="arrow-right" >Get Early Access</Button>
+                    </a>  
                   </div>
                 </Col>
               </div>
@@ -194,16 +167,15 @@ const IndexPage = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(https://source.unsplash.com/Gup8MCvSsf0)',
+          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(https://source.unsplash.com/RAA9gNJdCvw)',
         }}
       >
         <Row gutter={48} type="flex"   align="middle">
-          <Col lg={12} xs={24} offset={1}>
-              <img src={InfoPath} alt="Groundline.io how it works?" />
+          <Col lg={10} xs={24} >
+              {/*<img src={InfoPath} alt="Groundline.io how it works?" />*/}
           </Col>
-          <Col lg={11} xs={24} >
+          <Col lg={14} xs={24} >
               <div className="text-left">
-                {/*
                 <div 
                   style={{
                     marginBottom:"1rem",  
@@ -215,19 +187,24 @@ const IndexPage = () => {
                   }}>
                     Coming Soon
                 </div>
-                */}
                 <h1 className="text-white">
-                  Data Analysis
+                  Image Services
                 </h1>
                 <h3 style={{color: "#EEE"}}>
-                  Extract actionable information
+                  {/*Extract actionable information*/}
+                  Access up-to-date high-resolution satellite and aerial imagery
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
+                  Satellite and aerial images provide invaluable information for many businesses that are not visible at eye level. 
+                    It allows greater coverage even in the most difficult areas making it an ideal tool for monitoring assets. 
+                    Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators to enhance your mapping experience.
+                  {/*
                   Image analysis plays a crucial role for industries using aerial imagery in creating business strategies.
                   For instance, farm owners can apply computer vision in a satellite image to easily identify the state of crops and help them predict yields efficiently.
                   We aim to make it easier for our users to leverage the benefits of artificial intelligence to make better decisions.
-                </p>
-                <a href='https://dashboard.groundline.io/register' className="inline m-2 ml-0">
+                  */}
+                  </p>
+                <a href='#contact' className="inline m-2 ml-0">
                   <Button type="outline" ghost style={{marginRight: 0, border: 0, padding: 0, borderRadius:0}} icon="arrow-right" >Get Early Access</Button>
                 </a>
               </div>
@@ -235,7 +212,8 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-
+      
+{/*
       <div className="bg-black py-10 px-8 md:px-20 md:py-12"
         style={{
           backgroundRepeat: 'no-repeat',
@@ -247,7 +225,6 @@ const IndexPage = () => {
         <Row gutter={48} type="flex"   align="middle">
           <Col lg={11} xs={24} offset={1}>
               <div className="text-left">
-                {/*
                 <div 
                   style={{
                     marginBottom:"1rem",  
@@ -259,7 +236,6 @@ const IndexPage = () => {
                   }}>
                     Coming Soon
                 </div>
-                */}
                 <h1 className="text-white" >Image Services</h1>
                   <h3 style={{color: "#EEE"}}>
                     Access up-to-date high-resolution satellite imagery
@@ -269,16 +245,17 @@ const IndexPage = () => {
                     It allows greater coverage even in the most difficult areas making it an ideal tool for monitoring assets. 
                     Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators in one platform.
                   </p>
-                  {/*
+                  
                 <a href='https://dashboard.groundline.io/register' className="inline m-2">
                   <Button type="outline"  style={{marginRight: 0, border: 0, padding: 0, borderRadius:0}} icon="arrow-right" ghost>Get Early Access</Button>
-                  </a>*/}
+                  </a>
               </div>
               <div style={{margin:"2rem 0"}} />
           </Col>
         </Row>
       </div>
-{/*}
+                */}
+
       <div 
         className="relative overflow-hidden" 
         style={{
@@ -296,21 +273,25 @@ const IndexPage = () => {
               align="bottom"
             >
               <div className="py-24 px-8 md:px-20 md:py-28 md:pb-20  text-center">
+                <h6 className="uppercase leading-4 tracking-widest text-white font-bold">
+                  Coming Soon
+                </h6>
                 <h1 style={{fontWeight:"bold", color:"#FFF"}}>
                   Explore Images
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                  Search for the latest satellite and aerial imagery. Download and print selected images for free.
-                  Please take note that this tool is in its early stage of development - some features may not be available without prior notice.
+                  Search for the latest satellite and aerial imagery. Integrate it to your map for better view and analysis of location.
                 </p>
-                <a href='https://dashboard.groundline.io'>
-                  <Button type="primary" size="large" style={{borderRadius: 0}} >Get Started</Button>
+                <a href='#contact'>
+                  <Button type="primary" size="large" style={{borderRadius: 0}} >Get Early Access</Button>
                 </a>
+                {/*
                 &nbsp;
                 &nbsp;
                 <a href='/platform'>
                   <Button type="outline" ghost size="large" style={{border: 0, borderRadius: 0}} >Learn More</Button>
                 </a>
+                */}
               </div>
               <div className="px-4 sm:p-0">
                 <img src={PlatformUI} className="rounded-lg" alt="Groundline fleet management software" />
@@ -319,7 +300,6 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-      */}
 {/*
       <div className="bg-black">
 

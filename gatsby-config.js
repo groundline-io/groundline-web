@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Enterprise solution for large-scale geospatial data visualization | Clerkflow',
+    title: 'Better customer experience using maps and data visualization | Groundline',
   },
   plugins: [
     {

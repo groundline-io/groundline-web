@@ -8,12 +8,12 @@ import 'antd/lib/button/style/css'
 import 'antd/lib/row/style/css'
 import 'antd/lib/col/style/css'
 import {
-  HomeOutlined,
-  ApiOutlined,
+//  HomeOutlined,
+ // ApiOutlined,
   DollarOutlined,
-  GlobalOutlined,
-  UserAddOutlined,
-  SolutionOutlined
+ // GlobalOutlined,
+  BookOutlined,
+  VideoCameraOutlined
 } from '@ant-design/icons';
 
 const IndexPage = () => {
@@ -42,7 +42,7 @@ const IndexPage = () => {
                   Industries
                 </h1>
                 <p style={{fontSize:"18px", color: "#EEE", letterSpacing: "1px", marginBottom:"1rem"}}>
-                    Remote sensing has a wide range of application in different industries. 
+                    Data visualization has a wide range of application in different industries. 
                     It provides invaluable source of information and unique opportunities for businesses. 
                     We work with different sectors to help improve business workflow and decision-making.
                 </p>
@@ -51,7 +51,88 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-            
+
+      <div className="bg-white">
+        <Row type="flex" align="middle" justify="center">
+          <Col lg={24} xs={24} >
+              <div className="flex flex-wrap items-center bg-red-600">
+                <Col lg={12} xs={24} 
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/CyX3ZAti5DA)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white" >Real Estate</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Groundline visualization provide a different perspective for real estate owners and buyers. 
+                      Interactive maps increase engagement and  will help buyers in site selection and market analysis.
+                      Showcase your portfolio using panoramic view and make it easier for customers to view your listings.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Images taken by satellites and UAV also helps view properties from above to improve marketing and development.
+                    </p>
+                  </div>
+                </Col>
+              </div>
+              <div  className="flex flex-wrap md:flex-row-reverse items-center bg-yellow-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundImage: 'url(https://source.unsplash.com/qcNTGMuJy4c)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Travel</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Create interactive guides for tourist spots, hotels, resorts and restaurants. 
+                      Provide navigation and customer interaction based on your locations current events.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Increase customer engagement by providing up-to-date imagery of top tourist attractions.
+                    </p>
+                  </div>
+                </Col>
+              </div>
+              <div className="flex flex-wrap items-center bg-green-600">
+                <Col lg={12} xs={24}
+                  style={{
+                    backgroundColor: '#FFF',
+                    backgroundImage: 'url(https://source.unsplash.com/7nrsVjvALnA)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height:"25rem"
+                  }}
+                >
+                </Col>
+                <Col lg={12} xs={24} className="text-white">
+                  <div className="p-12">
+                    <h2 className="text-white">Government</h2>
+                    <p style={{fontSize:"16px"}}>
+                      Create an immersive visualization of your community to help improve services, infrastructure and citizen's engagement.
+                      It can improve transparency and help the citizens understand the different aspects of their community.
+                    </p>
+                    <p style={{fontSize:"16px"}}>
+                      Integrating up-to-date imagery can also help assess damages caused by accidents or natural disaster. 
+                    </p>
+                  </div>
+                </Col>
+              </div>
+          </Col>
+        </Row>
+      </div>
+            {/*
       <div className="bg-white">
         <Row type="flex" align="middle" justify="center">
           <Col lg={24} xs={24} >
@@ -138,6 +219,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
+                */}
 
       <div className="relative md:px-20  " >
         <div className="pt-10 px-16 bg-white">
@@ -149,6 +231,8 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row gutter={96}>
+
+          {/*
             <Col lg={8} xs={24} className="mb-8 ">
               <HomeOutlined className="text-4xl mb-4" />
               <h3 className="text-black">Real Estate</h3>
@@ -170,11 +254,12 @@ const IndexPage = () => {
                 Monitor forestry, wild animal sanctuary and other high-risk areas.
               </p>
             </Col>
+          */}
             <Col lg={8} xs={24} className="mb-8 ">
-              <SolutionOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">Journalism</h3>
+              <VideoCameraOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Entertainment</h3>
               <p style={{fontSize:"18px"}}>
-                Use imagery for investigative reports and fact-finding.
+                Organize events by creating engaging visualization and maps. 
               </p>
             </Col>
             <Col lg={8} xs={24} className="mb-8 ">
@@ -185,10 +270,10 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col lg={8} xs={24}  className="mb-8">
-              <UserAddOutlined className="text-4xl mb-4" />
-              <h3 className="text-black">NGO</h3>
+              <BookOutlined className="text-4xl mb-4" />
+              <h3 className="text-black">Education</h3>
               <p style={{fontSize:"18px"}}>
-                Evaluate areas to improve and maximize services. 
+                Build better campus tour apps to increase student interest.
               </p>
             </Col>
             {/*}

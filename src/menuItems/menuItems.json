@@ -1,5 +1,9 @@
 [
   { 
+    "name": "Contact Us",
+    "link":  "#contact"
+  },
+  { 
     "name": "Industries",
     "link":  "/industries"
   },

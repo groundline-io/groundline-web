@@ -58,7 +58,7 @@ const MenuWrapper = () => {
             */}
             <Menu.Item key={'999'}>
               <a href="#contact"  >
-                Contact Us
+                Get Started
               </a>
             </Menu.Item>
           </Menu>
@@ -98,7 +98,7 @@ const MenuWrapper = () => {
             </SubMenu>
             <Menu.Item key={'999'}>
               <a href="#contact"  >
-                Contact Us
+                Get Started
               </a>
             </Menu.Item>
           </Menu>
