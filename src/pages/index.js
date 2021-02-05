@@ -86,7 +86,7 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col lg={8} xs={24}>
-              <h3 className="text-black">Data-driven</h3>
+              <h3 className="text-black">Multisource Data</h3>
               <p style={{fontSize:"18px"}}>
                 Access your own data or integrate third-party datasets from our trusted sources for better analysis.
               </p>
