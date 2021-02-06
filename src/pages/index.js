@@ -130,13 +130,13 @@ const IndexPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/dWwZBcjw3GE)',
+                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/C57vy2bfVrA)',
                   }}
               >
                 <Col lg={14} xs={24}  offset={1}>
                   <div className="mt-32">
                     <h1 className="text-white">
-                    Geospatial data visualization
+                     Data visualization
                   </h1>
                   <h3 style={{color: "#EEE"}}>
                     Create interactive and data-driven maps
@@ -167,7 +167,7 @@ const IndexPage = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(https://source.unsplash.com/RAA9gNJdCvw)',
+          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(https://source.unsplash.com/Rj6vvs8N4Qg)',
         }}
       >
         <Row gutter={48} type="flex"   align="middle">
@@ -176,6 +176,7 @@ const IndexPage = () => {
           </Col>
           <Col lg={14} xs={24} >
               <div className="text-left">
+                {/*
                 <div 
                   style={{
                     marginBottom:"1rem",  
@@ -187,17 +188,18 @@ const IndexPage = () => {
                   }}>
                     Coming Soon
                 </div>
+                */}
                 <h1 className="text-white">
-                  Image Services
+                  Indoor Mapping
                 </h1>
                 <h3 style={{color: "#EEE"}}>
                   {/*Extract actionable information*/}
-                  Access up-to-date high-resolution satellite and aerial imagery
+                  Create digital indoor navigation
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
-                  Satellite and aerial images provide invaluable information for many businesses that are not visible at eye level. 
-                    It allows greater coverage even in the most difficult areas making it an ideal tool for monitoring assets. 
-                    Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators to enhance your mapping experience.
+                  Large facilities such as shopping malls, campuses and hospitals requires effective mapping and montoring of routes and assets.
+                  Indoor navigation can provide turn-by-turn directions that will get you to the right spot. 
+                  It gives a quick overview of your location and create better experience for customers.  
                   {/*
                   Image analysis plays a crucial role for industries using aerial imagery in creating business strategies.
                   For instance, farm owners can apply computer vision in a satellite image to easily identify the state of crops and help them predict yields efficiently.
@@ -213,17 +215,17 @@ const IndexPage = () => {
         </Row>
       </div>
       
-{/*
+
       <div className="bg-black py-10 px-8 md:px-20 md:py-12"
         style={{
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'left',
-          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(https://source.unsplash.com/NN9HQkDgguc)',
+          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(https://source.unsplash.com/6M9xiVgkoN0)',
         }}
       >
         <Row gutter={48} type="flex"   align="middle">
-          <Col lg={11} xs={24} offset={1}>
+          <Col lg={13} xs={24} offset={1}>
               <div className="text-left">
                 <div 
                   style={{
@@ -238,7 +240,7 @@ const IndexPage = () => {
                 </div>
                 <h1 className="text-white" >Image Services</h1>
                   <h3 style={{color: "#EEE"}}>
-                    Access up-to-date high-resolution satellite imagery
+                    Access up-to-date high-resolution satellite and aerial imagery
                   </h3>
                   <p className="text-gray-400" style={{fontSize:"16px"}}>
                     Satellite and aerial images provide invaluable information for many businesses that are not visible at eye level. 
@@ -246,7 +248,7 @@ const IndexPage = () => {
                     Groundline makes it easier for everyone to access the latest images from different satellite and UAV operators in one platform.
                   </p>
                   
-                <a href='https://dashboard.groundline.io/register' className="inline m-2">
+                <a href='#contact' className="inline m-2">
                   <Button type="outline"  style={{marginRight: 0, border: 0, padding: 0, borderRadius:0}} icon="arrow-right" ghost>Get Early Access</Button>
                   </a>
               </div>
@@ -254,7 +256,6 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-                */}
 
       <div 
         className="relative overflow-hidden" 
