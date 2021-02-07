@@ -197,7 +197,7 @@ const IndexPage = () => {
                   Create digital indoor navigation
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
-                  Large facilities such as shopping malls, campuses and hospitals requires effective mapping and montoring of routes and assets.
+                  Large facilities such as shopping malls, campuses and hospitals requires effective mapping, routing and monitoring of assets.
                   Indoor navigation can provide turn-by-turn directions that will get you to the right spot. 
                   It gives a quick overview of your location and create better experience for customers.  
                   {/*
@@ -221,7 +221,7 @@ const IndexPage = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'left',
-          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(https://source.unsplash.com/6M9xiVgkoN0)',
+          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(https://source.unsplash.com/6M9xiVgkoN0)',
         }}
       >
         <Row gutter={48} type="flex"   align="middle">
