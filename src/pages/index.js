@@ -46,7 +46,7 @@ const IndexPage = () => {
                     Beta
                 </div>
                 <h1 className="tracking-wider md:tracking-widest text-white leading-10 md:leading-10" >
-                  Create better customer experience using maps and data visualization
+                  A better customer experience using maps and geospatial visualization
                   {/*Enterprise solution for geospatial monitoring and analysis*/}
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
