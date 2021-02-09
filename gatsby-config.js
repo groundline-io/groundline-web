@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Better customer experience using maps and data visualization | Groundline',
+    title: 'Driving customer experience using maps and geospatial visualization | Groundline',
   },
   plugins: [
     {
