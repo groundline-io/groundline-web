@@ -18,7 +18,7 @@ const IndexPage = () => {
       <div 
         className="py-24 px-8 md:px-20 md:py-40" 
         style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('+NightAerial+')',
+          backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('+NightAerial+')',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'left',
