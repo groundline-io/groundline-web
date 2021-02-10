@@ -50,7 +50,7 @@ const IndexPage = () => {
                   {/*Enterprise solution for geospatial monitoring and analysis*/}
                 </h1>
                 <p style={{fontSize:"15px", color: "#EEE", letterSpacing: "1px", marginBottom:"3rem"}}>
-                  Groundline is a mapping service for geospatial visualization and navigation.
+                  Groundline is a mapping service for location intelligence and navigation.
                   {/*Groundline is a satellite and aerial imagery management platform for asset monitoring.*/}
                 </p>
                 <a href='#contact' className="inline m-2">
