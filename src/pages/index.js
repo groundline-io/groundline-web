@@ -130,10 +130,10 @@ const IndexPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/C57vy2bfVrA)',
+                    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/lMcHm_tzR3I)',
                   }}
               >
-                <Col lg={14} xs={24}  offset={1}>
+                <Col lg={13} xs={24}  offset={1}>
                   <div className="mt-32">
                     <h1 className="text-white">
                      Data visualization
