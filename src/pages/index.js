@@ -161,7 +161,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </div>
-      
+      {/*
       <div className="bg-black py-10 px-8 md:px-20 md:py-12"
         style={{
           backgroundRepeat: 'no-repeat',
@@ -172,11 +172,10 @@ const IndexPage = () => {
       >
         <Row gutter={48} type="flex"   align="middle">
           <Col lg={10} xs={24} >
-              {/*<img src={InfoPath} alt="Groundline.io how it works?" />*/}
+              <img src={InfoPath} alt="Groundline.io how it works?" />
           </Col>
           <Col lg={14} xs={24} >
               <div className="text-left">
-                {/*
                 <div 
                   style={{
                     marginBottom:"1rem",  
@@ -188,23 +187,21 @@ const IndexPage = () => {
                   }}>
                     Coming Soon
                 </div>
-                */}
                 <h1 className="text-white">
                   Indoor Mapping
                 </h1>
                 <h3 style={{color: "#EEE"}}>
-                  {/*Extract actionable information*/}
                   Create digital indoor navigation
                 </h3>
                 <p className="text-gray-400" style={{fontSize:"16px"}}>
                   Large facilities such as shopping malls, campuses and hospitals requires effective mapping, routing and monitoring of assets.
                   Indoor navigation can provide turn-by-turn directions that will get you to the right spot. 
                   It gives a quick overview of your location and create better experience for customers.  
-                  {/*
+
                   Image analysis plays a crucial role for industries using aerial imagery in creating business strategies.
                   For instance, farm owners can apply computer vision in a satellite image to easily identify the state of crops and help them predict yields efficiently.
                   We aim to make it easier for our users to leverage the benefits of artificial intelligence to make better decisions.
-                  */}
+
                   </p>
                 <a href='#contact' className="inline m-2 ml-0">
                   <Button type="outline" ghost style={{marginRight: 0, border: 0, padding: 0, borderRadius:0}} icon="arrow-right" >Get Early Access</Button>
@@ -215,7 +212,7 @@ const IndexPage = () => {
         </Row>
       </div>
       
-
+                  */}
       <div className="bg-black py-10 px-8 md:px-20 md:py-12"
         style={{
           backgroundRepeat: 'no-repeat',
